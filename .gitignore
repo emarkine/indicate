@@ -1,0 +1,13 @@
+# Ignore OS directory tmp files
+.directory 
+.DS_Store
+
+# Ignore Java files
+.class
+#build/
+#bin/
+
+# Ingnore IB files
+#ib/IBJts/*
+#ib/IBJts/ib/IBJts/ibgateway.*
+                                                                                                                                    
