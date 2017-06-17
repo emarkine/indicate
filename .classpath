@@ -2,5 +2,12 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/eugene/space/indicate/lib/commons-lang3-3.3.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/eugene/space/indicate/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar"/>
+	<classpathentry kind="lib" path="C:/Users/eugene/space/indicate/lib/eclipselink/eclipselink.jar"/>
+	<classpathentry kind="lib" path="C:/Users/eugene/space/indicate/lib/eclipselink/javax.persistence_2.1.0.v201304241213.jar"/>
+	<classpathentry kind="lib" path="C:/Users/eugene/space/indicate/lib/eclipselink/org.eclipse.persistence.jpa.jpql_2.5.1.v20130918-f2b9fc5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/eugene/space/indicate/lib/eclipselinkmodelgen/org.eclipse.persistence.jpa.modelgen_2.5.1.v20130918-f2b9fc5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/eugene/space/indicate/lib/MySQLDriver/mysql-connector-java-5.1.23-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
