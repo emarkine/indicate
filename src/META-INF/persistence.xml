@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="TramPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.eugenelab.tram.database.Hosts</class>
+    <class>com.eugenelab.tram.domain.Fund</class>
+    <class>com.eugenelab.tram.domain.Setting</class>
+    <class>com.eugenelab.tram.domain.Datum</class>
+    <class>com.eugenelab.tram.domain.Command</class>
+    <class>com.eugenelab.tram.domain.Edge</class>
+    <class>com.eugenelab.tram.domain.Crystal</class>
+    <class>com.eugenelab.tram.domain.ServiceData</class>
+    <class>com.eugenelab.tram.domain.Indicator</class>
+    <class>com.eugenelab.tram.domain.Point</class>
+    <class>com.eugenelab.tram.domain.Neuron</class>
+    <class>com.eugenelab.tram.domain.Structure</class>
+    <class>com.eugenelab.tram.domain.Response</class>
+    <class>com.eugenelab.tram.domain.Tick</class>
+    <class>com.eugenelab.tram.domain.Frame</class>
+    <class>com.eugenelab.tram.domain.Currency</class>
+    <class>com.eugenelab.tram.domain.Weight</class>
+    <class>com.eugenelab.tram.domain.Nerve</class>
+    <class>com.eugenelab.tram.domain.Country</class>
+    <class>com.eugenelab.tram.domain.Bar</class>
+    <class>com.eugenelab.tram.domain.Host</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value=""/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      <property name="javax.persistence.jdbc.driver" value=""/>
+      <property name="javax.persistence.jdbc.user" value=""/>
+    </properties>
+  </persistence-unit>
+  <!--  <persistence-unit name="SDB" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.eugenelab.tram.database.Tick</class>
+    <class>com.eugenelab.tram.database.Bar</class>
+    <class>com.eugenelab.tram.database.Frame</class>
+    <class>com.eugenelab.tram.database.Fund</class>
+    <class>com.eugenelab.tram.database.Currency</class>
+    <class>com.eugenelab.tram.database.Country</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/tram_development?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://marketram.com:3306/tram_production?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="tram"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="yiiEUGCwKw"/>
+    </properties>
+  </persistence-unit>-->
+</persistence>
