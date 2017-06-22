@@ -5,9 +5,14 @@ package com.ib.controller;
 
 import java.util.AbstractSet;
 import java.util.Iterator;
+import java.util.Spliterator;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 public class ConcurrentHashSet<Key> extends AbstractSet<Key> {
+
     static Object OBJECT = new Object();
 
     private ConcurrentHashMap<Key, Object> m_map = new ConcurrentHashMap<Key, Object>(16,0.75f,1); // use write concurrency level 1 (last param) to decrease memory consumption by ConcurrentHashMap
@@ -41,4 +46,36 @@ public class ConcurrentHashSet<Key> extends AbstractSet<Key> {
     public void clear() {
         m_map.clear();
     }
+    
+	@Override
+	public Spliterator<Key> spliterator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Stream<Key> parallelStream() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean removeIf(Predicate<? super Key> arg0) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Stream<Key> stream() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void forEach(Consumer<? super Key> arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+
 }

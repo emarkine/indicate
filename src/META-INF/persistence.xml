@@ -25,9 +25,9 @@
     <class>com.eugenelab.tram.domain.Host</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value=""/>
-      <property name="javax.persistence.jdbc.password" value=""/>
-      <property name="javax.persistence.jdbc.driver" value=""/>
       <property name="javax.persistence.jdbc.user" value=""/>
+      <property name="javax.persistence.jdbc.driver" value=""/>
+      <property name="javax.persistence.jdbc.password" value=""/>
     </properties>
   </persistence-unit>
   <!--  <persistence-unit name="SDB" transaction-type="RESOURCE_LOCAL">
