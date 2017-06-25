@@ -1,7 +1,10 @@
 # Ignore OS directory tmp files
 .directory 
 .DS_Store
-
+                                                                                                                                                    
+# Ignore IDEA files                                                                                                                             
+.idea                                                                                                                                               
+   
 # Ingnore IB files
 #ib/IBJts/*
 #ib/IBJts/ib/IBJts/ibgateway.*

@@ -113,7 +113,7 @@ public class Commander {
 
     public static ApiController initController(ApiConnection.ILogger logger, int clientId) {
         ApiController controller = new ApiController(new ConnectionHandler(), logger, logger);
-        controller.connect(ARG.getIBHost(), ARG.getIBPort(), clientId);
+        controller.connect(ARG.getIBHost(), ARG.getIBPort(), clientId, null);
         return controller;
     }
 

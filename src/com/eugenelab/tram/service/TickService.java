@@ -12,12 +12,13 @@ import com.eugenelab.tram.util.Constant;
 import com.eugenelab.tram.util.MarketData;
 import com.eugenelab.tram.util.ServiceFinder;
 import com.eugenelab.tram.util.Utils;
+import com.ib.client.TickType;
 import com.ib.controller.ApiController;
 import com.ib.controller.ApiController.IRealTimeBarHandler;
 import com.ib.controller.ApiController.ITopMktDataHandler;
-import com.ib.controller.NewContract;
+import com.ib.client.Contract;
 import com.ib.controller.NewTickType;
-import com.ib.controller.Types;
+import com.ib.client.Types;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.Date;
@@ -44,7 +45,7 @@ public class TickService extends Service implements IRealTimeBarHandler, ITopMkt
     private int askSize;
     private int volume;
 
-    private final NewContract contract;
+    private final Contract contract;
     private boolean hasOpen = false;
     private boolean hasClose = false;
 
@@ -119,7 +120,6 @@ public class TickService extends Service implements IRealTimeBarHandler, ITopMkt
         makeBar(ib_bar);
     }
 
-    @Override
     public void tickPrice(NewTickType tickType, double price, int canAutoExecute) {
         switch (tickType) {
             case BID:
@@ -172,7 +172,6 @@ public class TickService extends Service implements IRealTimeBarHandler, ITopMkt
         puts(point);
     }
 
-    @Override
     public void tickSize(NewTickType tickType, int size) {
 //        System.out.println("time: " + Commander.FORMAT.format(new Date()));
         switch (tickType) {
@@ -252,7 +251,6 @@ public class TickService extends Service implements IRealTimeBarHandler, ITopMkt
         }
     }
 
-    @Override
     public void tickString(NewTickType tickType, String value) {
         if (tickType == NewTickType.LAST_TIMESTAMP) {
 //            long t = Long.parseLong(value) * 1000;
@@ -298,6 +296,22 @@ public class TickService extends Service implements IRealTimeBarHandler, ITopMkt
     public boolean isAsynchronous() {
         return true;
     }
+
+    @Override
+    public void tickPrice(TickType tickType, double price, int canAutoExecute) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void tickSize(TickType tickType, int size) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void tickString(TickType tickType, String value) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 
 //     /**
 //     * Обновление последнего бара

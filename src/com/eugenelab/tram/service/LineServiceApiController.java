@@ -8,7 +8,8 @@ import com.eugenelab.tram.database.ServiceData;
 import com.eugenelab.tram.util.MarketData;
 import com.ib.controller.ApiController;
 import com.ib.controller.ApiController.ITopMktDataHandler;
-import com.ib.controller.NewContract;
+import com.ib.client.Contract;
+import com.ib.client.TickType;
 import com.ib.controller.NewTickType;
 import com.ib.controller.Types;
 import java.math.BigDecimal;
@@ -21,7 +22,7 @@ import javax.persistence.EntityManager;
  */
 public class LineServiceApiController extends Service implements ITopMktDataHandler {
 
-    private final NewContract contract;
+    private final Contract contract;
     private boolean hasOpen = false;
     private boolean hasClose = false;
     private boolean canceled = false;
@@ -51,7 +52,6 @@ public class LineServiceApiController extends Service implements ITopMktDataHand
         runtime();
     }
 
-    @Override
     public void tickPrice(NewTickType tickType, double price, int canAutoExecute) {
         switch (tickType) {
             case OPEN:
@@ -69,11 +69,9 @@ public class LineServiceApiController extends Service implements ITopMktDataHand
         }
     }
 
-    @Override
     public void tickSize(NewTickType tickType, int size) {
     }
 
-    @Override
     public void tickString(NewTickType tickType, String value) {
     }
 
@@ -81,7 +79,6 @@ public class LineServiceApiController extends Service implements ITopMktDataHand
     public void tickSnapshotEnd() {
     }
 
-    @Override
     public void marketDataType(Types.MktDataType marketDataType) {
     }
 
@@ -90,6 +87,26 @@ public class LineServiceApiController extends Service implements ITopMktDataHand
         manager.persist(point);
         transaction();
         puts(point);
+    }
+
+    @Override
+    public void tickPrice(TickType tickType, double price, int canAutoExecute) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void tickSize(TickType tickType, int size) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void tickString(TickType tickType, String value) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void marketDataType(com.ib.client.Types.MktDataType marketDataType) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

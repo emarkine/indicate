@@ -10,9 +10,13 @@ import static com.eugenelab.tram.util.Constant.FORMAT_IB_REQUEST;
 import static com.eugenelab.tram.util.MarketData.initContract;
 import com.ib.controller.ApiController;
 import com.ib.controller.ApiController.IHistoricalDataHandler;
-import com.ib.controller.NewContract;
-import com.ib.controller.Types;
+import com.ib.client.Contract;
+import com.ib.client.Types.BarSize;
+import com.ib.client.Types;
+import com.ib.client.Types.DurationUnit;
+//import com.ib.client.DurationUnit
 import java.util.Date;
+
 
 /**
  *
@@ -23,9 +27,9 @@ public class HistoryReader implements IHistoricalDataHandler {
     private final Barable service;
     private final Frame frame;
     private final ApiController controller;
-    private final NewContract contract;
-    private final Types.BarSize barSize;
-    private Types.DurationUnit unit;
+    private final Contract contract;
+    private final BarSize barSize;
+    private DurationUnit unit;
 //    private final Calculator calculator;
     private Period period;
     private boolean isIncrement;

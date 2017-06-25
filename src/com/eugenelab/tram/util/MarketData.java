@@ -6,10 +6,11 @@
 package com.eugenelab.tram.util;
 
 import com.eugenelab.tram.database.Fund;
-import com.ib.controller.NewContract;
-import com.ib.controller.Types.DurationUnit;
-import com.ib.controller.Types.BarSize;
-import com.ib.controller.Types.SecType;
+import com.ib.client.Contract;
+import com.ib.client.Types;
+import com.ib.client.Types.DurationUnit;
+import com.ib.client.Types.BarSize;
+import com.ib.client.Types.SecType;
 
 /**
  *
@@ -96,19 +97,19 @@ public class MarketData {
         return null;
     }
 
-    public static NewContract initContract(Fund fund) {
-        NewContract contract = new NewContract();
+    public static Contract initContract(Fund fund) {
+        Contract contract = new Contract();
         switch (fund.getCategory()) {
             case "index":
                 contract.symbol(fund.getUnderlying());
-                contract.secType(SecType.IND);
+                contract.secType(Types.SecType.IND);
                 contract.exchange(fund.getExchange());
                 contract.currency(fund.getCurrency().getCode());
                 break;
             case "future":
                 contract.symbol(fund.getProduct());
-                contract.secType(SecType.FUT);
-                contract.expiry(fund.getContractMonthString());
+                contract.secType(Types.SecType.FUT);
+                contract.lastTradeDateOrContractMonth(fund.getContractMonthString());
                 contract.exchange(fund.getExchange());
                 contract.tradingClass(fund.getTradingClass());
                 contract.currency(fund.getCurrency().getCode());
@@ -119,15 +120,15 @@ public class MarketData {
                 break;
             case "commodity":
                 contract.symbol(fund.getProduct());
-                contract.secType(SecType.FUT);
-                contract.expiry(fund.getContractMonthString());
+                contract.secType(Types.SecType.FUT);
+                contract.lastTradeDateOrContractMonth(fund.getContractMonthString());
                 contract.exchange(fund.getExchange());
                 contract.currency(fund.getCurrency().getCode());
                 contract.tradingClass(fund.getTradingClass());
                 break;
             case "valuta":
                 contract.symbol(fund.getUnderlying());
-                contract.secType(SecType.CASH);
+                contract.secType(Types.SecType.CASH);
                 contract.exchange(fund.getExchange());
                 contract.currency(fund.getCurrency().getCode());
                 break;
