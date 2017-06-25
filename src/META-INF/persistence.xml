@@ -23,6 +23,26 @@
     <class>com.eugenelab.tram.domain.Country</class>
     <class>com.eugenelab.tram.domain.Bar</class>
     <class>com.eugenelab.tram.domain.Host</class>
+    <class>com.eugenelab.tram.database.Bar</class>
+    <class>com.eugenelab.tram.database.Command</class>
+    <class>com.eugenelab.tram.database.Country</class>
+    <class>com.eugenelab.tram.database.Crystal</class>
+    <class>com.eugenelab.tram.database.Currency</class>
+    <class>com.eugenelab.tram.database.Datum</class>
+    <class>com.eugenelab.tram.database.Edge</class>
+    <class>com.eugenelab.tram.database.Frame</class>
+    <class>com.eugenelab.tram.database.Fund</class>
+    <class>com.eugenelab.tram.database.Host</class>
+    <class>com.eugenelab.tram.database.Indicator</class>
+    <class>com.eugenelab.tram.database.Nerve</class>
+    <class>com.eugenelab.tram.database.Neuron</class>
+    <class>com.eugenelab.tram.database.Point</class>
+    <class>com.eugenelab.tram.database.Response</class>
+    <class>com.eugenelab.tram.database.ServiceData</class>
+    <class>com.eugenelab.tram.database.Setting</class>
+    <class>com.eugenelab.tram.database.Structure</class>
+    <class>com.eugenelab.tram.database.Tick</class>
+    <class>com.eugenelab.tram.database.Weight</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value=""/>
       <property name="javax.persistence.jdbc.user" value=""/>
