@@ -4,7 +4,10 @@
                                                                                                                                                     
 # Ignore IDEA files                                                                                                                             
 .idea                                                                                                                                               
-   
+
+# Ignore Eclipse files
+.settings 
+  
 # Ingnore IB files
 #ib/IBJts/*
 #ib/IBJts/ib/IBJts/ibgateway.*
