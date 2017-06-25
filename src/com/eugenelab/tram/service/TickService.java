@@ -120,38 +120,6 @@ public class TickService extends Service implements IRealTimeBarHandler, ITopMkt
         makeBar(ib_bar);
     }
 
-    public void tickPrice(NewTickType tickType, double price, int canAutoExecute) {
-        switch (tickType) {
-            case BID:
-                bid = price;
-                if (!fund.getCategory().equals("stock") && !fund.getCategory().equals("index")) {
-                    saveTickMidpoint();
-                }
-                break;
-            case ASK:
-                ask = price;
-                if (!fund.getCategory().equals("stock") && !fund.getCategory().equals("index")) {
-                    saveTickMidpoint();
-                }
-                break;
-            case LAST:
-                lastPrice = BigDecimal.valueOf(price).setScale(fund.getComma(), RoundingMode.HALF_UP).doubleValue();
-                saveTick();
-                break;
-            case OPEN:
-                if (!hasOpen) {
-                    savePoint("line_opening_price", price);
-                    hasOpen = true;
-                }
-                break;
-            case CLOSE:
-                if (!hasClose) {
-                    savePoint("line_previous_close", price);
-                    hasClose = true;
-                }
-        }
-    }
-
     protected void savePoint(String set_name, double price) {
         Point prev = null;
         Setting set = reader.set(set_name);
@@ -170,22 +138,6 @@ public class TickService extends Service implements IRealTimeBarHandler, ITopMkt
         manager.persist(point);
         transaction();
         puts(point);
-    }
-
-    public void tickSize(NewTickType tickType, int size) {
-//        System.out.println("time: " + Commander.FORMAT.format(new Date()));
-        switch (tickType) {
-            case BID_SIZE:
-                bidSize = size;
-                break;
-            case ASK_SIZE:
-                askSize = size;
-                break;
-            case VOLUME:
-                volume = size;
-                saveTick();
-                break;
-        }
     }
 
     // фильтр, который пропускает тики только с изменением не больше чем percent
@@ -251,13 +203,6 @@ public class TickService extends Service implements IRealTimeBarHandler, ITopMkt
         }
     }
 
-    public void tickString(NewTickType tickType, String value) {
-        if (tickType == NewTickType.LAST_TIMESTAMP) {
-//            long t = Long.parseLong(value) * 1000;
-//            puts( "LAST_TIMESTAMP: " + new Date(t));
-        }
-    }
-
     @Override
     public void tickSnapshotEnd() {
         puts("tickSnapshotEnd()");
@@ -299,17 +244,59 @@ public class TickService extends Service implements IRealTimeBarHandler, ITopMkt
 
     @Override
     public void tickPrice(TickType tickType, double price, int canAutoExecute) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        switch (tickType) {
+            case BID:
+                bid = price;
+                if (!fund.getCategory().equals("stock") && !fund.getCategory().equals("index")) {
+                    saveTickMidpoint();
+                }
+                break;
+            case ASK:
+                ask = price;
+                if (!fund.getCategory().equals("stock") && !fund.getCategory().equals("index")) {
+                    saveTickMidpoint();
+                }
+                break;
+            case LAST:
+                lastPrice = BigDecimal.valueOf(price).setScale(fund.getComma(), RoundingMode.HALF_UP).doubleValue();
+                saveTick();
+                break;
+            case OPEN:
+                if (!hasOpen) {
+                    savePoint("line_opening_price", price);
+                    hasOpen = true;
+                }
+                break;
+            case CLOSE:
+                if (!hasClose) {
+                    savePoint("line_previous_close", price);
+                    hasClose = true;
+                }
+        }
     }
 
     @Override
     public void tickSize(TickType tickType, int size) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        switch (tickType) {
+            case BID_SIZE:
+                bidSize = size;
+                break;
+            case ASK_SIZE:
+                askSize = size;
+                break;
+            case VOLUME:
+                volume = size;
+                saveTick();
+                break;
+        }
     }
 
     @Override
     public void tickString(TickType tickType, String value) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (tickType == TickType.LAST_TIMESTAMP) {
+            long t = Long.parseLong(value) * 1000;
+            puts( "LAST_TIMESTAMP: " + new Date(t));
+        }
     }
 
 
