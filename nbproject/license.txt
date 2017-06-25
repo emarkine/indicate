@@ -1,7 +1,0 @@
-<#if licenseFirst??>
-${licenseFirst}
-</#if>
-${licensePrefix}Copyright (c) 2004 - 2015, EugeneLab. All Rights Reserved
-<#if licenseLast??>
-${licenseLast}
-</#if>
