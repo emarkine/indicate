@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.eugenelab.tram.database;
+package com.eugenelab.tram.domain;
 
 import com.eugenelab.tram.interfaces.Rateable;
 import static com.eugenelab.tram.util.Constant.FORMAT_MS;

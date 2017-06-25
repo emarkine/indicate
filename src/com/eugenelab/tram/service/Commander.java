@@ -3,14 +3,14 @@
  */
 package com.eugenelab.tram.service;
 
-import com.eugenelab.tram.database.Fund;
+import com.eugenelab.tram.domain.Fund;
 import com.eugenelab.tram.util.ServiceTimerTask;
 import com.eugenelab.tram.interfaces.Serviceable;
-import com.eugenelab.tram.database.Host;
-import com.eugenelab.tram.database.Indicator;
+import com.eugenelab.tram.domain.Host;
+import com.eugenelab.tram.domain.Indicator;
 import com.eugenelab.tram.util.Parser;
-import com.eugenelab.tram.database.ServiceData;
-import com.eugenelab.tram.database.Setting;
+import com.eugenelab.tram.domain.ServiceData;
+import com.eugenelab.tram.domain.Setting;
 import static com.eugenelab.tram.util.Constant.FORMAT;
 import com.eugenelab.tram.util.Reader;
 import com.eugenelab.tram.util.ServiceFinder;

@@ -3,10 +3,10 @@
  */
 package com.eugenelab.tram.service;
 
-import com.eugenelab.tram.database.Bar;
-import com.eugenelab.tram.database.Frame;
-import com.eugenelab.tram.database.ServiceData;
-import com.eugenelab.tram.database.Tick;
+import com.eugenelab.tram.domain.Bar;
+import com.eugenelab.tram.domain.Frame;
+import com.eugenelab.tram.domain.ServiceData;
+import com.eugenelab.tram.domain.Tick;
 import com.eugenelab.tram.util.MarketData;
 import com.eugenelab.tram.util.Period;
 import com.eugenelab.tram.util.Reader;

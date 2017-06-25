@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2004 - 2015, EugeneLab. All Rights Reserved
  */
-package com.eugenelab.tram.database;
+package com.eugenelab.tram.domain;
 
 import java.io.Serializable;
 import javax.persistence.Basic;
@@ -14,7 +14,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
-import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -23,44 +22,41 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author eugene
  */
 @Entity
-@Table(name = "neurons")
+@Table(name = "structures")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Neuron.findAll", query = "SELECT n FROM Neuron n"),
-    @NamedQuery(name = "Neuron.findById", query = "SELECT n FROM Neuron n WHERE n.id = :id"),
-    @NamedQuery(name = "Neuron.findByType", query = "SELECT n FROM Neuron n WHERE n.type = :type"),
-    @NamedQuery(name = "Neuron.findByEdge", query = "SELECT n FROM Neuron n WHERE n.edge = :edge"),
-    @NamedQuery(name = "Neuron.findByPosition", query = "SELECT n FROM Neuron n WHERE n.position = :position")})
-public class Neuron implements Serializable {
-
+    @NamedQuery(name = "Structure.findAll", query = "SELECT s FROM Structure s"),
+    @NamedQuery(name = "Structure.findById", query = "SELECT s FROM Structure s WHERE s.id = :id"),
+    @NamedQuery(name = "Structure.findByPosition", query = "SELECT s FROM Structure s WHERE s.position = :position")})
+public class Structure implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
-    @Column(name = "id")
     private Integer id;
-    @Basic(optional = false)
-    @Column(name = "type")
-    private String type;
+
     @Column(name = "position")
     private Integer position;
-    @Column(name = "factor")
-    private Float factor;
+    
+    @ManyToOne
+    @JoinColumn(name = "crystal_id", nullable=false)
+    private Crystal crystal;
 
     @ManyToOne
-    @JoinColumn(name = "edge_id", nullable = false)
+    @JoinColumn(name = "edge_id", nullable=false)
     private Edge edge;
 
-    public Neuron() {
+
+    public Structure() {
     }
 
-    public Neuron(Integer id) {
+    public Structure(Integer id) {
         this.id = id;
     }
 
-    public Neuron(Integer id, String type, Edge edge) {
+    public Structure(Integer id, Crystal crystal, Edge edge) {
         this.id = id;
-        this.type = type;
+        this.crystal = crystal;
         this.edge = edge;
     }
 
@@ -74,10 +70,10 @@ public class Neuron implements Serializable {
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof Neuron)) {
+        if (!(object instanceof Structure)) {
             return false;
         }
-        Neuron other = (Neuron) object;
+        Structure other = (Structure) object;
         if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
             return false;
         }
@@ -86,12 +82,7 @@ public class Neuron implements Serializable {
 
     @Override
     public String toString() {
-        String s = "Neuron[" + id + "], ";
-        s += "edge: " + edge.getName() + ", ";
-        s += "type: " + type + ", ";
-        s += "position: " + position + ", ";
-        s += "factor: " + factor + "";
-        return s;
+        return "com.eugenelab.tram.database.Structure[ id=" + id + " ]";
     }
 
     public Integer getId() {
@@ -102,12 +93,20 @@ public class Neuron implements Serializable {
         this.id = id;
     }
 
-    public String getType() {
-        return type;
+    public Integer getPosition() {
+        return position;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setPosition(Integer position) {
+        this.position = position;
+    }
+
+    public Crystal getCrystal() {
+        return crystal;
+    }
+
+    public void setCrystal(Crystal crystal) {
+        this.crystal = crystal;
     }
 
     public Edge getEdge() {
@@ -117,21 +116,5 @@ public class Neuron implements Serializable {
     public void setEdge(Edge edge) {
         this.edge = edge;
     }
-
-    public Integer getPosition() {
-        return position;
-    }
-
-    public void setPosition(Integer position) {
-        this.position = position;
-    }
-
-    public Float getFactor() {
-        return factor;
-    }
-
-    public void setFactor(Float factor) {
-        this.factor = factor;
-    }
-
+    
 }

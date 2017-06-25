@@ -4,17 +4,17 @@
 package com.eugenelab.tram.service;
 
 import com.eugenelab.tram.container.Points;
-import com.eugenelab.tram.database.Bar;
+import com.eugenelab.tram.domain.Bar;
 import com.eugenelab.tram.interfaces.Serviceable;
 import com.eugenelab.tram.interfaces.Rateable;
-import com.eugenelab.tram.database.Frame;
-import com.eugenelab.tram.database.Fund;
-import com.eugenelab.tram.database.Indicator;
-import com.eugenelab.tram.database.Setting;
-import com.eugenelab.tram.database.Point;
-import com.eugenelab.tram.database.ServiceData;
-import com.eugenelab.tram.database.Tick;
-import com.eugenelab.tram.database.Weight;
+import com.eugenelab.tram.domain.Frame;
+import com.eugenelab.tram.domain.Fund;
+import com.eugenelab.tram.domain.Indicator;
+import com.eugenelab.tram.domain.Setting;
+import com.eugenelab.tram.domain.Point;
+import com.eugenelab.tram.domain.ServiceData;
+import com.eugenelab.tram.domain.Tick;
+import com.eugenelab.tram.domain.Weight;
 import com.eugenelab.tram.util.Calculator;
 import static com.eugenelab.tram.util.Constant.FORMAT;
 import static com.eugenelab.tram.util.Constant.FORMAT_MS;

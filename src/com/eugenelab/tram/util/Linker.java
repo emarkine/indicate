@@ -3,8 +3,8 @@
  */
 package com.eugenelab.tram.util;
 
-import com.eugenelab.tram.database.Datum;
-import com.eugenelab.tram.database.Point;
+import com.eugenelab.tram.domain.Datum;
+import com.eugenelab.tram.domain.Point;
 import java.util.Collection;
 import java.util.Map;
 import javax.persistence.EntityManager;

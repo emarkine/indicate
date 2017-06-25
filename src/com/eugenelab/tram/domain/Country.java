@@ -4,10 +4,9 @@
  * and open the template in the editor.
  */
 
-package com.eugenelab.tram.database;
+package com.eugenelab.tram.domain;
 
 import java.io.Serializable;
-import java.util.Set;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -16,7 +15,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -25,17 +23,14 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author eugene
  */
 @Entity
-@Table(name = "currencies")
+@Table(name = "countries")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Currency.findAll", query = "SELECT c FROM Currency c"),
-    @NamedQuery(name = "Currency.findById", query = "SELECT c FROM Currency c WHERE c.id = :id"),
-    @NamedQuery(name = "Currency.findByName", query = "SELECT c FROM Currency c WHERE c.name = :name"),
-    @NamedQuery(name = "Currency.findByCode", query = "SELECT c FROM Currency c WHERE c.code = :code"),
-    @NamedQuery(name = "Currency.findBySign", query = "SELECT c FROM Currency c WHERE c.sign = :sign"),
-    @NamedQuery(name = "Currency.findByCountryId", query = "SELECT c FROM Currency c WHERE c.countryId = :countryId"),
-    @NamedQuery(name = "Currency.findByState", query = "SELECT c FROM Currency c WHERE c.state = :state")})
-public class Currency implements Serializable {
+    @NamedQuery(name = "Country.findAll", query = "SELECT c FROM Country c"),
+    @NamedQuery(name = "Country.findById", query = "SELECT c FROM Country c WHERE c.id = :id"),
+    @NamedQuery(name = "Country.findByName", query = "SELECT c FROM Country c WHERE c.name = :name"),
+    @NamedQuery(name = "Country.findByCode", query = "SELECT c FROM Country c WHERE c.code = :code")})
+public class Country implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -46,26 +41,16 @@ public class Currency implements Serializable {
     private String name;
     @Column(name = "code")
     private String code;
-    @Column(name = "sign")
-    private String sign;
-    @Column(name = "country_id")
-    private Integer countryId;
-    @Column(name = "state")
-    private String state;
 
- //   @OneToMany(mappedBy="currency")
-  //  private Set<Fund> funds;
-    
-    public Currency() {
+    public Country() {
     }
 
-    public Currency(Integer id) {
+    public Country(Integer id) {
         this.id = id;
     }
-
     @Override
     public String toString() {
-        return "Currency[" + id + "] "+name;
+        return "Country[" + id + "] "+name;
     }
 
     @Override
@@ -78,15 +63,16 @@ public class Currency implements Serializable {
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof Currency)) {
+        if (!(object instanceof Country)) {
             return false;
         }
-        Currency other = (Currency) object;
+        Country other = (Country) object;
         if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
             return false;
         }
         return true;
     }
+
 
     public Integer getId() {
         return id;
@@ -111,37 +97,5 @@ public class Currency implements Serializable {
     public void setCode(String code) {
         this.code = code;
     }
-
-    public String getSign() {
-        return sign;
-    }
-
-    public void setSign(String sign) {
-        this.sign = sign;
-    }
-
-    public Integer getCountryId() {
-        return countryId;
-    }
-
-    public void setCountryId(Integer countryId) {
-        this.countryId = countryId;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
-    }
-
-//    public Set<Fund> getFunds() {
-//        return funds;
-//    }
-//
-//    public void setFunds(Set<Fund> funds) {
-//        this.funds = funds;
-//    }
     
 }

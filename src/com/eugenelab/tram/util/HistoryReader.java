@@ -3,8 +3,8 @@
  */
 package com.eugenelab.tram.util;
 
-import com.eugenelab.tram.database.Frame;
-import com.eugenelab.tram.database.Fund;
+import com.eugenelab.tram.domain.Frame;
+import com.eugenelab.tram.domain.Fund;
 import com.eugenelab.tram.interfaces.Barable;
 import static com.eugenelab.tram.util.Constant.FORMAT_IB_REQUEST;
 import static com.eugenelab.tram.util.MarketData.initContract;

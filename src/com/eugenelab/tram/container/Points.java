@@ -3,7 +3,7 @@
  */
 package com.eugenelab.tram.container;
 
-import com.eugenelab.tram.database.Point;
+import com.eugenelab.tram.domain.Point;
 import com.eugenelab.tram.util.Reader;
 import java.util.Date;
 import java.util.Map;

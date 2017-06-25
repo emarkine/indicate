@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package com.eugenelab.tram.database;
+package com.eugenelab.tram.domain;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

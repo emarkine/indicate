@@ -3,7 +3,7 @@
  */
 package com.eugenelab.tram.interfaces;
 
-import com.eugenelab.tram.database.Bar;
+import com.eugenelab.tram.domain.Bar;
 import java.util.Date;
 
 /**

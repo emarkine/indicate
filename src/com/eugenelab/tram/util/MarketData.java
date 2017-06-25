@@ -5,7 +5,7 @@
  */
 package com.eugenelab.tram.util;
 
-import com.eugenelab.tram.database.Fund;
+import com.eugenelab.tram.domain.Fund;
 import com.ib.client.Contract;
 import com.ib.client.Types;
 import com.ib.client.Types.DurationUnit;

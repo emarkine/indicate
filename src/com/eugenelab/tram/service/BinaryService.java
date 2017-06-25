@@ -3,9 +3,9 @@
  */
 package com.eugenelab.tram.service;
 
-import com.eugenelab.tram.database.Bar;
-import com.eugenelab.tram.database.Point;
-import com.eugenelab.tram.database.ServiceData;
+import com.eugenelab.tram.domain.Bar;
+import com.eugenelab.tram.domain.Point;
+import com.eugenelab.tram.domain.ServiceData;
 import java.util.Map;
 import java.util.Random;
 import javax.persistence.EntityManager;

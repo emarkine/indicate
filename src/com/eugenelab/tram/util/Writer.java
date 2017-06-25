@@ -3,15 +3,15 @@
  */
 package com.eugenelab.tram.util;
 
-import com.eugenelab.tram.database.Bar;
-import com.eugenelab.tram.database.Datum;
-import com.eugenelab.tram.database.Frame;
-import com.eugenelab.tram.database.Fund;
-import com.eugenelab.tram.database.Indicator;
-import com.eugenelab.tram.database.Neuron;
-import com.eugenelab.tram.database.Setting;
-import com.eugenelab.tram.database.Point;
-import com.eugenelab.tram.database.Tick;
+import com.eugenelab.tram.domain.Bar;
+import com.eugenelab.tram.domain.Datum;
+import com.eugenelab.tram.domain.Frame;
+import com.eugenelab.tram.domain.Fund;
+import com.eugenelab.tram.domain.Indicator;
+import com.eugenelab.tram.domain.Neuron;
+import com.eugenelab.tram.domain.Setting;
+import com.eugenelab.tram.domain.Point;
+import com.eugenelab.tram.domain.Tick;
 import com.ib.controller.ApiController;
 import java.math.BigDecimal;
 import java.util.Date;

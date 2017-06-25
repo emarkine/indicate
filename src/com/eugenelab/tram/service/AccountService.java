@@ -3,7 +3,7 @@
  */
 package com.eugenelab.tram.service;
 
-import com.eugenelab.tram.database.ServiceData;
+import com.eugenelab.tram.domain.ServiceData;
 import com.ib.controller.ApiController;
 import javax.persistence.EntityManager;
 

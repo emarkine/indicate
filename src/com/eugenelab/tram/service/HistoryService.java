@@ -3,9 +3,9 @@
  */
 package com.eugenelab.tram.service;
 
-import com.eugenelab.tram.database.Bar;
-import com.eugenelab.tram.database.ServiceData;
-import com.eugenelab.tram.database.Tick;
+import com.eugenelab.tram.domain.Bar;
+import com.eugenelab.tram.domain.ServiceData;
+import com.eugenelab.tram.domain.Tick;
 import com.eugenelab.tram.interfaces.Barable;
 import com.eugenelab.tram.util.HistoryReader;
 import com.eugenelab.tram.util.MarketData;

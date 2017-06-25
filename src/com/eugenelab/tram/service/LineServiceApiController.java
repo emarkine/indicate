@@ -3,8 +3,8 @@
  */
 package com.eugenelab.tram.service;
 
-import com.eugenelab.tram.database.Point;
-import com.eugenelab.tram.database.ServiceData;
+import com.eugenelab.tram.domain.Point;
+import com.eugenelab.tram.domain.ServiceData;
 import com.eugenelab.tram.util.MarketData;
 import com.ib.controller.ApiController;
 import com.ib.controller.ApiController.ITopMktDataHandler;

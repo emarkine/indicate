@@ -3,8 +3,8 @@
  */
 package com.eugenelab.tram.util;
 
-import com.eugenelab.tram.database.Indicator;
-import com.eugenelab.tram.database.Setting;
+import com.eugenelab.tram.domain.Indicator;
+import com.eugenelab.tram.domain.Setting;
 import com.eugenelab.tram.service.AccountService;
 import com.eugenelab.tram.service.BarService;
 import com.eugenelab.tram.service.BinaryService;

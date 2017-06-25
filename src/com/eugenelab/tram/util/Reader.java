@@ -3,21 +3,21 @@
  */
 package com.eugenelab.tram.util;
 
-import com.eugenelab.tram.database.Bar;
-import com.eugenelab.tram.database.Datum;
-import com.eugenelab.tram.database.Edge;
-import com.eugenelab.tram.database.Frame;
-import com.eugenelab.tram.database.Fund;
-import com.eugenelab.tram.database.Host;
-import com.eugenelab.tram.database.Indicator;
-import com.eugenelab.tram.database.Nerve;
-import com.eugenelab.tram.database.Neuron;
-import com.eugenelab.tram.database.Setting;
-import com.eugenelab.tram.database.Point;
-import com.eugenelab.tram.database.Response;
-import com.eugenelab.tram.database.ServiceData;
-import com.eugenelab.tram.database.Tick;
-import com.eugenelab.tram.database.Weight;
+import com.eugenelab.tram.domain.Bar;
+import com.eugenelab.tram.domain.Datum;
+import com.eugenelab.tram.domain.Edge;
+import com.eugenelab.tram.domain.Frame;
+import com.eugenelab.tram.domain.Fund;
+import com.eugenelab.tram.domain.Host;
+import com.eugenelab.tram.domain.Indicator;
+import com.eugenelab.tram.domain.Nerve;
+import com.eugenelab.tram.domain.Neuron;
+import com.eugenelab.tram.domain.Setting;
+import com.eugenelab.tram.domain.Point;
+import com.eugenelab.tram.domain.Response;
+import com.eugenelab.tram.domain.ServiceData;
+import com.eugenelab.tram.domain.Tick;
+import com.eugenelab.tram.domain.Weight;
 import com.eugenelab.tram.interfaces.Rateable;
 import com.eugenelab.tram.service.Commander;
 import static com.eugenelab.tram.service.Commander.ARG;

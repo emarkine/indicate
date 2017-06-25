@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2004 - 2015, EugeneLab. All Rights Reserved
  */
-package com.eugenelab.tram.database;
+package com.eugenelab.tram.domain;
 
 import com.eugenelab.tram.interfaces.Rateable;
 import static com.eugenelab.tram.util.Constant.FORMAT;
