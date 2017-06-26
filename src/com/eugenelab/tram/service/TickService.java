@@ -21,6 +21,7 @@ import com.ib.controller.NewTickType;
 import com.ib.client.Types;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.Calendar;
 import java.util.Date;
 import javax.persistence.EntityManager;
 
@@ -176,7 +177,8 @@ public class TickService extends Service implements IRealTimeBarHandler, ITopMkt
                 }
                 Tick tick = new Tick();
                 tick.setFund(fund);
-                tick.setTime(new Date());
+//                tick.setTime(new Date());
+                tick.setTime(Utils.time());
                 tick.setMs(System.currentTimeMillis());
                 tick.setRate(BigDecimal.valueOf(lastPrice));
                 tick.setBid(BigDecimal.valueOf(bid));

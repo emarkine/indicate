@@ -76,6 +76,8 @@ public class Bar implements Serializable, Rateable {
     @Column(name = "time")
     @Temporal(TemporalType.TIMESTAMP)
     private Date time;
+    @Column(name = "ms")
+    private Long ms;
     @Column(name = "open_time")
     @Temporal(TemporalType.TIMESTAMP)
     private Date openTime;
@@ -369,6 +371,14 @@ public class Bar implements Serializable, Rateable {
     public boolean isBelow(double rate) {
         return rate > high.doubleValue();
     }
-            
-    
+        
+    public long getMs() {
+        return ms;
+    }
+
+    public void setMs(long ms) {
+        this.ms = ms;
+    }
+        
+  
 }

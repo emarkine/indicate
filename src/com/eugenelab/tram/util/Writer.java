@@ -53,6 +53,7 @@ public class Writer {
         Date open_time = new Date(ib_bar.time() * 1000L);
         Date close_time = new Date(open_time.getTime() + calculator.bar_size);
         Date time = new Date(open_time.getTime() + calculator.bar_size / 2);
+        bar.setMs(System.currentTimeMillis());
         bar.setLast(false);
         bar.setFund(fund);
         bar.setFrame(frame);
@@ -187,6 +188,7 @@ public class Writer {
         long size = frame.getId() * 1000L;
         Date close_time = new Date(open_time.getTime() + size);
         Date time = new Date(open_time.getTime() + size / 2);
+        bar.setMs(System.currentTimeMillis());
         bar.setLast(false);
         bar.setFund(fund);
         bar.setFrame(frame);
@@ -414,6 +416,7 @@ public class Writer {
         Point point = new Point();
 //        point.setName(name);
 //        point.setIndicator(indicator);
+        point.setMs(time);
         point.setSetting(set);
         point.setFund(fund);
         point.setFrame(frame);
@@ -456,6 +459,7 @@ public class Writer {
         datum.setFrame(frame);
         datum.setNeuron(neuron);
         datum.setTime(new Date(time));
+//        datum.setMs(System.currentTimeMillis());
         datum.setValue(value);
         manager.persist(datum);
         return datum;

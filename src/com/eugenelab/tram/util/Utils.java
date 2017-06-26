@@ -6,6 +6,7 @@ package com.eugenelab.tram.util;
 import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.TimeZone;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -15,6 +16,13 @@ import java.util.logging.Logger;
  */
 public class Utils {
 
+    public static Date time() {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeZone(TimeZone.getTimeZone("Amsterdam"));
+        return calendar.getTime();
+    }
+            
+            
     public static Date beginOfDay(Date date) {
         Calendar c = Calendar.getInstance();
         c.setTime(date);

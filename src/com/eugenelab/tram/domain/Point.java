@@ -82,6 +82,9 @@ public class Point implements Serializable, Rateable {
     @Temporal(TemporalType.TIMESTAMP)
     private Date time;
     // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
+    
+    @Column(name = "ms")
+    private Long ms;
 
     @Column(name = "value")
     private BigDecimal value;
@@ -398,6 +401,14 @@ public class Point implements Serializable, Rateable {
      */
     public void setNextId(Integer nextId) {
         this.nextId = nextId;
+    }
+        
+    public long getMs() {
+        return ms;
+    }
+
+    public void setMs(long ms) {
+        this.ms = ms;
     }
 
 }

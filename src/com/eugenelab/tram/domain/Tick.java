@@ -216,16 +216,10 @@ public class Tick implements Serializable, Rateable, Comparable<Tick> {
         return 0;
     }
 
-    /**
-     * @return the ms
-     */
     public long getMs() {
-        return ms.longValue();
+        return ms;
     }
 
-    /**
-     * @param ms the ms to set
-     */
     public void setMs(long ms) {
         this.ms = ms;
     }
