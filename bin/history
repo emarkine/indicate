@@ -1,0 +1,8 @@
+#!/bin/bash  
+
+#bin/service -single history -frame 1d -fund $1 $@
+bin/service -single history -frame 1h -fund $1 $@
+bin/service -single history -frame 15m -fund $1 $@
+bin/service -single history -frame 5m -fund $1 $@
+bin/service -single history -frame 1m -fund $1 $@
+#bin/service -single history -frame 5s -fund eurusd $@

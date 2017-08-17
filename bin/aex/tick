@@ -1,0 +1,4 @@
+#!/bin/bash  
+
+export IB_CLIENT_ID=203819921
+bin/group aex.tick $@

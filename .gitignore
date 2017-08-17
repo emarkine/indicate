@@ -21,6 +21,4 @@ nbproject
 # Ignore Java files
 .class
 /build/
-/dist/
-/bin/
 
