@@ -33,8 +33,7 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "Currency.findByName", query = "SELECT c FROM Currency c WHERE c.name = :name"),
     @NamedQuery(name = "Currency.findByCode", query = "SELECT c FROM Currency c WHERE c.code = :code"),
     @NamedQuery(name = "Currency.findBySign", query = "SELECT c FROM Currency c WHERE c.sign = :sign"),
-    @NamedQuery(name = "Currency.findByCountryId", query = "SELECT c FROM Currency c WHERE c.countryId = :countryId"),
-    @NamedQuery(name = "Currency.findByState", query = "SELECT c FROM Currency c WHERE c.state = :state")})
+    @NamedQuery(name = "Currency.findByCountryId", query = "SELECT c FROM Currency c WHERE c.countryId = :countryId")})
 public class Currency implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
@@ -50,8 +49,6 @@ public class Currency implements Serializable {
     private String sign;
     @Column(name = "country_id")
     private Integer countryId;
-    @Column(name = "state")
-    private String state;
 
  //   @OneToMany(mappedBy="currency")
   //  private Set<Fund> funds;
@@ -126,14 +123,6 @@ public class Currency implements Serializable {
 
     public void setCountryId(Integer countryId) {
         this.countryId = countryId;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
     }
 
 //    public Set<Fund> getFunds() {
