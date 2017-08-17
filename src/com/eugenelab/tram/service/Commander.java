@@ -119,6 +119,12 @@ public class Commander {
 
     public static EntityManager connectDatabase() {
         System.out.println("Database Connecting...");
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("TramPU");
+        return factory.createEntityManager();
+    }
+
+    public static EntityManager connectDatabaseParams() {
+        System.out.println("Database Connecting...");
         Map<String, String> persistenceMap = new HashMap<String, String>();
         String url = "jdbc:mysql://" + ARG.getDataBaseHost() + ":"
                 + ARG.getDataBasePort() + "/" + ARG.getDataBaseName()
