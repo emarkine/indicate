@@ -1,0 +1,367 @@
+[INFO] logger started at Thu Aug 17 21:46:39 CEST 2017
+[INFO] executable name: /home/eugene/Downloads/ibgateway-stable-standalone-linux-x64.sh
+[INFO] install4j version: 6.1.5 (build 6349)
+[INFO] Properties: 
+-- listing properties --
+java.runtime.name=Java(TM) SE Runtime Environment
+exe4j.moduleName=/home/eugene/Downloads/ibgateway-stab...
+sun.boot.library.path=/home/eugene/.i4j_jres/1.8.0_60_64/li...
+java.vm.version=25.60-b23
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=:
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=RU
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=unknown
+install4j.exeDir=/home/eugene/Downloads/
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=/home/eugene/Downloads/ibgateway-stab...
+java.runtime.version=1.8.0_60-b27
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+i4jv=0
+java.endorsed.dirs=/home/eugene/.i4j_jres/1.8.0_60_64/li...
+os.arch=amd64
+java.io.tmpdir=/tmp
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+os.name=Linux
+exe4j.totalDataLength=94029959
+sun.java2d.noddraw=true
+sun.jnu.encoding=UTF-8
+java.library.path=/home/eugene/Downloads/ibgateway-stab...
+sun.awt.enableExtraMouseButtons=true
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=4.8.0-59-generic
+i4j.vpt=true
+user.home=/home/eugene
+install4j.cwd=/home/eugene/Downloads
+user.timezone=Europe/Amsterdam
+java.awt.printerjob=sun.print.PSPrinterJob
+java.specification.version=1.8
+install4j.jvmDir=/home/eugene/.i4j_jres/1.8.0_60_64
+file.encoding=UTF-8
+user.name=eugene
+java.class.path=i4jruntime.jar
+java.vm.specification.version=1.8
+sun.arch.data.model=64
+java.home=/home/eugene/.i4j_jres/1.8.0_60_64
+sun.java.command=com.install4j.runtime.launcher.UnixLa...
+java.specification.vendor=Oracle Corporation
+user.language=ru
+awt.toolkit=sun.awt.X11.XToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_60
+java.ext.dirs=/home/eugene/.i4j_jres/1.8.0_60_64/li...
+sun.boot.class.path=/home/eugene/.i4j_jres/1.8.0_60_64/li...
+java.vendor=Oracle Corporation
+install4j.appDir=/home/eugene/Downloads/
+file.separator=/
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.cpu.endian=little
+sun.io.unicode.encoding=UnicodeLittle
+sun.font.fontmanager=sun.awt.X11FontManager
+sun.cpu.isalist=
+[INFO] System language 'ru'
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 3121]: Execute action
+       Property variableName: installerType
+       Property failIfNull: true
+       Property responseFileVariable: true
+       Property onlyIfUndefined: false
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_1
+       Variable changed: installerType=standalone[class java.lang.String]
+       Execute action successful after 2 ms
+[INFO] com.install4j.runtime.beans.actions.control.RunScriptAction [ID 1597]: Execute action
+       Property rollbackScript: null
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_2
+       Variable changed: sys.installationDir=/home/eugene/Jts/ibgateway/963[class java.lang.String]
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 2316]: Execute action
+       Property variableName: jtsConfigDir
+       Property failIfNull: true
+       Property responseFileVariable: false
+       Property onlyIfUndefined: false
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_3
+       Variable changed: jtsConfigDir=/home/eugene/Jts[class java.lang.String]
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 2518]: Execute action
+       Property variableName: vmOptionsPath
+       Property failIfNull: true
+       Property responseFileVariable: false
+       Property onlyIfUndefined: false
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_4
+       Variable changed: vmOptionsPath=/home/eugene/Jts/ibgateway/963/ibgateway.vmoptions[class java.lang.String]
+       Execute action successful after 0 ms
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 2953]: Execute action
+       Property variableName: cmdLineArgs
+       Property failIfNull: true
+       Property responseFileVariable: true
+       Property onlyIfUndefined: false
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_5
+       Variable changed: cmdLineArgs=[/home/eugene/Jts, gdc1.ibllc.com:4000][class [Ljava.lang.String;]
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 1892]: Execute action
+       Property variableName: exeName
+       Property failIfNull: true
+       Property responseFileVariable: true
+       Property onlyIfUndefined: false
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_6
+       Variable changed: exeName=ibgateway[class java.lang.String]
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 2306]: Execute action
+       Property variableName: savedVmOptions
+       Property failIfNull: true
+       Property responseFileVariable: false
+       Property onlyIfUndefined: false
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_7
+       VM options file not found: /home/eugene/Jts/ibgateway/963/ibgateway.vmoptions
+       Variable changed: savedVmOptions={content=}[class java.util.HashMap]
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 2401]: Execute action
+       Property variableName: mergedVmOptions
+       Property failIfNull: true
+       Property responseFileVariable: false
+       Property onlyIfUndefined: false
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_8
+       Variable changed: mergedVmOptions=#
+# This file contains VM parameters for IB Gateway 963.
+# Each parameter should be defined in a separate line and the
+# last line must be followed by a line feed. No leading or
+# trailing whitespaces are allowed in the same line, where a
+# parameter is defined.
+#
+# Lines starting with a '#' character are treated as comments
+# and ignored. Additionally, if a line contains a
+# '### keep on update' string, all parameters defined below will
+# be preserved on update.
+#
+
+# maximum Java heap size
+-Xmx768m
+
+-Dinstaller.uuid=8e5b45eb-14fb-43d9-ab01-6fb004807149
+-DvmOptionsPath=/home/eugene/Jts/ibgateway/963/ibgateway.vmoptions
+-Dsun.awt.nopixfmt=true
+-Dsun.java2d.noddraw=true
+-Dswing.boldMetal=false
+-Dsun.locale.formatasdefault=true
+
+### keep on update
+[class java.lang.String]
+       Execute action successful after 2 ms
+[INFO] com.install4j.runtime.beans.screens.StartupScreen [ID 1]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.BannerFormScreen [ID 2738]: Show screen
+[INFO] com.install4j.runtime.beans.screens.BannerFormScreen [ID 2738]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.InstallationScreen [ID 8]: Show screen
+[INFO] com.install4j.runtime.beans.actions.control.RunScriptAction [ID 3419]: Execute action
+       Property rollbackScript: null
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_10
+       Execute action successful after 0 ms
+[INFO] com.install4j.runtime.beans.actions.InstallFilesAction [ID 9]: Execute action
+       Property sizeCalculatorScript: null
+       Property saveDownloadedFiles: false
+       Property installRuntime: true
+       Property updateBundledJre: true
+       Property validateApplicationId: false
+       Property checkFreeSpace: true
+       Property showFileNames: true
+       Property triggerReboot: true
+       Property delay: false
+       Property fileFilterScript: null
+       Property directoryResolverScript: null
+       Property rollbackSupported: true
+       checking writable with unelevated
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/2bfa42ba.lprop; size: 54 bytes; exists: false
+       File options set to: [fileTime: Thu Aug 03 06:11:30 CEST 2017, mode: 644, overwriteMode: Always ask except for update, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/3257f6f9.lprop; size: 54 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/d958696.lprop; size: 252 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/ibgateway.png; size: 2427 bytes; exists: false
+       File options set to: [fileTime: Mon May 22 21:45:28 CEST 2017, mode: 644, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/restarter; size: 12961 bytes; exists: false
+       File options set to: [fileTime: Thu Aug 03 06:11:30 CEST 2017, mode: 755, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/s_1fmt56t.png; size: 169149 bytes; exists: false
+       File options set to: [fileTime: Mon May 15 18:20:54 CEST 2017, mode: 644, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/uninstall.png; size: 73008 bytes; exists: false
+       File options set to: [fileTime: Wed Feb 22 16:48:58 CET 2017, mode: 644, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/ibgateway/963/ibgateway; size: 13456 bytes; exists: false
+       File options set to: [fileTime: Thu Aug 03 06:11:30 CEST 2017, mode: 755, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/ibgateway/963/jars/jts4launch-963.jar; size: 31601294 bytes; exists: false
+       File options set to: [fileTime: Thu Aug 03 06:11:30 CEST 2017, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/ibgateway/963/jars/locales.jar; size: 101918 bytes; exists: false
+       File options set to: [fileTime: Wed Nov 16 13:25:06 CET 2016, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/ibgateway/963/jars/log4j-api-2.5.jar; size: 101150 bytes; exists: false
+       File options set to: [fileTime: Thu Aug 03 06:08:12 CEST 2017, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/ibgateway/963/jars/log4j-core-2.5.jar; size: 565368 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/jars/total-2015c.jar; size: 6213315 bytes; exists: false
+       File options set to: [fileTime: Thu Jul 07 18:58:26 CEST 2016, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/ibgateway/963/jars/twslaunch-963.jar; size: 1001636 bytes; exists: false
+       File options set to: [fileTime: Thu Aug 03 06:08:02 CEST 2017, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/ibgateway/963/jars/twslaunch-install4j-1.8.jar; size: 11801 bytes; exists: false
+       File options set to: [fileTime: Thu Aug 03 06:08:12 CEST 2017, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/ibgateway/963/uninstall; size: 13109 bytes; exists: false
+       File options set to: [fileTime: Thu Aug 03 06:11:30 CEST 2017, mode: 700, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/inst_jre.cfg; size: 35 bytes; exists: false
+       File options set to: [fileTime: Thu Aug 17 21:47:03 CEST 2017, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4jruntime.jar; size: 1375778 bytes; exists: false
+       File options set to: [fileTime: Thu Aug 17 21:47:03 CEST 2017, mode: 644, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/MessagesDefault; size: 33534 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4jparams.conf; size: 69153 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/stats.properties; size: 330 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/user.jar; size: 24831 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_35_ehxa44.properties; size: 3187 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_16_ehxa44.properties; size: 987 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_24_ehxa44.properties; size: 2138 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_14_ehxa44.utf8; size: 32787 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_18_ehxa44.properties; size: 1021 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_7_ehxa44.utf8; size: 33730 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_19_ehxa44.utf8; size: 48907 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_29_ehxa44.utf8; size: 34747 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_9_ehxa44.utf8; size: 32114 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_36_ehxa44.utf8; size: 36290 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_20_ehxa44.utf8; size: 36810 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_37_ehxa44.properties; size: 930 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_3_ehxa44.properties; size: 1034 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_23_ehxa44.utf8; size: 44250 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_31_ehxa44.utf8; size: 35441 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_34_ehxa44.utf8; size: 53098 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_21_ehxa44.utf8; size: 34848 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_2_ehxa44.utf8; size: 28346 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_0_ehxa44.utf8; size: 33534 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_11_ehxa44.properties; size: 791 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_41_ehxa44_d36cl.png; size: 955 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_8_ehxa44.properties; size: 1202 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_22_ehxa44.properties; size: 935 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_32_ehxa44.properties; size: 1075 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_5_ehxa44.properties; size: 1034 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_25_ehxa44.utf8; size: 38559 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_10_ehxa44.utf8; size: 33852 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_38_ehxa44.utf8; size: 31905 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_33_ehxa44.utf8; size: 37406 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_1_ehxa44.properties; size: 1337 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_12_ehxa44.utf8; size: 32438 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_27_ehxa44.properties; size: 926 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_15_ehxa44.utf8; size: 38916 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_4_ehxa44.utf8; size: 27656 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_40_ehxa44_czgnkz.ico; size: 146982 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_17_ehxa44.utf8; size: 36087 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_30_ehxa44.utf8; size: 37640 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_13_ehxa44.properties; size: 872 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_6_ehxa44.utf8; size: 34549 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_26_ehxa44.utf8; size: 34684 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_28_ehxa44.utf8; size: 32406 bytes; exists: false
+       Install file: /home/eugene/Jts/ibgateway/963/.install4j/i4j_extf_39_ehxa44.utf8; size: 37535 bytes; exists: false
+       Execute action successful after 19010 ms
+[INFO] com.install4j.runtime.beans.actions.control.RunScriptAction [ID 2076]: Execute action
+       Property rollbackScript: null
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_13
+       Creating '/home/eugene/Jts' directory...
+       Execute action successful after 2 ms
+[INFO] com.install4j.runtime.beans.actions.text.WriteTextFileAction [ID 2307]: Execute action
+       Property logText: true
+       Property append: false
+       Property text: #
+# This file contains VM parameters for IB Gateway 963.
+# Each parameter should be defined in a separate line and the
+# last line must be followed by a line feed. No leading or
+# trailing whitespaces are allowed in the same line, where a
+# parameter is defined.
+#
+# Lines starting with a '#' character are treated as comments
+# and ignored. Additionally, if a line contains a
+# '### keep on update' string, all parameters defined below will
+# be preserved on update.
+#
+
+# maximum Java heap size
+-Xmx768m
+
+-Dinstaller.uuid=8e5b45eb-14fb-43d9-ab01-6fb004807149
+-DvmOptionsPath=/home/eugene/Jts/ibgateway/963/ibgateway.vmoptions
+-Dsun.awt.nopixfmt=true
+-Dsun.java2d.noddraw=true
+-Dswing.boldMetal=false
+-Dsun.locale.formatasdefault=true
+
+### keep on update
+
+       Property encoding: 
+       Property escaped: false
+       Property file: /home/eugene/Jts/ibgateway/963/ibgateway.vmoptions
+       Property rollbackSupported: true
+       Execute action successful after 2 ms
+[INFO] com.install4j.runtime.beans.actions.desktop.CreateProgramGroupAction [ID 10]: Execute action
+       Property addUninstaller: true
+       Property categories: Application
+       Property uninstallerMenuName: IB Gateway 963 Деинсталлятор
+       Property addDefaultLauncherLinks: true
+       Property programGroupName: IB Gateway 963
+       Property allUsers: true
+       Property linkDirectory: /usr/local/bin
+       Property programGroupEntryConfigs: []
+       Property unixSymlinks: true
+       Property failForSymlinksNotCreated: false
+       Property unixMenuEntries: true
+       Property rollbackSupported: true
+       Install file: /home/eugene/Jts/ibgateway/963/IB Gateway 963.desktop; size: 210 bytes; exists: false
+       File options set to: [fileTime: Thu Aug 17 21:47:03 CEST 2017, mode: 755, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/eugene/.local/share/applications/IB Gateway 963-0.desktop; size: 210 bytes; exists: false
+       File options set to: [fileTime: Thu Aug 17 21:47:03 CEST 2017, mode: 644, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+[ERROR] com.install4j.runtime.beans.actions.desktop.CreateProgramGroupAction [ID 10]: /usr/local/bin/ibgateway
+[INFO] com.install4j.runtime.beans.actions.desktop.CreateProgramGroupAction [ID 10]: Execute action successful after 5 ms
+[INFO] com.install4j.runtime.beans.actions.desktop.RegisterAddRemoveAction [ID 11]: Execute action
+       Property itemName: IB Gateway 963
+       Property iconSource: Custom icon
+       Property icon: i4j_extf_40_ehxa44_czgnkz.ico
+       Property persistentProperties: {}
+       Property rollbackSupported: true
+       Execute action successful after 0 ms
+[INFO] com.install4j.runtime.beans.actions.desktop.CreateDesktopLinkAction [ID 54]: Execute action
+       Property allUsers: true
+       Property runAsAdministrator: false
+       Property startIn: null
+       Property winIconFile: null
+       Property unixIconFile: null
+       Property macSingleBundleTarget: false
+       Property arguments: 
+       Property description: IB Gateway 963
+       Property name: IB Gateway 963
+       Property file: ibgateway
+       Property rollbackSupported: true
+       Install file: /home/eugene/Desktop/IB Gateway 963.desktop; size: 187 bytes; exists: false
+       File options set to: [fileTime: Thu Aug 17 21:47:03 CEST 2017, mode: 755, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.actions.text.WriteTextFileAction [ID 2244]: Execute action
+       Property logText: true
+       Property append: false
+       Property text: .
+       Property encoding: 
+       Property escaped: true
+       Property file: /home/eugene/Jts/ibgateway/963/.install4j/.installSuccess
+       Property rollbackSupported: true
+       Execute action successful after 0 ms
+[INFO] com.install4j.runtime.beans.screens.InstallationScreen [ID 8]: Rollback barrier reached
+       command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.BannerFormScreen [ID 2790]: Show screen
+       Variable changed: executeLauncherAction=true[class java.lang.Boolean]
+[INFO] com.install4j.runtime.beans.actions.finish.ExecuteLauncherAction [ID 2791]: Execute action
+       Property launcherId: 22
+       Property arguments: null
+       Property rollbackSupported: false
+       Execute action successful after 506 ms
+[INFO] com.install4j.runtime.beans.screens.BannerFormScreen [ID 2790]: command: finish
+       cleaning up
+       Finished
