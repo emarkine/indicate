@@ -68,7 +68,7 @@ public class Commander {
         if (host_name.indexOf('.') != -1) {
             host_name = host_name.substring(0, host_name.indexOf('.'));
         }
-//        System.out.println("host_name: " + host_name);
+        System.out.println("host_name: " + host_name);
         host = Reader.host(commander.manager, host_name);
         System.out.println("Host: " + host);
         System.out.println("IB Client ID: " + ARG.getIBClientId());
