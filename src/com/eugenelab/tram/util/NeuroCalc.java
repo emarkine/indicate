@@ -316,7 +316,7 @@ public class NeuroCalc {
             Map<Long, Datum> angles,
             Map<Long, Datum> signs,
             Map<Long, Datum> trends,
-            Map<Long, Datum> reverses,
+//            Map<Long, Datum> reverses,
             Map<Long, Datum> levels) {
         Neuron neuron = Reader.neuron(manager, edge, "Neuron::Out");
         if (neuron == null) {
