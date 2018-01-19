@@ -67,8 +67,8 @@ public class NeuroCalc {
             Linker.setDataPrevNext(manager,signs);
             Map<Long, Datum> trends = trend(edge, signs);
             Linker.setDataPrevNext(manager,trends);
-            Map<Long, Datum> reverses = reverse(edge, points, bars);
-            Linker.setDataPrevNext(manager,reverses);
+//            Map<Long, Datum> reverses = reverse(edge, points, bars);
+//            Linker.setDataPrevNext(manager,reverses);
             Map<Long, Datum> levels = level(edge, points);
             Linker.setDataPrevNext(manager,levels);
             Map<Long, Datum> outs = out(edge, points);
@@ -335,10 +335,10 @@ public class NeuroCalc {
         if (response_trend == 0.0) {
             --div;
         }
-        double response_reverse = response(edge, neuron, "Neuron::Reverse");
-        if (response_reverse == 0.0) {
-            --div;
-        }
+//        double response_reverse = response(edge, neuron, "Neuron::Reverse");
+//        if (response_reverse == 0.0) {
+//            --div;
+//        }
         double response_level = response(edge, neuron, "Neuron::Level");
         if (response_level == 0.0) {
             --div;
@@ -357,7 +357,7 @@ public class NeuroCalc {
                     double value = angles.get(time).getValue() * response_angle;
                     value += signs.get(time).getSignValue() * response_sign;
                     value += trends.get(time).getValue() * response_trend;
-                    value += reverses.get(time).getValue() * response_reverse;
+//                    value += reverses.get(time).getValue() * response_reverse;
                     value += levels.get(time).getValue() * response_level;
                     value /= div;
                     datum.setValue(Math.round((float) value));
