@@ -19,10 +19,10 @@ import com.eugenelab.tram.service.RandomService;
 import com.eugenelab.tram.service.RelativeStrengthIndexService;
 import com.eugenelab.tram.service.SimpleMovingAverageService;
 import com.eugenelab.tram.service.SolutionService;
+import com.eugenelab.tram.service.StateService;
 import com.eugenelab.tram.service.TickService;
 import com.eugenelab.tram.service.TrendService;
 import java.util.Map;
-import java.util.Random;
 import java.util.TreeMap;
 
 /**
@@ -33,6 +33,7 @@ public class ServiceFinder {
         private final static Map<String, Class> SERVICES = new TreeMap<>();
 
     static {
+        SERVICES.put("state", StateService.class);
         SERVICES.put("tick", TickService.class);
         SERVICES.put("bar", BarService.class);
         SERVICES.put("history", HistoryService.class);
