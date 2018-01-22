@@ -1,0 +1,4 @@
+#!/bin/bash  
+
+export IB_CLIENT_ID=84417837
+bin/group eur.tick $@
