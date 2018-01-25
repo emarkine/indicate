@@ -36,20 +36,16 @@ public class Nerve implements Serializable {
     private Integer id;
 
     @ManyToOne
+    @JoinColumn(name = "node_id")
+    private Node node;
+
+    @ManyToOne
     @JoinColumn(name = "source_id", nullable = false)
     private Neuron source;
 
     @ManyToOne
     @JoinColumn(name = "recipient_id", nullable = false)
     private Neuron recipient;
-    
-    @JoinColumn(name = "fund_id")
-    @ManyToOne
-    private Fund fund;
-    
-    @JoinColumn(name = "frame_id")
-    @ManyToOne
-    private Frame frame;
 
     @Column(name = "value")
     private Float value;
@@ -135,22 +131,6 @@ public class Nerve implements Serializable {
 
     public void setRecipient(Neuron recipient) {
         this.recipient = recipient;
-    }
-
-    public Fund getFund() {
-        return fund;
-    }
-
-    public void setFund(Fund fund) {
-        this.fund = fund;
-    }
-
-    public Frame getFrame() {
-        return frame;
-    }
-
-    public void setFrame(Frame frame) {
-        this.frame = frame;
     }
 
     public float getValue() {

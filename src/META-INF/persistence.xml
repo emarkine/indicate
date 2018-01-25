@@ -22,6 +22,7 @@
     <class>com.eugenelab.tram.domain.Country</class>
     <class>com.eugenelab.tram.domain.Bar</class>
     <class>com.eugenelab.tram.domain.Host</class>
+    <class>com.eugenelab.tram.domain.Node</class>
     <properties>
 <!--      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/tram_development"/>
       <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
