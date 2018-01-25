@@ -28,19 +28,23 @@ import javax.xml.bind.annotation.XmlRootElement;
 @NamedQueries({
     @NamedQuery(name = "Node.findAll", query = "SELECT n FROM Node n"),
     @NamedQuery(name = "Node.findById", query = "SELECT n FROM Node n WHERE n.id = :id"),
-    @NamedQuery(name = "Node.findByName", query = "SELECT n FROM Node n WHERE n.name = :name"),
-    @NamedQuery(name = "Node.findByIp", query = "SELECT n FROM Node n WHERE n.ip = :ip"),
-    @NamedQuery(name = "Node.findByProcessor", query = "SELECT n FROM Node n WHERE n.processor = :processor"),
-    @NamedQuery(name = "Node.findByRam", query = "SELECT n FROM Node n WHERE n.ram = :ram"),
-    @NamedQuery(name = "Node.findByHd", query = "SELECT n FROM Node n WHERE n.hd = :hd"),
-    @NamedQuery(name = "Node.findByOs", query = "SELECT n FROM Node n WHERE n.os = :os"),
-    @NamedQuery(name = "Node.findByOsKernel", query = "SELECT n FROM Node n WHERE n.osKernel = :osKernel"),
-    @NamedQuery(name = "Node.findByOsName", query = "SELECT n FROM Node n WHERE n.osName = :osName"),
-    @NamedQuery(name = "Node.findByOsVersion", query = "SELECT n FROM Node n WHERE n.osVersion = :osVersion"),
-    @NamedQuery(name = "Node.findByLocation", query = "SELECT n FROM Node n WHERE n.location = :location"),
-    @NamedQuery(name = "Node.findByUser", query = "SELECT n FROM Node n WHERE n.user = :user")})
+    @NamedQuery(name = "Node.findByName", query = "SELECT n FROM Node n WHERE n.name = :name")})
 
 public class Node implements Serializable {
+
+    /**
+     * @return the type
+     */
+    public String getType() {
+        return type;
+    }
+
+    /**
+     * @param type the type to set
+     */
+    public void setType(String type) {
+        this.type = type;
+    }
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -56,7 +60,7 @@ public class Node implements Serializable {
     private String title;
     @Column(name = "description")
     private String description;
-    @OneToMany(mappedBy="edge", cascade=CascadeType.ALL)
+    @OneToMany(mappedBy="node", cascade=CascadeType.ALL)
     private List<Nerve> nerves;
 
     public Node() {
