@@ -167,7 +167,13 @@ public class Commander {
 //            System.out.println(data);
 //        }
         Setting setting = data.getSetting();
+        if ( setting == null ) {
+            System.err.println("No settings for " + data);
+        }
         String set_name = setting.getName();
+        if ( set_name == null ) {
+            System.err.println("No name for settings " + setting);
+        }
         Class service_class = ServiceFinder.find(setting);
 //        Class service_class = ServiceFinder.find(set_name);
         Service service;

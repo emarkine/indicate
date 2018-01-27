@@ -50,7 +50,7 @@ public class Nerve implements Serializable {
     private Integer id;
 
     @ManyToOne
-    @JoinColumn(name = "node_id")
+    @JoinColumn(name = "node_id", nullable = false)
     private Node node;
 
     @ManyToOne

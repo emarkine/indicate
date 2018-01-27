@@ -56,10 +56,11 @@ public class Node implements Serializable {
     private String type;
     @Column(name = "name")
     private String name;
-    @Column(name = "title")
+    @Column(name = "title", nullable = false)
     private String title;
     @Column(name = "description")
     private String description;
+    
     @OneToMany(mappedBy="node", cascade=CascadeType.ALL)
     private List<Nerve> nerves;
 
