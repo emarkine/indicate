@@ -29,29 +29,15 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "Nerve.findAll", query = "SELECT r FROM Nerve r"),
     @NamedQuery(name = "Nerve.findById", query = "SELECT r FROM Nerve r WHERE r.id = :id")})
 public class Nerve implements Serializable {
-
-    /**
-     * @return the node
-     */
-    public Node getNode() {
-        return node;
-    }
-
-    /**
-     * @param node the node to set
-     */
-    public void setNode(Node node) {
-        this.node = node;
-    }
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
     private Integer id;
 
-    @ManyToOne
-    @JoinColumn(name = "node_id", nullable = false)
-    private Node node;
+//    @ManyToOne
+//    @JoinColumn(name = "node_id", nullable = false)
+//    private Node node;
 
     @ManyToOne
     @JoinColumn(name = "source_id", nullable = false)
@@ -163,5 +149,12 @@ public class Nerve implements Serializable {
         this.level = level;
     }
 
-    
+//    public Node getNode() {
+//        return node;
+//    }
+//
+//    public void setNode(Node node) {
+//        this.node = node;
+//    }
+//    
 }

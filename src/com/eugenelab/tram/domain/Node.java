@@ -54,15 +54,17 @@ public class Node implements Serializable {
     @Basic(optional = false)
     @Column(name = "type")
     private String type;
-    @Column(name = "name")
-    private String name;
     @Column(name = "title", nullable = false)
     private String title;
+    @Column(name = "name")
+    private String name;
     @Column(name = "description")
     private String description;
+    @Column(name = "file")
+    private String file;
     
-    @OneToMany(mappedBy="node", cascade=CascadeType.ALL)
-    private List<Nerve> nerves;
+//    @OneToMany(mappedBy="node", cascade=CascadeType.ALL)
+//    private List<Nerve> nerves;
 
     public Node() {
     }
@@ -127,18 +129,18 @@ public class Node implements Serializable {
         this.description = description;
     }
 
-    /**
-     * @return the nerves
-     */
-    public List<Nerve> getNerves() {
-        return nerves;
-    }
-
-    /**
-     * @param nerves the nerves to set
-     */
-    public void setNerves(List<Nerve> nerves) {
-        this.nerves = nerves;
-    }
+//    /**
+//     * @return the nerves
+//     */
+//    public List<Nerve> getNerves() {
+//        return nerves;
+//    }
+//
+//    /**
+//     * @param nerves the nerves to set
+//     */
+//    public void setNerves(List<Nerve> nerves) {
+//        this.nerves = nerves;
+//    }
 
 }
