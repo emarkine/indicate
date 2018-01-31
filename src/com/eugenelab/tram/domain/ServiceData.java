@@ -57,8 +57,8 @@ public class ServiceData implements Serializable {
 
 //    @Column(name = "status")
 //    protected String status;
-    @Column(name = "action")
-    private String action;
+//    @Column(name = "action")
+//    private String action;
     @Column(name = "active")
     private boolean active;
     @Column(name = "single")
@@ -360,13 +360,13 @@ public class ServiceData implements Serializable {
 //        this.delta = delta;
 //    }
 
-    public String getAction() {
-        return action;
-    }
-
-    public void setAction(String action) {
-        this.action = action;
-    }
+//    public String getAction() {
+//        return action;
+//    }
+//
+//    public void setAction(String action) {
+//        this.action = action;
+//    }
 
     public ServiceData getTrigger() {
         return trigger;
