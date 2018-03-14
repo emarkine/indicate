@@ -84,6 +84,11 @@ public final class Reader {
         }
     }
 
+    public static List<ServiceData> services(EntityManager manager) {
+        Query query = manager.createNamedQuery("ServiceData.findAll");
+        return (List<ServiceData>) query.getResultList();
+    }
+
     public static ServiceData service(EntityManager manager, String name) {
         Query query = manager.createNamedQuery("ServiceData.findByName");
         query.setParameter("name", name);

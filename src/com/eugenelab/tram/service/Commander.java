@@ -19,6 +19,7 @@ import com.ib.controller.ApiController;
 import java.lang.reflect.Constructor;
 import java.net.InetAddress;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -57,7 +58,7 @@ public class Commander {
 
     public static void main(String args[]) throws Exception {
         ARG = new Parser(args);
-       Commander commander = new Commander();
+        Commander commander = new Commander();
 //        EntityManager manager = Persistence.createEntityManagerFactory("TramPU").createEntityManager();
 //        Commander commander = new Commander(initDatabase(args));
 //        Commander commander = new Commander(manager);
@@ -94,7 +95,8 @@ public class Commander {
                 commander.start();
             }
         } else {
-            commander.initServices();
+            List<ServiceData> list = Reader.services(commander.manager);
+            commander.initServices(list);
             commander.start();
         }
 //        if ( ARG.getDate() != null && ARG.getTime() == null) { // мы в режиме расчета по переданной дате
@@ -109,7 +111,6 @@ public class Commander {
 //        this.manager = Persistence.createEntityManagerFactory("TramPU").createEntityManager();
 //        this.sdb_manager = Persistence.createEntityManagerFactory("SDB").createEntityManager();
     }
-
 
     public static ApiController initController(ApiConnection.ILogger logger, int clientId) {
         ApiController controller = new ApiController(new ConnectionHandler(), logger, logger);
@@ -152,12 +153,9 @@ public class Commander {
 //        this.manager = manager;
 //        this.sdb_manager = sdb_manager;
 //    }
-    
 //    public Commander(EntityManager manager) {
 //        this.manager = manager;
 //    }
-
-
     /**
      * Инициализация сервиса - нахождение и вызов его конструктора, передача
      * праметров
@@ -167,11 +165,11 @@ public class Commander {
 //            System.out.println(data);
 //        }
         Setting setting = data.getSetting();
-        if ( setting == null ) {
+        if (setting == null) {
             System.err.println("No settings for " + data);
         }
         String set_name = setting.getName();
-        if ( set_name == null ) {
+        if (set_name == null) {
             System.err.println("No name for settings " + setting);
         }
         Class service_class = ServiceFinder.find(setting);
@@ -214,7 +212,7 @@ public class Commander {
         service.start();
 //        if (service.isRefresh() && !service.isUpdatable() && !service.isSingle()) { 
         // Таймер запускаем только в случае если есть время обнавления 
-        if (service.isRefresh() && !service.isSingle()) { 
+        if (service.isRefresh() && !service.isSingle()) {
             ServiceTimerTask task = new ServiceTimerTask(service);
             timer.schedule(task, task.alignedTime(), task.frameMs());
             System.out.println("Servive[" + service.getId() + "] timer(start: " + FORMAT.format(task.alignedTime()) + ", refresh: " + service.refreshPeriod() + "s)");
@@ -223,19 +221,6 @@ public class Commander {
         }
     }
 
-    /**
-     * Инициализация сервисов
-     */
-    private void initServices() throws Exception {
-        Query query = manager.createNamedQuery("ServiceData.findAll");
-        List<ServiceData> list = query.getResultList();
-        System.out.println("" + list.size() + " services found");
-        for (ServiceData service : list) {
-//            if (host.equals(service.getHost())) {
-            initService(service);
-//            }
-        }
-    }
 
     /**
      * Инициализация сервисов
