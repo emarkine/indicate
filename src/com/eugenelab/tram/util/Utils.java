@@ -15,10 +15,13 @@ import java.util.logging.Logger;
  * @author eugene
  */
 public class Utils {
+    public static final Calendar calendar = Calendar.getInstance();
+    {
+        calendar.setTimeZone(TimeZone.getTimeZone("Amsterdam"));
+    }
 
     public static Date time() {
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTimeZone(TimeZone.getTimeZone("Amsterdam"));
+        
         return calendar.getTime();
     }
             

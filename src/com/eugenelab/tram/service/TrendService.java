@@ -65,7 +65,7 @@ public class TrendService extends Service {
                 long tm = bar.getTime().getTime();
                 if ( !points_high.containsKey(tm) ) {
                     Point point = writer.createPoint(tm, bar.getHigh().doubleValue(), "trend_bar_high", prev_point_high);
-                    point.setService(subservice);
+                    point.setService(data);
                     points_high.put(tm, point);
                     puts(point);
                 }
@@ -75,7 +75,7 @@ public class TrendService extends Service {
                 long tm = bar.getTime().getTime();
                 if ( !points_low.containsKey(tm) ) {
                     Point point = writer.createPoint(tm, bar.getLow().doubleValue(), "trend_bar_low", prev_point_low);
-                    point.setService(subservice);
+                    point.setService(data);
                     points_low.put(tm, point);
                     puts(point);
                 }

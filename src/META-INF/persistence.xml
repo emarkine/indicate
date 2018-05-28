@@ -18,18 +18,19 @@
     <class>com.eugenelab.tram.domain.Frame</class>
     <class>com.eugenelab.tram.domain.Currency</class>
     <class>com.eugenelab.tram.domain.Weight</class>
-    <class>com.eugenelab.tram.domain.Nerve</class>
+    <class>com.eugenelab.tram.domain.Line</class>
     <class>com.eugenelab.tram.domain.Country</class>
     <class>com.eugenelab.tram.domain.Bar</class>
     <class>com.eugenelab.tram.domain.Host</class>
     <class>com.eugenelab.tram.domain.Node</class>
+    <class>com.eugenelab.tram.domain.State</class>
     <properties>
 <!--      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/tram_development"/>
       <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
       <property name="javax.persistence.jdbc.user" value="eugene"/>
       <property name="javax.persistence.jdbc.password" value="1q2w3e4r5t"/>-->
-      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://eugenelab.com:5432/tram_production"/>
-      <property name="javax.persistence.jdbc.user" value="tram_adapt"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://eugenelab.com:5432/adapt_production"/>
+      <property name="javax.persistence.jdbc.user" value="adapt"/>
       <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
       <property name="javax.persistence.jdbc.password" value="HXLemdtpoO"/>
       

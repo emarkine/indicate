@@ -23,12 +23,12 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author eugene
  */
 @Entity
-@Table(name = "nerves")
+@Table(name = "lines")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Nerve.findAll", query = "SELECT r FROM Nerve r"),
-    @NamedQuery(name = "Nerve.findById", query = "SELECT r FROM Nerve r WHERE r.id = :id")})
-public class Nerve implements Serializable {
+    @NamedQuery(name = "Line.findAll", query = "SELECT r FROM Line r"),
+    @NamedQuery(name = "Line.findById", query = "SELECT r FROM Line r WHERE r.id = :id")})
+public class Line implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -44,8 +44,8 @@ public class Nerve implements Serializable {
     private Neuron source;
 
     @ManyToOne
-    @JoinColumn(name = "recipient_id", nullable = false)
-    private Neuron recipient;
+    @JoinColumn(name = "target_id", nullable = false)
+    private Neuron target;
 
     @Column(name = "value")
     private Float value;
@@ -58,10 +58,10 @@ public class Nerve implements Serializable {
 //    @Column(name = "recipient_id")
 //    private Integer recipientId;
 
-    public Nerve() {
+    public Line() {
     }
 
-    public Nerve(Integer id) {
+    public Line(Integer id) {
         this.id = id;
     }
 
@@ -75,10 +75,10 @@ public class Nerve implements Serializable {
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof Nerve)) {
+        if (!(object instanceof Line)) {
             return false;
         }
-        Nerve other = (Nerve) object;
+        Line other = (Line) object;
         if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
             return false;
         }
@@ -89,7 +89,7 @@ public class Nerve implements Serializable {
     public String toString() {
         String s = "Nerve[" + id + "], ";
         s += "source: " + source.getType()+ ", ";
-        s += "recipient: " + recipient.getType();
+        s += "target: " + target.getType();
         return s;
     }
 
@@ -125,12 +125,12 @@ public class Nerve implements Serializable {
         this.source = source;
     }
 
-    public Neuron getRecipient() {
-        return recipient;
+    public Neuron getTarget() {
+        return target;
     }
 
-    public void setRecipient(Neuron recipient) {
-        this.recipient = recipient;
+    public void setTarget(Neuron target) {
+        this.target = target;
     }
 
     public float getValue() {

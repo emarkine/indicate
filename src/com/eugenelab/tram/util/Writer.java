@@ -7,10 +7,12 @@ import com.eugenelab.tram.domain.Bar;
 import com.eugenelab.tram.domain.Datum;
 import com.eugenelab.tram.domain.Frame;
 import com.eugenelab.tram.domain.Fund;
+import com.eugenelab.tram.domain.State;
 import com.eugenelab.tram.domain.Indicator;
 import com.eugenelab.tram.domain.Neuron;
 import com.eugenelab.tram.domain.Setting;
 import com.eugenelab.tram.domain.Point;
+import com.eugenelab.tram.domain.ServiceData;
 import com.eugenelab.tram.domain.Tick;
 import com.ib.controller.ApiController;
 import java.math.BigDecimal;
@@ -435,7 +437,6 @@ public class Writer {
         return point;
     }
 
-
     /**
      * Обновление точки
      *
@@ -463,6 +464,20 @@ public class Writer {
         datum.setValue(value);
         manager.persist(datum);
         return datum;
+    }
+
+    public void updateData(ServiceData data) {
+        manager.getTransaction().begin();
+        manager.persist(data);
+        manager.getTransaction().commit();
+    }
+
+    public void updateState(State state) {
+        if (!manager.getTransaction().isActive()) {
+            this.manager.getTransaction().begin();
+        }
+        manager.persist(state);
+        manager.getTransaction().commit();
     }
 
 }

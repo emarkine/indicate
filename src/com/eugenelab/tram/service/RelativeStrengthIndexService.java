@@ -78,7 +78,7 @@ public class RelativeStrengthIndexService extends Service  {
             if (p == null) {
                 double rsi = calc_rsi(bars, i);
                 p = writer.createPoint(t, rsi, prev);
-                p.setService(subservice);
+                p.setService(data);
                 puts(p);
             }
             prev = p;

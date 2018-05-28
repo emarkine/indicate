@@ -8,7 +8,7 @@ import com.eugenelab.tram.domain.Datum;
 import com.eugenelab.tram.domain.Edge;
 import com.eugenelab.tram.domain.Frame;
 import com.eugenelab.tram.domain.Fund;
-import com.eugenelab.tram.domain.Nerve;
+import com.eugenelab.tram.domain.Line;
 import com.eugenelab.tram.domain.Neuron;
 import com.eugenelab.tram.domain.Point;
 import com.eugenelab.tram.domain.Response;
@@ -295,7 +295,7 @@ public class NeuroCalc {
 
     private double response(Edge edge, Neuron out, String type) {
         Neuron neuron = Reader.neuron(manager, edge, type);
-        Nerve nerve = Reader.nerve(manager, neuron, out);
+        Line nerve = Reader.nerve(manager, neuron, out);
         Response response = Reader.response(manager, nerve, this.fund, this.frame);
         if (response != null) {
             return response.getValue().doubleValue();
@@ -404,11 +404,11 @@ public class NeuroCalc {
     public Datum thread_(Neuron neuron, Date time) {
         double value = 0;
         // считываем все нервы для нейрона
-        List<Nerve> nerves = Reader.nerves(manager, neuron);
-        int div = nerves.size();
-        for (Nerve nerve : nerves) { // проходим по нервам
-            Response response = Reader.response(manager, nerve, this.fund, this.frame); // считываем откклик
-            Datum datum = Reader.datum(manager, fund, frame, nerve.getSource(), time); // находим источник данных
+        List<Line> lines = Reader.lines(manager, neuron);
+        int div = lines.size();
+        for (Line line : lines) { // проходим по нервам
+            Response response = Reader.response(manager, line, this.fund, this.frame); // считываем откклик
+            Datum datum = Reader.datum(manager, fund, frame, line.getSource(), time); // находим источник данных
             if (response != null && datum != null) {
                 if (response.getValue() != 0.0) {
                     value += response.getValue() * datum.getSignValue();
@@ -446,8 +446,8 @@ public class NeuroCalc {
     public Datum thread(Neuron neuron, Date time) {
         double value = 0;
         // считываем все нервы для нейрона
-        List<Nerve> nerves = Reader.nerves(manager, neuron);
-        for (Nerve nerve : nerves) { // проходим по нервам
+        List<Line> lines = Reader.lines(manager, neuron);
+        for (Line nerve : lines) { // проходим по нервам
 //            Response response = Reader.response(manager, nerve, this.fund, this.frame); // считываем откклик
             Datum datum = Reader.datum(manager, fund, frame, nerve.getSource(), time); // находим источник данных
             if (datum != null) {
@@ -463,7 +463,7 @@ public class NeuroCalc {
         datum.setFrame(frame);
         datum.setNeuron(neuron);
         datum.setTime(time);
-        datum.setSignValue(Math.round((float) (value / nerves.size())));
+        datum.setSignValue(Math.round((float) (value / lines.size())));
         manager.persist(datum);
         return datum;
     }

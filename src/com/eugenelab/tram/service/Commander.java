@@ -14,6 +14,7 @@ import com.eugenelab.tram.domain.Setting;
 import static com.eugenelab.tram.util.Constant.FORMAT;
 import com.eugenelab.tram.util.Reader;
 import com.eugenelab.tram.util.ServiceFinder;
+import com.eugenelab.tram.util.Writer;
 import com.ib.controller.ApiConnection;
 import com.ib.controller.ApiController;
 import java.lang.reflect.Constructor;
@@ -75,7 +76,7 @@ public class Commander {
         System.out.println("IB Client ID: " + ARG.getIBClientId());
         if (ARG.getItem("single") != null) { // передана команда на запуск единичного сервиса
             ServiceData data = Reader.single_service(commander.manager);
-            Serviceable service = commander.initService(data);
+            Serviceable service = commander.initService(data,host);
             service.setSingle(true);
             commander.startService(service);
             if (!service.isAsynchronous()) { // сервис не должен асинхронно обновляться
@@ -83,7 +84,7 @@ public class Commander {
             }
         } else if (ARG.getItem("name") != null) { // передана команда на запуск сервиса по имени
             ServiceData data = Reader.service(commander.manager, ARG.getItem("name"));
-            Serviceable service = commander.initService(data);
+            Serviceable service = commander.initService(data,host);
             commander.startService(service);
         } else if (ARG.getItem("group") != null) { // передана команда на запуск группы сервисов 
             List<ServiceData> list = Reader.services_by_group(commander.manager, ARG.getItem("group"));
@@ -91,12 +92,12 @@ public class Commander {
                 System.err.println("No services found for group: " + ARG.getItem("group"));
                 System.exit(0); // вываливаемся
             } else {
-                commander.initServices(list);
+                commander.initServices(list, host);
                 commander.start();
             }
         } else {
             List<ServiceData> list = Reader.services(commander.manager);
-            commander.initServices(list);
+            commander.initServices(list, host);
             commander.start();
         }
 //        if ( ARG.getDate() != null && ARG.getTime() == null) { // мы в режиме расчета по переданной дате
@@ -160,7 +161,7 @@ public class Commander {
      * Инициализация сервиса - нахождение и вызов его конструктора, передача
      * праметров
      */
-    private Serviceable initService(ServiceData data) throws Exception {
+    private Serviceable initService(ServiceData data, Host host) throws Exception {
 //        if (data.isActive()) {
 //            System.out.println(data);
 //        }
@@ -199,6 +200,8 @@ public class Commander {
 //            }
         }
         services.add(service);
+        service.setHost(host);
+        service.setState("add");
         return service;
     }
 
@@ -218,17 +221,17 @@ public class Commander {
             System.out.println("Servive[" + service.getId() + "] timer(start: " + FORMAT.format(task.alignedTime()) + ", refresh: " + service.refreshPeriod() + "s)");
         } else { // иначе просто выполняем один раз метод run
             service.run();
+            service.setState("run");
         }
     }
-
 
     /**
      * Инициализация сервисов
      */
-    private void initServices(List<ServiceData> list) throws Exception {
+    private void initServices(List<ServiceData> list, Host host) throws Exception {
         for (ServiceData service : list) {
 //            if (host.equals(service.getHost())) {
-            initService(service);
+            initService(service, host);
 //            }
         }
     }

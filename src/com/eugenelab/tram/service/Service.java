@@ -5,10 +5,12 @@ package com.eugenelab.tram.service;
 
 import com.eugenelab.tram.container.Points;
 import com.eugenelab.tram.domain.Bar;
+import com.eugenelab.tram.domain.State;
 import com.eugenelab.tram.interfaces.Serviceable;
 import com.eugenelab.tram.interfaces.Rateable;
 import com.eugenelab.tram.domain.Frame;
 import com.eugenelab.tram.domain.Fund;
+import com.eugenelab.tram.domain.Host;
 import com.eugenelab.tram.domain.Indicator;
 import com.eugenelab.tram.domain.Setting;
 import com.eugenelab.tram.domain.Point;
@@ -58,7 +60,7 @@ public abstract class Service implements Serviceable {
 //    protected Map<Date, Tick> ticks = new TreeMap<>();
 //    protected Map<Date, Bar> bars = new TreeMap<>();
 //    protected Map<Date, Point> points = new TreeMap<>();
-    protected final ServiceData subservice;
+    protected final ServiceData data;
     protected final Indicator indicator;
     protected final Setting set;
     protected final Fund fund;
@@ -91,7 +93,7 @@ public abstract class Service implements Serviceable {
 
     public Service(ServiceData data, EntityManager manager, ApiController controller) {
 //        print = true;
-        this.subservice = data;
+        this.data = data;
         this.set = data.getSetting();
         this.single = data.isSingle();
         this.indicator = set.getIndicator();
@@ -120,7 +122,7 @@ public abstract class Service implements Serviceable {
         if (isSingle()) {
             s += " single";
         }
-        s += "\n " + subservice;
+        s += "\n " + data;
         return s;
     }
 
@@ -155,26 +157,17 @@ public abstract class Service implements Serviceable {
 
     @Override
     public int getId() {
-        return subservice.getId();
+        return data.getId();
     }
 
-    protected void setStatus(String status, String message) {
-        puts("status: " + status);
-//        if (!manager.getTransaction().isActive()) {
-//            this.manager.getTransaction().begin();
-//        }
-//        data.setStatus("started");
-//        this.manager.persist(data);
-//        this.manager.getTransaction().commit();
-    }
 
     private void initUpdatable() {
         puts("Updatable Services:");
         for (Service service : Commander.services) {
             if (service.fund == this.fund && service != this && service.isActive()) { // 
-                if (service.subservice.getTrigger() == this.subservice) {
+                if (service.data.getTrigger() == this.data) {
                     listUpdatableServices.add(service);
-                    puts(service.subservice.getName());
+                    puts(service.data.getName());
                 }
             }
         }
@@ -183,7 +176,6 @@ public abstract class Service implements Serviceable {
     @Override
     public void start() {
         initUpdatable();
-        setStatus("started", null);
         if (isDate()) { // передана дата
             Date beginDate = Utils.timeToDate(fund.getOpenTime(), getDate());
             Date endDate = new Date();
@@ -192,16 +184,18 @@ public abstract class Service implements Serviceable {
             }
             calculator.time(beginDate, endDate, period);
         }
+        setState("start");
     }
 
     @Override
     public void run() {
         service_time = System.currentTimeMillis();
+        setState("run");
     }
 
     @Override
     public void stop() {
-        setStatus("stopped", null);
+        setState("stop");
     }
 
     @Override
@@ -235,7 +229,7 @@ public abstract class Service implements Serviceable {
     public void sendError(Object o) {
         String message = FORMAT_MS.format(new Date()) + " {" + set.getName() + "} " + o;
         System.err.println(message);
-        setStatus("error", message);
+        setState("error", message);
 //        System.exit(-1);
     }
 
@@ -276,17 +270,17 @@ public abstract class Service implements Serviceable {
 
     @Override
     public boolean isRefresh() {
-        return subservice.getRefresh() != null;
+        return data.getRefresh() != null;
     }
 
     @Override
     public boolean isUpdatable() {
-        return subservice.getTrigger() != null;
+        return data.getTrigger() != null;
     }
 
     @Override
     public int refreshPeriod() {
-        return subservice.getRefresh();
+        return data.getRefresh();
     }
 
     protected double calc_ema(int period, double prev_ema, double rate) {
@@ -342,7 +336,7 @@ public abstract class Service implements Serviceable {
                     double rate = bar.getRate().doubleValue();
                     double ema = calc_ema(period, prev_ema, rate);
                     point = writer.createPoint(time, ema, set, prev);
-                    point.setService(subservice);
+                    point.setService(data);
                     ps.put(time, point);
 //                } else if ( bar instanceof Bar && i == (bs.length-1)) {// last Rateable element
 //                    Bar b = reader.bar(new Date(t)); // перечитываем бар
@@ -419,7 +413,7 @@ public abstract class Service implements Serviceable {
             if (point == null) {
                 double sma = calc_sma(period, index, bs);
                 point = writer.createPoint(time, sma, s, prev);
-                point.setService(subservice);
+                point.setService(data);
                 ps.put(time, point);
             }
             prev = point;
@@ -458,7 +452,7 @@ public abstract class Service implements Serviceable {
 
     @Override
     public boolean isActive() {
-        return subservice.isActive();
+        return data.isActive();
     }
 
     /**
@@ -531,6 +525,33 @@ public abstract class Service implements Serviceable {
         for (Service service : listUpdatableServices) {
             service.updateSelf(bar);
         }
+    }
+
+    @Override
+    public void setHost(Host host) {
+       data.setHost(host);
+       writer.updateData(data);
+    }
+    
+    @Override
+    public void setState(String status) {
+        setState(status,null);
+    }
+
+    @Override
+    public void setState(String status, String message) {
+       State state = getState();
+       state.setName(status);
+       state.setMessage(message);
+       state.setTime(Utils.time());
+       state.setService(data);
+       writer.updateState(state);
+    }
+
+ 
+    @Override
+    public State getState() {
+        return reader.state(data);
     }
 
 }

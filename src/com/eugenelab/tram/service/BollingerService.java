@@ -69,11 +69,11 @@ public class BollingerService extends Service {
                 double value = point.getValue().doubleValue();
                 double dev = calc_standard_deviations(value, i, bars);
                 bol_width_prev = writer.createPoint(t, dev, "bol_width", bol_width_prev);
-                bol_width_prev.setService(subservice);
+                bol_width_prev.setService(data);
                 bol_high_prev = writer.createPoint(t, value + dev, "bol_high", bol_high_prev);
-                bol_high_prev.setService(subservice);
+                bol_high_prev.setService(data);
                 bol_low_prev = writer.createPoint(t, value - dev, "bol_low", bol_low_prev);
-                bol_low_prev.setService(subservice);
+                bol_low_prev.setService(data);
             }
         }
         calculation(points);

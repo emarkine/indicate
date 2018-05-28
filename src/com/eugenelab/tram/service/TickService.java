@@ -109,6 +109,7 @@ public class TickService extends Service implements IRealTimeBarHandler, ITopMkt
      */
     @Override
     public void run() {
+        super.run();
         renew();
 //        Bar bar = reader.bar(); // читаем последний 5s бар
 //        if (prev != null) {
@@ -135,7 +136,7 @@ public class TickService extends Service implements IRealTimeBarHandler, ITopMkt
             } 
         }
         Point point = writer.createPoint(System.currentTimeMillis(), price, set, prev);
-        point.setService(subservice);
+        point.setService(data);
         manager.persist(point);
         transaction();
         puts(point);

@@ -9,7 +9,7 @@ import com.eugenelab.tram.domain.Datum;
 import com.eugenelab.tram.domain.Edge;
 import com.eugenelab.tram.domain.Frame;
 import com.eugenelab.tram.domain.Fund;
-import com.eugenelab.tram.domain.Nerve;
+import com.eugenelab.tram.domain.Line;
 import com.eugenelab.tram.domain.Neuron;
 import com.eugenelab.tram.domain.Point;
 import com.eugenelab.tram.domain.Response;

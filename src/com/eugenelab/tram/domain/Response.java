@@ -53,7 +53,7 @@ public class Response implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "nerve_id", nullable = false)
-    private Nerve nerve;
+    private Line nerve;
 
     // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
     private Float value;

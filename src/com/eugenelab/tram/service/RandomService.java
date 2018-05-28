@@ -35,7 +35,7 @@ public class RandomService extends Service {
             if (point == null) {
                 double rnd = Math.random();
                 point = writer.createPoint(t, rnd, prev);
-                point.setService(subservice);
+                point.setService(data);
                 points.put(t, point);
                 puts(point);
             }

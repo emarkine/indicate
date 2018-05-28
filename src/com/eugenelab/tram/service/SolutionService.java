@@ -46,7 +46,7 @@ public class SolutionService extends Service {
             if (point == null) { // нет такой точки
                 double rate = b2.getClose().doubleValue() - b1.getClose().doubleValue();
                 point = writer.createPoint(time, rate, prev);
-                point.setService(subservice);
+                point.setService(this.data);
                 points.put(time, point);
                 puts(point);
                 int value = (rate == 0.0) ? 0 : (rate > 0) ? 1 : -1;

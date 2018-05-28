@@ -37,7 +37,7 @@ public class MovingAverageConvergenceDivergenceService extends Service {
                 if (first != null && second != null) {
                     double diff = first.getValue().doubleValue() - second.getValue().doubleValue();
                     point = writer.createPoint(time, diff, s, prev);
-                    point.setService(subservice);
+                    point.setService(data);
                     ps.put(time, point);
                 }
             }

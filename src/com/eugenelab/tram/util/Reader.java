@@ -9,8 +9,9 @@ import com.eugenelab.tram.domain.Edge;
 import com.eugenelab.tram.domain.Frame;
 import com.eugenelab.tram.domain.Fund;
 import com.eugenelab.tram.domain.Host;
+import com.eugenelab.tram.domain.State;
 import com.eugenelab.tram.domain.Indicator;
-import com.eugenelab.tram.domain.Nerve;
+import com.eugenelab.tram.domain.Line;
 import com.eugenelab.tram.domain.Neuron;
 import com.eugenelab.tram.domain.Setting;
 import com.eugenelab.tram.domain.Point;
@@ -197,11 +198,11 @@ public final class Reader {
         }
     }
 
-    public static Nerve nerve(EntityManager manager, Neuron source, Neuron recipient) {
+    public static Line nerve(EntityManager manager, Neuron source, Neuron recipient) {
         Query query = manager.createQuery("SELECT o FROM Nerve o WHERE o.source = ?1 AND o.recipient = ?2");
         query.setParameter(1, source);
         query.setParameter(2, recipient);
-        List<Nerve> list = query.getResultList();
+        List<Line> list = query.getResultList();
         if (list.isEmpty()) {
             System.err.println("Nerve not found sourse[" + source.getId() + "] -> recipient["+ recipient.getId() + "]");
             return null;
@@ -210,7 +211,7 @@ public final class Reader {
         }
     }
     
-    public static Response response(EntityManager manager, Nerve nerve, Fund fund, Frame frame) {
+    public static Response response(EntityManager manager, Line nerve, Fund fund, Frame frame) {
         Query query = manager.createQuery("SELECT o FROM Response o WHERE o.nerve = ?1 AND o.fund = ?2 AND o.frame = ?3");
         query.setParameter(1, nerve);
         query.setParameter(2, fund);
@@ -792,11 +793,19 @@ public final class Reader {
      * @param neuron нейрон
      * @return считанные данные
      */
-    public static List<Nerve> nerves(EntityManager manager, Neuron neuron) {
-        Query query = manager.createQuery("SELECT o FROM Nerve o WHERE o.recipient = ?1");
+    public static List<Line> lines(EntityManager manager, Neuron neuron) {
+        Query query = manager.createQuery("SELECT o FROM Line o WHERE o.target = ?1");
         query.setParameter(1, neuron);
         return query.getResultList();
     }
+    
+    
+    public State state(ServiceData service) {
+        Query query = manager.createQuery("SELECT o FROM State o order by times desc limit 1 WHERE o.service_id = ?1");
+        query.setParameter(1, service.getId());
+        return (State) query.getSingleResult();
+    }
+
 
 }
 // SELLAR
