@@ -801,9 +801,14 @@ public final class Reader {
     
     
     public State state(ServiceData service) {
-        Query query = manager.createQuery("SELECT o FROM State o order by times desc limit 1 WHERE o.service_id = ?1");
-        query.setParameter(1, service.getId());
-        return (State) query.getSingleResult();
+        Query query = manager.createQuery("SELECT o FROM State o WHERE o.service = ?1");
+        query.setParameter(1, service);
+        List<State> list = query.getResultList();
+        if (list.isEmpty()) {
+            return null;
+        } else {
+            return list.get(0);
+        }
     }
 
 

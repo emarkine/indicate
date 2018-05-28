@@ -25,9 +25,9 @@ public class Parser {
 //        DEFAULT.put("fund", "100");
         DEFAULT.put("db_port", "3306");
         DEFAULT.put("db_host", "localhost");
-        DEFAULT.put("db_name", "tram_development");
+        DEFAULT.put("db_name", "tram_adapt");
         DEFAULT.put("db_user", "root");
-        DEFAULT.put("ib_host", "127.0.0.1");
+        DEFAULT.put("ib_host", "eugenelab.com");
         DEFAULT.put("ib_port", "4001");
         DEFAULT.put("ib_client_id", "1");
     }
