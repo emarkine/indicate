@@ -1,7 +1,0 @@
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Type=Application
-Name=LYNX Trading
-Exec=/bin/sh "/home/eugene/Jts/lynx10/tws"
-Icon=/home/eugene/Jts/lynx10/.install4j/tws.png
-Categories=Application;
