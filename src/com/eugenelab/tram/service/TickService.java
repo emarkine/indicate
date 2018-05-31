@@ -178,8 +178,8 @@ public class TickService extends Service implements IRealTimeBarHandler, ITopMkt
                 }
                 Tick tick = new Tick();
                 tick.setFund(fund);
-//                tick.setTime(new Date());
-                tick.setTime(Utils.time());
+                tick.setTime(new Date());
+//                tick.setTime(Utils.time());
                 tick.setMs(System.currentTimeMillis());
                 tick.setRate(BigDecimal.valueOf(lastPrice));
                 tick.setBid(BigDecimal.valueOf(bid));

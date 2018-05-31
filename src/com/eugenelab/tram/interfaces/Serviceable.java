@@ -5,7 +5,6 @@ package com.eugenelab.tram.interfaces;
 
 import com.eugenelab.tram.domain.Bar;
 import com.eugenelab.tram.domain.Host;
-import com.eugenelab.tram.domain.State;
 import java.util.Date;
 
 /**
@@ -33,6 +32,6 @@ public interface Serviceable {
     void setHost(Host host); // обновление хоста, где запустился сервис
     void setState(String status); // обновление статуса
     void setState(String status, String message); // обновление статуса с сообщением
-    State getState(); // получение текущего (последнего) состояния сервиса
+    String getState(); // получение текущего (последнего) состояния сервиса
     void puts(Object o);
 }

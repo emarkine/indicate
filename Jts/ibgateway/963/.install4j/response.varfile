@@ -1,0 +1,8 @@
+# install4j response file for IB Gateway 963 (.3h) 20170801 12:40:35
+cmdLineArgs$StringArray="/home/eugene/Jts","gdc1.ibllc.com\:4000"
+exeName=ibgateway
+executeLauncherAction$Boolean=false
+installerType=standalone
+sys.adminRights$Boolean=false
+sys.installationDir=/home/eugene/Jts/ibgateway/963
+sys.languageId=ru

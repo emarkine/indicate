@@ -1,0 +1,30 @@
+
+
+# version 1.6 <br>
+# lang = EN <br>
+# build = 964 <br>
+BENCHMARKER https://www.interactivebrokers.com/java/classes/cheatsheet/images/BENCHMARKER_EN_954.png <br>
+METADATA BENCHMARKER Benchmarker Feature in Focus = https://www.interactivebrokers.com/en/index.php?f=14776&ns=T <br>
+BOOK_TRADER https://www.interactivebrokers.com/java/classes/cheatsheet/images/BOOK_TRADER_EN_954.png <br>
+METADATA BOOK_TRADER IBot Feature in Focus = https://www.interactivebrokers.com/en/index.php?f=21214 <br>
+EVENT_CALENDARS https://www.interactivebrokers.com/java/classes/cheatsheet/images/EVENT_CALENDARS_EN_963.png <br>
+METADATA EVENT_CALENDARS Event Calendars Users' Guide = https://www.interactivebrokers.com/en/software/tws/usersguidebook/fundamentalanalytics/unifiedcalendars.htm <br>
+FX_PORTFOLIO https://www.interactivebrokers.com/java/classes/cheatsheet/images/FX_PORTFOLIO_EN_954.png <br>
+METADATA FX_PORTFOLIO See the Users' Guide Topic = https://www.interactivebrokers.com/en/software/tws/usersguidebook/realtimeactivitymonitoring/fxportfolio.htm <br>
+METADATA FX_PORTFOLIO Watch a Short Video! = https://www.youtube.com/embed/5B7NePy4J2c <br>
+OPTION_TRADER https://www.interactivebrokers.com/java/classes/cheatsheet/images/OPTION_TRADER_EN_954.png <br>
+ORDERS https://www.interactivebrokers.com/java/classes/cheatsheet/images/ORDERS_EN_952.png <br>
+METADATA ORDERS Orders Window Users' Guide = https://www.interactivebrokers.com/en/software/tws/usersguidebook/mosaic/the_orders_window.htm <br>
+PORTFOLIO_BUILDER https://www.interactivebrokers.com/java/classes/cheatsheet/images/PORTFOLIO_BUILDER_EN_954.png <br>
+METADATA PORTFOLIO_BUILDER Portfolio Builder Feature in Focus = https://www.clientam.com/en/index.php?f=15064&ns=T&conf=am&originator=TWS <br>
+PORTFOLIO https://www.interactivebrokers.com/java/classes/cheatsheet/images/PORTFOLIO_EN_954.png <br>
+METADATA PORTFOLIO Portfolio Window Users' Guide = https://www.interactivebrokers.com/en/software/tws/usersguidebook/mosaic/mosaicportfolio.htm <br>
+SCANNER https://www.interactivebrokers.com/java/classes/cheatsheet/images/SCANNER_EN_947.png <br>
+METADATA SCANNER Market Scanner Users' Guide = https://www.interactivebrokers.com/en/software/tws/usersguidebook/mosaic/mosaic_market_scanners.htm <br>
+TRADES https://www.interactivebrokers.com/java/classes/cheatsheet/images/TRADES_EN_952.png <br>
+TRADES_SUMMARY https://www.interactivebrokers.com/java/classes/cheatsheet/images/TRADES_SUMMARY_EN_954.png <br>
+UNIFIED_CALENDARS https://www.interactivebrokers.com/java/classes/cheatsheet/images/UNIFIED_CALENDARS_EN_963.png <br>
+METADATA UNIFIED_CALENDARS Event Calendars Users' Guide = https://www.interactivebrokers.com/en/software/tws/usersguidebook/fundamentalanalytics/unifiedcalendars.htm <br>
+WATCHLIST https://www.interactivebrokers.com/java/classes/cheatsheet/images/WATCHLIST_EN_947.png <br>
+METADATA WATCHLIST Watchlist = https://www.interactivebrokers.com/en/software/tws/usersguidebook/mosaic/the_watchlist.htm <br>
+WELCOME_1 https://www.interactivebrokers.com/java/classes/cheatsheet/images/WELCOME_1_EN_947.png <br>

@@ -1,0 +1,8 @@
+# install4j response file for LYNX Trading (964.1a) 20170321 16:03:11
+cmdLineArgs$StringArray="/home/eugene/Jts","gdc1.ibllc.com\:4000","locale\=nl","language\=http\://www.clientam.com/java/classes/broker/lynx"
+exeName=tws
+executeLauncherAction$Boolean=true
+installerType=standalone-white-label
+sys.adminRights$Boolean=false
+sys.installationDir=/home/eugene/Jts/lynx10
+sys.languageId=ru

@@ -540,18 +540,23 @@ public abstract class Service implements Serviceable {
 
     @Override
     public void setState(String status, String message) {
-       State state = getState();
-       state.setName(status);
-       state.setMessage(message);
-       state.setTime(Utils.time());
-       state.setService(data);
-       writer.updateState(state);
+        data.setStatus(status);
+        data.setMessage(message);
+        data.setUpdatedAt(new Date());
+        writer.updateData(data);
+//       State state = getState();
+//       State state = new State();
+//       state.setName(status);
+//       state.setMessage(message);
+//       state.setTime(new Date());
+//       state.setService(data);
+//       writer.updateState(state);
     }
 
  
     @Override
-    public State getState() {
-        return reader.state(data);
+    public String getState() {
+        return data.getStatus();
     }
 
 }

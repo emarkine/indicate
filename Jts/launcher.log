@@ -1,0 +1,185 @@
+2018-05-31 08:07:40.498 [JV] INFO  [JTS-Main] - ------------------------------- TWS RESTART --------------------------------
+2018-05-31 08:07:40.504 [JV] INFO  [JTS-Main] - Jts dir is /home/eugene/Jts/
+2018-05-31 08:07:40.513 [JV] INFO  [JTS-Main] - PROXY Installed custom selector
+2018-05-31 08:07:40.522 [JV] INFO  [JTS-Main] - SSL support status for gdc1.ibllc.com:4000 is true
+2018-05-31 08:07:40.526 [JV] INFO  [JTS-Main] - LOCALE: Property locale_to_use=null
+2018-05-31 08:07:40.530 [JV] INFO  [JTS-Main] - LOCALE: JTS Locale=en_US  country=United States  variant=
+2018-05-31 08:07:40.530 [JV] INFO  [JTS-Main] - Region: from ini us -> America
+2018-05-31 08:07:40.531 [JV] INFO  [JTS-Main] - LOCALE: Property locale_to_use=null
+2018-05-31 08:07:40.531 [JV] INFO  [JTS-Main] - LOCALE: JTS Locale=en_US  country=United States  variant=
+2018-05-31 08:07:40.531 [JV] INFO  [JTS-Main] - Region:America
+2018-05-31 08:07:40.531 [JV] INFO  [JTS-Main] - URL for locales.jar from argument: http://www.clientam.com/java/classes/broker/lynx
+2018-05-31 08:07:40.534 [JV] INFO  [JTS-Main] - Starting to download 'http://www.clientam.com/java/classes/broker/lynx/locales.jar' using HotBackup 'http://www.clientam.com/java/classes/broker/lynx/locales.jar'
+2018-05-31 08:07:40.949 [JV] INFO  [JTS-Main] - LOCALE: needToUpdate  dest=/home/eugene/Jts/lynx10/jars/locales.jar  sourceMod=2013-02-06 12:40:45  destMod=2013-02-06 12:40:45  sourceSize=61490  destSize=61490  conditions=[NEWER_REMOTE, LOCAL_IN_FUTURE, SIZE_DIFFERS]  download=false
+2018-05-31 08:07:40.949 [JV] INFO  [JTS-Main] - LOCALE: /home/eugene/Jts/lynx10/jars/locales.jar already up-to-date
+2018-05-31 08:07:40.999 [JV] INFO  [JTS-Main] - LOCALE: loaded 9 supported locales
+2018-05-31 08:07:41.013 [JV] INFO  [JTS-Main] - LOCALE: loaded 8 countries
+2018-05-31 08:07:41.018 [JV] INFO  [JTS-Main] - Locale from ini: en
+2018-05-31 08:07:41.019 [JV] INFO  [JTS-Main] - LOCALE: created classloader java.net.URLClassLoader@222114ba with file:/home/eugene/Jts/lynx10/jars/locales.jar, parent: sun.misc.Launcher$AppClassLoader@70dea4e
+2018-05-31 08:07:41.019 [JV] INFO  [JTS-Main] - LOCALE: Property locale_to_use=en
+2018-05-31 08:07:41.019 [JV] INFO  [JTS-Main] - LOCALE: JTS Locale=en_US  country=United States  variant=
+2018-05-31 08:07:41.019 [JV] INFO  [JTS-Main] - Locale=en_US  country=United States  variant=
+2018-05-31 08:07:41.021 [JV] INFO  [JTS-Main] - prohibiting class lookup [twslaunch.ji18n.LauncherLanguage]
+2018-05-31 08:07:41.023 [JV] INFO  [JTS-Main] - prohibiting class lookup [twslaunch.ji18n.LauncherLanguage_en]
+2018-05-31 08:07:41.023 [JV] INFO  [JTS-Main] - prohibiting class lookup [twslaunch.ji18n.LauncherLanguage_en_US]
+2018-05-31 08:07:41.024 [JV] INFO  [JTS-Main] - LOCALE: type: launcher intended: en_US actual:  size: 328
+2018-05-31 08:07:41.041 [JV] INFO  [JTS-Main] - TWS installer version: 2.8
+2018-05-31 08:07:41.041 [JV] INFO  [JTS-Main] - TWS installer type: standalone-white-label
+2018-05-31 08:07:41.192 [JV] INFO  [JTS-Main] - prohibiting class lookup [org.jfree.chart.LocalizationBundle]
+2018-05-31 08:07:41.242 [JV] INFO  [JTS-Main] - prohibiting class lookup [org.jfree.chart.LocalizationBundle_en]
+2018-05-31 08:07:41.243 [JV] INFO  [JTS-Main] - prohibiting resource lookup [org/jfree/chart/LocalizationBundle_en.properties]
+2018-05-31 08:07:41.243 [JV] INFO  [JTS-Main] - prohibiting class lookup [org.jfree.chart.LocalizationBundle_en_US]
+2018-05-31 08:07:41.243 [JV] INFO  [JTS-Main] - prohibiting resource lookup [org/jfree/chart/LocalizationBundle_en_US.properties]
+2018-05-31 08:07:41.243 [JV] INFO  [JTS-Main] - prohibiting class lookup [org.jfree.chart.plot.LocalizationBundle]
+2018-05-31 08:07:41.243 [JV] INFO  [JTS-Main] - prohibiting class lookup [org.jfree.chart.plot.LocalizationBundle_en]
+2018-05-31 08:07:41.243 [JV] INFO  [JTS-Main] - prohibiting resource lookup [org/jfree/chart/plot/LocalizationBundle_en.properties]
+2018-05-31 08:07:41.243 [JV] INFO  [JTS-Main] - prohibiting class lookup [org.jfree.chart.plot.LocalizationBundle_en_US]
+2018-05-31 08:07:41.243 [JV] INFO  [JTS-Main] - prohibiting resource lookup [org/jfree/chart/plot/LocalizationBundle_en_US.properties]
+2018-05-31 08:07:41.526 [JV] INFO  [JTS-Main] - jfreechart version =1.0.8
+2018-05-31 08:07:41.526 [JV] INFO  [JTS-Main] - jcommon version =1.0.12
+2018-05-31 08:07:41.527 [JV] INFO  [JTS-Main] - JDOMFactory Class =interface org.jdom.JDOMFactory
+2018-05-31 08:07:41.531 [JV] INFO  [JTS-Main] - hsqldb jdbc =class org.hsqldb.jdbcDriver 2.2
+2018-05-31 08:07:41.836 [JV] INFO  [JTS-Main] - initPreUI() - entry
+2018-05-31 08:07:41.843 [JV] INFO  [JTS-Main] - Build 964.1a, Mar 21, 2017 4:03:11 PM
+2018-05-31 08:07:41.884 [JV] INFO  [JTS-Main] - LookAndFeelChangedListener installed
+2018-05-31 08:07:41.890 [JV] INFO  [JTS-Main] - JtsLookAndFeel initialized
+2018-05-31 08:07:41.969 [JV] INFO  [JTS-Main] - Current LAF: TWS LAF
+2018-05-31 08:07:41.970 [JV] INFO  [JTS-Main] - initPreUI() - exit
+2018-05-31 08:07:41.975 [JV] INFO  [JTS-Main] - Connect and request MiscUrls
+2018-05-31 08:07:41.977 [JV] INFO  [JTS-MiscUlrsRequester-3] - Connecting gdc1.ibllc.com:4000 timeout=0
+2018-05-31 08:07:42.175 [JV] INFO  [JTS-MiscUlrsRequester-3] - Connected to gdc1.ibllc.com:4000 on local port 0 socket local addrs:port /192.168.1.101:53474
+2018-05-31 08:07:42.177 [JV] INFO  [JTS-MiscUlrsRequester-3] - Resolving mac address
+2018-05-31 08:07:42.179 [JV] INFO  [JTS-MiscUlrsRequester-3] - MACNetworkInfo created <0186c0ec|D0:67:E5:F0:D9:45|192.168.1.101>
+2018-05-31 08:07:42.181 [JV] INFO  [JTS-MISC URLsListenerS1-4] - Starting Listener thread
+2018-05-31 08:07:42.195 [JV] INFO  [JTS-MiscUlrsRequester-3] - Sending MiscUrls request
+2018-05-31 08:07:42.195 [JV] INFO  [JTS-AuthDispatcherS1-5] - Starting dispatcher
+2018-05-31 08:07:42.197 [JV] INFO  [JTS-MiscUlrsRequester-3] - LOGIN_TIME_MONITOR	 false 08:07:42:197 since start = 0 thread delay = 0 global delay = 0 tag=null, cls=AuthDispatcher method=send
+2018-05-31 08:07:42.198 [JV] INFO  [JTS-AuthResponseMonitor-6] - Starting auth response monitor thread
+2018-05-31 08:07:42.198 [JV] INFO  [JTS-MISC URLsListenerS1-4] - Initial listener buffer size is 187200
+2018-05-31 08:07:42.198 [JV] INFO  [JTS-MISC URLsListenerS1-4] - Capping listener buffer size at 65536
+2018-05-31 08:07:42.285 [JV] INFO  [JTS-AuthDispatcherS1-5] - Received NS_MISC_URLS
+2018-05-31 08:07:42.287 [JV] INFO  [JTS-AuthDispatcherS1-5] - Received URLs ='{alpine_help=https://www.interactivebrokers.com/en/general/alpineHelp.php, ib_system_status=http://status.interactivebrokers.net/cgi-bin/bb_status.pl, customer_service=https://www.interactivebrokers.com/en/p.php?f=customerService&ib_entity=llc, wbdemo=direct, java_upgrade_howto=https://www.interactivebrokers.com/en/software/downloadPlugin.php?ib_entity=llc, demo=email, ssl=1, pass_change_ib=https://gdcdyn.interactivebrokers.com/sso/Login?service=AM.LOGIN&MSG=PWD, paper_account_creation=https://gdcdyn.interactivebrokers.com/sso/Login, pass_reset=https://gdcdyn.interactivebrokers.com/Universal/servlet/AccountAccess.PasswordReset, bingo_help=https://www.interactivebrokers.com/en/general/bingoHelp.php, pass_reset_wb=https://www.clientam.com/Universal/servlet/AccountAccess.PasswordReset, gold_help=https://www.interactivebrokers.com/en/general/goldHelp.php, s3store=1}'
+2018-05-31 08:07:42.289 [JV] INFO  [AWT-EventQueue-0] - OvernightManager.dayInit: new values: dayOfTheWeek: 5 (Thu), YYYYMMofToday: 201805, YYYYMMDDofToday: 20180531, m_todayDate: 20180531, dueToChangeInTimezone: false
+2018-05-31 08:07:42.289 [JV] INFO  [JTS-AuthDispatcherS1-5] - Disconnecting gdc1.ibllc.com:4000 with status DISCONNECT_BY_DESIGN
+2018-05-31 08:07:42.290 [JV] INFO  [JTS-AuthDispatcherS1-5] - Terminating dispatcher
+2018-05-31 08:07:42.290 [JV] INFO  [JTS-MISC URLsListenerS1-4] - Socket for connection gdc1.ibllc.com:4000 was closed by another thread
+2018-05-31 08:07:42.290 [JV] INFO  [JTS-AuthResponseMonitor-6] - Terminating auth response monitor thread
+2018-05-31 08:07:42.290 [JV] INFO  [JTS-MISC URLsListenerS1-4] - Terminating Listener thread
+2018-05-31 08:07:42.300 [JV] INFO  [AWT-EventQueue-0] - LauncherFontUpdater: simulatehighdefscreen=false
+2018-05-31 08:07:42.300 [JV] INFO  [AWT-EventQueue-0] - LauncherFontUpdater: Screen dimensions=3840x2160
+2018-05-31 08:07:42.300 [JV] INFO  [AWT-EventQueue-0] - LauncherFontUpdater: highres=true
+2018-05-31 08:07:42.300 [JV] INFO  [AWT-EventQueue-0] - LauncherFontUpdater: FontSize=0
+2018-05-31 08:07:42.768 [JV] INFO  [AWT-EventQueue-0] - twslaunch.autoupdate.serviceImpl: com.ib.tws.twslaunch.install4j.Install4jAutoUpdateService
+2018-05-31 08:07:42.770 [JV] INFO  [AWT-EventQueue-0] - updateDownloadUrl: null
+2018-05-31 08:07:42.771 [JV] INFO  [AWT-EventQueue-0] - skipUpdateCheck: null
+2018-05-31 08:07:42.771 [JV] INFO  [AWT-EventQueue-0] - nightlyEnabled: true
+2018-05-31 08:07:42.771 [JV] INFO  [AWT-EventQueue-0] - channelNameArg: null
+2018-05-31 08:07:42.771 [JV] INFO  [AWT-EventQueue-0] - channelName: latest
+2018-05-31 08:07:42.771 [JV] INFO  [AWT-EventQueue-0] - jtsConfigDir: null
+2018-05-31 08:07:42.771 [JV] INFO  [AWT-EventQueue-0] - sessionId: not set
+2018-05-31 08:07:42.771 [JV] INFO  [AWT-EventQueue-0] - apiPort: null
+2018-05-31 08:07:42.771 [JV] INFO  [AWT-EventQueue-0] - installDir: /home/eugene/Jts/lynx10/
+2018-05-31 08:07:42.771 [JV] INFO  [AWT-EventQueue-0] - exeName: null
+2018-05-31 08:07:42.874 [JV] INFO  [AWT-EventQueue-0] - Started on 20180531-07:07:42 Europe/London
+2018-05-31 08:07:42.875 [JV] INFO  [AWT-EventQueue-0] - java version = 1.8.0_60
+2018-05-31 08:07:42.875 [JV] INFO  [AWT-EventQueue-0] - sun.arch.data.model = 64
+2018-05-31 08:07:42.875 [JV] INFO  [AWT-EventQueue-0] - os = Linux
+2018-05-31 08:07:42.875 [JV] INFO  [AWT-EventQueue-0] - os architecture = 32
+2018-05-31 08:07:42.875 [JV] INFO  [AWT-EventQueue-0] - runtime = Java(TM) SE Runtime Environment
+2018-05-31 08:07:42.875 [JV] INFO  [AWT-EventQueue-0] - vendor = Oracle Corporation
+2018-05-31 08:07:42.875 [JV] INFO  [AWT-EventQueue-0] - vm name = Java HotSpot(TM) 64-Bit Server VM
+2018-05-31 08:07:42.875 [JV] INFO  [AWT-EventQueue-0] - username = 'eugene'
+2018-05-31 08:07:43.011 [JV] INFO  [AWT-EventQueue-0] - Basic init done. Login window shown
+2018-05-31 08:07:52.813 [JV] INFO  [AWT-EventQueue-0] - username = diulishzrp
+2018-05-31 08:07:52.813 [JV] INFO  [AWT-EventQueue-0] - Setting dir is /home/eugene/Jts/
+2018-05-31 08:07:52.814 [JV] INFO  [AWT-EventQueue-0] - PROXY Cleared HTTP proxy: no valid proxy is present (passing on :0)
+2018-05-31 08:07:52.824 [JV] INFO  [AWT-EventQueue-0] - host = gdc1.ibllc.com
+2018-05-31 08:07:52.824 [JV] INFO  [AWT-EventQueue-0] - remotePort = 4000
+2018-05-31 08:07:52.824 [JV] INFO  [AWT-EventQueue-0] - localPort = 0
+2018-05-31 08:07:52.826 [JV] INFO  [AWT-EventQueue-0] - SPLASH Creating screen with 15 steps
+2018-05-31 08:07:52.907 [JV] INFO  [AWT-EventQueue-0] - mapProdToPaper: m_simulatedTradingModeSelected=false
+2018-05-31 08:07:52.907 [JV] INFO  [AWT-EventQueue-0] - CONN CALC: Last connection attempt time is cleared!
+2018-05-31 08:07:52.907 [JV] INFO  [AWT-EventQueue-0] - CONN CALC: Last connection set as now:08:07:52:907
+2018-05-31 08:07:52.907 [JV] INFO  [AWT-EventQueue-0] - Prelogin delay:0
+2018-05-31 08:07:52.909 [JV] INFO  [JTS-Login-10] - Starting launcher login thread
+2018-05-31 08:07:52.910 [JV] INFO  [JTS-Login-10] - SPLASH Connecting to server
+2018-05-31 08:07:52.910 [JV] INFO  [AWT-EventQueue-0] - Network monitor is activated
+2018-05-31 08:07:52.910 [JV] INFO  [JTS-Login-10] - Connecting gdc1.ibllc.com:4000 timeout=20000
+2018-05-31 08:07:52.996 [JV] INFO  [JTS-Login-10] - Connected to gdc1.ibllc.com:4000 on local port 0 socket local addrs:port /192.168.1.101:53508
+2018-05-31 08:07:53.007 [JV] INFO  [JTS-Login-10] - NSCX init:false
+2018-05-31 08:07:53.007 [JV] INFO  [JTS-Login-10] - Changing state for connection from PRELOGON to PRELOGON in y 1745505795: SessionSocket:2
+2018-05-31 08:07:53.007 [JV] INFO  [JTS-Login-10] - Authenticating
+2018-05-31 08:07:53.008 [JV] INFO  [JTS-CCPListenerS2-12] - Starting Listener thread
+2018-05-31 08:07:53.008 [JV] INFO  [JTS-Login-10] - AuthTimeoutMonitor: deactivate
+2018-05-31 08:07:53.008 [JV] INFO  [JTS-Login-10] - AuthTimeoutMonitor: timeout=20000
+2018-05-31 08:07:53.008 [JV] INFO  [JTS-Login-10] - AuthTimeoutMonitor: activate
+2018-05-31 08:07:53.008 [JV] INFO  [JTS-AuthTimeoutMonitorThread-14] - Starting auth timeout monitor thread
+2018-05-31 08:07:53.009 [JV] INFO  [JTS-Login-10] - SPLASH -0001 step 1 AuthDispatcher.connect
+2018-05-31 08:07:53.009 [JV] INFO  [JTS-Login-10] - Sending connect request
+2018-05-31 08:07:53.010 [JV] INFO  [JTS-AuthDispatcherS2-13] - Starting dispatcher
+2018-05-31 08:07:53.011 [JV] INFO  [JTS-Login-10] - SPLASH Authenticating
+2018-05-31 08:07:53.012 [JV] INFO  [JTS-CCPListenerS2-12] - Initial listener buffer size is 187200
+2018-05-31 08:07:53.012 [JV] INFO  [JTS-CCPListenerS2-12] - Capping listener buffer size at 65536
+2018-05-31 08:07:53.013 [JV] INFO  [JTS-Login-10] - Terminating launcher login thread
+2018-05-31 08:07:53.135 [JV] INFO  [JTS-AuthDispatcherS2-13] - cert #0 subject:CN=tws.ibllc.com,OU=tws.ibllc.com,O=IBLLC,C=US	issuer:CN=prod.ckg.ibllc.com,O=Interactive Brokers LLC,L=Greenwich,ST=Connecticut,C=US	notBefore:20180530-15:14:17 Europe/London	notAfter:20180601-23:14:17 Europe/London
+2018-05-31 08:07:53.135 [JV] INFO  [JTS-AuthDispatcherS2-13] - cert #1 subject:CN=prod.ckg.ibllc.com,O=Interactive Brokers LLC,L=Greenwich,ST=Connecticut,C=US	issuer:CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US	notBefore:20150806-01:00:00 Europe/London	notAfter:20180810-13:00:00 Europe/London
+2018-05-31 08:07:53.136 [JV] INFO  [JTS-AuthDispatcherS2-13] - cert #2 subject:CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US	issuer:CN=DigiCert Global Root CA,OU=www.digicert.com,O=DigiCert Inc,C=US	notBefore:20130308-12:00:00 Europe/London	notAfter:20230308-12:00:00 Europe/London
+2018-05-31 08:07:53.137 [JV] INFO  [JTS-AuthDispatcherS2-13] - Current time is: 20180531-07:07:53 Europe/London
+2018-05-31 08:07:53.239 [JV] INFO  [JTS-AuthDispatcherS2-13] - CipherContext initialization successed.
+2018-05-31 08:07:53.354 [JV] INFO  [JTS-AuthDispatcherS2-13] - SPLASH 0345 step 2 AuthDispatcher.send
+2018-05-31 08:07:53.442 [JV] INFO  [JTS-AuthDispatcherS2-13] - Received NS_AUTH_START: 1
+2018-05-31 08:07:53.443 [JV] INFO  [JTS-AuthDispatcherS2-13] - pwd time to expiry ms: 2574629527000 days: 29799
+2018-05-31 08:07:53.443 [JV] INFO  [JTS-AuthDispatcherS2-13] - Long pwd allowed : true
+2018-05-31 08:07:53.443 [JV] INFO  [JTS-AuthDispatcherS2-13] -  NS_AUTH_START version=28 pwd=1 soft=0 token=3 tokenSubtype=0 initialTokenType=PWD authenticationType=MARKET_DATA_CONNECTION identityHashcode=524835075
+2018-05-31 08:07:53.445 [JV] INFO  [JTS-AuthDispatcherS2-13] - Starting password Authentication
+2018-05-31 08:07:53.445 [JV] INFO  [JTS-AuthDispatcherS2-13] - sendXYZMessage: 777
+2018-05-31 08:07:53.534 [JV] INFO  [JTS-AuthDispatcherS2-13] - Receiver: 777
+2018-05-31 08:07:53.534 [JV] INFO  [JTS-AuthDispatcherS2-13] - processXYZMessage: 777 protocol version: 28
+2018-05-31 08:07:53.534 [JV] INFO  [JTS-AuthDispatcherS2-13] - Received AUTH_PARAMS
+2018-05-31 08:07:53.535 [JV] INFO  [JTS-AuthDispatcherS2-13] - sendXYZMessage: 777
+2018-05-31 08:07:53.622 [JV] INFO  [JTS-AuthDispatcherS2-13] - SPLASH 0268 step 3 AuthDispatcher.processDataItr
+2018-05-31 08:07:53.622 [JV] INFO  [JTS-AuthDispatcherS2-13] - Receiver: 777
+2018-05-31 08:07:53.622 [JV] INFO  [JTS-AuthDispatcherS2-13] - processXYZMessage: 777 protocol version: 28
+2018-05-31 08:07:53.622 [JV] INFO  [JTS-AuthDispatcherS2-13] - Received SERVER_PARAMS
+2018-05-31 08:07:53.623 [JV] INFO  [JTS-AuthDispatcherS2-13] - Session Token received in AuthenticationMessageXYZ: 520c1e10c12bf384c881487061acaa675d00cca6  messageId=SERVER_KEY (4)
+2018-05-31 08:07:53.624 [JV] INFO  [JTS-AuthDispatcherS2-13] - sendXYZMessage: 777
+2018-05-31 08:07:53.710 [JV] INFO  [JTS-AuthDispatcherS2-13] - Receiver: 777
+2018-05-31 08:07:53.711 [JV] INFO  [JTS-AuthDispatcherS2-13] - processXYZMessage: 777 protocol version: 28
+2018-05-31 08:07:53.711 [JV] INFO  [JTS-AuthDispatcherS2-13] - Received AUTH_RESULT
+2018-05-31 08:07:53.711 [JV] INFO  [JTS-AuthDispatcherS2-13] - Passed pwd authentication.
+2018-05-31 08:07:53.711 [JV] INFO  [JTS-AuthDispatcherS2-13] - sendXYZMessage: 773
+2018-05-31 08:07:53.802 [JV] INFO  [JTS-AuthDispatcherS2-13] - Receiver: 773
+2018-05-31 08:07:53.802 [JV] INFO  [JTS-AuthDispatcherS2-13] - processXYZMessage: 773 protocol version: 28
+2018-05-31 08:07:53.802 [JV] INFO  [JTS-AuthDispatcherS2-13] - Received CHALLENGE: 364
+2018-05-31 08:07:53.802 [JV] INFO  [JTS-AuthDispatcherS2-13] - AuthTimeoutMonitor: pause
+2018-05-31 08:08:11.506 [JV] INFO  [AWT-EventQueue-0] - Response: ***
+2018-05-31 08:08:11.506 [JV] INFO  [AWT-EventQueue-0] - AuthTimeoutMonitor: resume, idleTime=17704
+2018-05-31 08:08:11.507 [JV] INFO  [AWT-EventQueue-0] - sendXYZMessage: 773
+2018-05-31 08:08:11.507 [JV] INFO  [AWT-EventQueue-0] - SPLASH 17886 step 4 AuthDispatcher.send
+2018-05-31 08:08:11.598 [JV] INFO  [JTS-AuthDispatcherS2-13] - Receiver: 773
+2018-05-31 08:08:11.598 [JV] INFO  [JTS-AuthDispatcherS2-13] - processXYZMessage: 773 protocol version: 28
+2018-05-31 08:08:11.598 [JV] INFO  [JTS-AuthDispatcherS2-13] - Received Result
+2018-05-31 08:08:11.598 [JV] INFO  [JTS-AuthDispatcherS2-13] - Passed token authentication.
+2018-05-31 08:08:11.682 [JV] INFO  [JTS-AuthDispatcherS2-13] - Receiver: 771
+2018-05-31 08:08:11.682 [JV] INFO  [JTS-AuthDispatcherS2-13] - processXYZMessage: 771 protocol version: 28
+2018-05-31 08:08:11.682 [JV] INFO  [JTS-AuthDispatcherS2-13] - Received Finish
+2018-05-31 08:08:11.682 [JV] INFO  [JTS-AuthDispatcherS2-13] - Finished authentication.
+2018-05-31 08:08:11.682 [JV] INFO  [JTS-AuthDispatcherS2-13] - Authentication completed.
+2018-05-31 08:08:11.683 [JV] INFO  [JTS-AuthDispatcherS2-13] - setting session token in AuthenticationHandler: authenticationType=MARKET_DATA_CONNECTION hashCode=524835075 new=520c1e10c12bf384c881487061acaa675d00cca6 old=NULL ctciOld=NULL
+2018-05-31 08:08:11.683 [JV] INFO  [JTS-AuthDispatcherS2-13] - Received NS_CONNECT_RESPONSE
+2018-05-31 08:08:11.683 [JV] INFO  [JTS-AuthDispatcherS2-13] - Log encryption support is disabled [logKeyId: ].
+2018-05-31 08:08:11.769 [JV] INFO  [JTS-AuthDispatcherS2-13] - SPLASH 0262 step 5 AuthDispatcher.processDataItr
+2018-05-31 08:08:11.769 [JV] INFO  [JTS-AuthDispatcherS2-13] - Received NS_FIX_START
+2018-05-31 08:08:11.771 [JV] INFO  [JTS-AuthDispatcherS2-13] - Terminating dispatcher
+2018-05-31 08:08:11.771 [JV] INFO  [JTS-PostAuthenticateS2-20] - AuthTimeoutMonitor: deactivate
+2018-05-31 08:08:11.771 [JV] INFO  [JTS-PostAuthenticateS2-20] - Authentication complete
+2018-05-31 08:08:11.772 [JV] INFO  [JTS-AuthTimeoutMonitorThread-14] - Terminating auth timeout monitor thread
+2018-05-31 08:08:11.772 [JV] INFO  [JTS-PostAuthenticateS2-20] - Starting FIX logon [sessionId: 2]...
+2018-05-31 08:08:11.772 [JV] INFO  [JTS-PostAuthenticateS2-20] - Creating a FixLogonHandlerFactory instance...
+2018-05-31 08:08:11.774 [JV] INFO  [JTS-PostAuthenticateS2-20] - Instance created.
+2018-05-31 08:08:11.781 [JV] INFO  [JTS-PostAuthenticateS2-20] - jfreechart version =1.0.8
+2018-05-31 08:08:11.781 [JV] INFO  [JTS-PostAuthenticateS2-20] - jcommon version =1.0.12
+2018-05-31 08:08:11.781 [JV] INFO  [JTS-PostAuthenticateS2-20] - JDOMFactory Class =interface org.jdom.JDOMFactory
+2018-05-31 08:08:11.781 [JV] INFO  [JTS-PostAuthenticateS2-20] - hsqldb jdbc =class org.hsqldb.jdbcDriver 2.2
+2018-05-31 08:08:11.783 [JV] INFO  [JTS-PostAuthenticateS2-20] - Changing state for connection from PRELOGON to PRELOGON in y 1745505795: SessionSocket:2
+2018-05-31 08:08:11.783 [JV] INFO  [JTS-PostAuthenticateS2-20] - Switching to a new log '/home/eugene/Jts/diulishzrp/tws.log'...

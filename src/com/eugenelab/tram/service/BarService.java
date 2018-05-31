@@ -55,6 +55,7 @@ public class BarService extends HistoryService {
      */
     @Override
     public void run() {
+        super.run();
         if (last != null ) {
             renew();
             updateTrigger(last);

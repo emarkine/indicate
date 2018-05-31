@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>IB Risk Navigator (SM) - Version Mapping</comment>
+<entry key="999,9999,971,972,973,974">
+risknav.version=5.0.4
+pivot.version=3.0.0
+riskNavOther.version=4.0
+</entry>
+<entry key="970">
+risknav.version=5.0.4
+pivot.version=3.0.0
+riskNavOther.version=4.0
+</entry>
+<entry key="969">
+risknav.version=4.12.7
+pivot.version=2.6.1
+riskNavOther.version=3.0
+</entry>
+<entry key="968">
+risknav.version=4.11.10
+pivot.version=2.5.4
+riskNavOther.version=3.0
+</entry>
+<entry key="967">
+risknav.version=4.10.4
+pivot.version=2.5.1
+riskNavOther.version=3.0
+</entry>
+<entry key="965,966">
+risknav.version=4.9.6
+pivot.version=2.4.6
+riskNavOther.version=3.0
+</entry>
+<entry key="964">
+risknav.version=4.9.6
+pivot.version=2.4.6
+riskNavOther.version=2.1
+</entry>
+<entry key="961,962,963">
+risknav.version=4.7.1
+pivot.version=2.3.1
+riskNavOther.version=2.1
+</entry>
+<entry key="960">
+risknav.version=4.6.4
+pivot.version=2.3.1
+riskNavOther.version=2.1
+</entry>
+<entry key="959">
+risknav.version=4.6.4
+pivot.version=2.3.1
+riskNavOther.version=2.1
+</entry>
+<entry key="958">
+risknav.version=4.5.4
+pivot.version=2.3.1
+riskNavOther.version=2.1
+</entry>
+<entry key="957">
+risknav.version=4.5.4
+pivot.version=2.3.1
+riskNavOther.version=2.1
+</entry>
+<entry key="956">
+risknav.version=4.5.0
+pivot.version=2.3.0
+riskNavOther.version=2.1
+</entry>
+<entry key="955">
+risknav.version=4.2.6
+pivot.version=2.1.1
+riskNavOther.version=2.0
+</entry>
+<entry key="954">
+risknav.version=4.1.10
+pivot.version=2.0.1
+riskNavOther.version=2.0
+</entry>
+<entry key="953">
+risknav.version=4.0.10
+pivot.version=2.0.1
+riskNavOther.version=2.0
+</entry>
+<entry key="952">
+risknav.version=4.0.3
+pivot.version=2.0.0
+riskNavOther.version=2.0
+</entry>
+<entry key="951">
+risknav.version=3.6.6
+pivot.version=1.11.1
+riskNavOther.version=1.4
+</entry>
+<entry key="950">
+risknav.version=3.5.4
+pivot.version=1.11.1
+riskNavOther.version=1.4
+</entry>
+<entry key="949">
+risknav.version=3.4.11
+pivot.version=1.10.20
+riskNavOther.version=1.4
+</entry>
+<entry key="948">
+risknav.version=3.3.11
+pivot.version=1.10.17
+riskNavOther.version=1.4
+</entry>
+<entry key="947">
+risknav.version=3.2.13
+pivot.version=1.10.14
+riskNavOther.version=1.4
+</entry>
+<entry key="946">
+risknav.version=3.0.8
+pivot.version=1.10.11
+riskNavOther.version=1.4
+</entry>
+<entry key="945">
+risknav.version=2.35.9
+pivot.version=1.10.6
+riskNavOther.version=1.4
+</entry>
+<entry key="944">
+risknav.version=2.34.13
+pivot.version=1.10.2
+riskNavOther.version=1.4
+</entry>
+<entry key="943">
+risknav.version=2.32.9
+pivot.version=1.9.9
+riskNavOther.version=1.4
+</entry>
+<entry key="941,942">
+risknav.version=2.31.8
+pivot.version=1.9.7
+riskNavOther.version=1.4
+</entry>
+<entry key="940">
+risknav.version=2.30.14
+pivot.version=1.9.4
+riskNavOther.version=1.4
+</entry>
+<entry key="939">
+risknav.version=2.28.11
+pivot.version=1.8.20
+riskNavOther.version=1.4
+</entry>
+<entry key="938">
+risknav.version=2.27.6
+pivot.version=1.8.20
+riskNavOther.version=1.4
+</entry>
+<entry key="937">
+risknav.version=2.27.1
+pivot.version=1.8.19
+riskNavOther.version=1.4
+</entry>
+<entry key="936">
+risknav.version=2.25.4
+pivot.version=1.8.15
+riskNavOther.version=1.4
+</entry>
+<entry key="935">
+risknav.version=2.22.4
+pivot.version=1.8.12
+riskNavOther.version=1.2
+</entry>
+<entry key="934">
+risknav.version=2.21.2
+pivot.version=1.8.10
+riskNavOther.version=1.2
+</entry>
+<entry key="932,933">
+risknav.version=2.19.15
+pivot.version=1.8.9
+riskNavOther.version=1.2
+</entry>
+<entry key="931">
+risknav.version=2.19.4
+pivot.version=1.8.6
+riskNavOther.version=1.2
+</entry>
+<entry key="930">
+risknav.version=2.17.4
+pivot.version=1.8.2
+riskNavOther.version=1.2
+</entry>
+<entry key="929">
+risknav.version=2.16.11
+pivot.version=1.7.3
+riskNavOther.version=1.2
+</entry>
+<entry key="927,928">
+risknav.version=2.14.10
+pivot.version=1.6.6
+riskNavOther.version=1.2
+</entry>
+<entry key="926">
+risknav.version=2.13.2
+pivot.version=1.6.0
+riskNavOther.version=1.2
+</entry>
+<entry key="925">
+risknav.version=2.12.2
+pivot.version=1.5.7
+riskNavOther.version=1.2
+</entry>
+<entry key="923,924">
+risknav.version=2.10.10
+pivot.version=1.5.7
+riskNavOther.version=1.2
+</entry>
+<entry key="922">
+risknav.version=2.10.1
+pivot.version=1.5.7
+riskNavOther.version=1.2
+</entry>
+<entry key="921">
+risknav.version=2.8.15
+pivot.version=1.5.7
+riskNavOther.version=1.2
+</entry>
+<entry key="920">
+risknav.version=2.8.9
+pivot.version=1.5.7
+riskNavOther.version=1.2
+</entry>
+<entry key="919">
+risknav.version=2.7.3
+pivot.version=1.5.4
+riskNavOther.version=1.2
+</entry>
+<entry key="917,918">
+risknav.version=2.3.6
+pivot.version=1.4.22
+riskNavOther.version=1.2
+</entry>
+<entry key="916">
+risknav.version=2.2.9
+pivot.version=1.4.19
+riskNavOther.version=1.2
+</entry>
+<entry key="915">
+risknav.version=2.2.6
+pivot.version=1.4.18
+riskNavOther.version=1.2
+</entry>
+<entry key="912,913,914">
+risknav.version=2.2.4
+pivot.version=1.4.18
+riskNavOther.version=1.2
+</entry>
+<entry key="910,911">
+risknav.version=2.1.20
+pivot.version=1.4.13
+riskNavOther.version=1.2
+</entry>
+<entry key="909">
+risknav.version=2.0.5
+pivot.version=1.4.12
+riskNavOther.version=1.2
+</entry>
+<entry key="907,908">
+risknav.version=1.15.18
+pivot.version=1.4.10
+riskNavOther.version=1.2
+</entry>
+<entry key="905,906">
+risknav.version=1.14.4
+pivot.version=1.4.9
+riskNavOther.version=1.2
+</entry>
+<entry key="904">
+risknav.version=1.13.0
+pivot.version=1.4.7
+riskNavOther.version=1.2
+</entry>
+<entry key="903">
+risknav.version=1.12.29
+pivot.version=1.4.7
+riskNavOther.version=1.2
+</entry>
+<entry key="901,902">
+risknav.version=1.12.19
+pivot.version=1.4.5
+riskNavOther.version=1.2
+</entry>
+<entry key="900">
+risknav.version=1.12.12
+pivot.version=1.4.1
+riskNavOther.version=1.2
+</entry>
+<entry key="899">
+risknav.version=1.10.16
+pivot.version=1.3.9
+riskNavOther.version=1.2
+</entry>
+<entry key="896,897,898">
+risknav.version=1.8.11
+pivot.version=1.3.2
+riskNavOther.version=1.2
+</entry>
+<entry key="895">
+risknav.version=1.7.2
+pivot.version=1.2.11
+riskNavOther.version=1.2
+</entry>
+<entry key="893,894">
+risknav.version=1.5.7
+pivot.version=1.2.9
+riskNavOther.version=1.2
+</entry>
+<entry key="890,891,892">
+risknav.version=1.5.7
+pivot.version=1.2.9
+riskNavOther.version=1.2
+</entry>
+<entry key="970,888,889">
+risknav.version=nia
+pivot.version=1.2.3
+riskNavOther.version=1.2
+</entry>
+<entry key="883,884,885,886,887">
+risknav.version=1.2
+pivot.version=1.2
+</entry>
+<entry key="881,882">
+risknav.version=
+riskNavOther.version=
+pivot.version=
+</entry>
+</properties>
+
+
+

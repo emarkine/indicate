@@ -21,7 +21,6 @@ public class Utils {
     }
 
     public static Date time() {
-        
         return calendar.getTime();
     }
             

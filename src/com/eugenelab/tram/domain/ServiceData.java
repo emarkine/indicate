@@ -37,7 +37,6 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "ServiceData.findByCreatedAt", query = "SELECT s FROM ServiceData s WHERE s.createdAt = :createdAt"),
     @NamedQuery(name = "ServiceData.findByUpdatedAt", query = "SELECT s FROM ServiceData s WHERE s.updatedAt = :updatedAt")})
 public class ServiceData implements Serializable {
-
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -83,14 +82,19 @@ public class ServiceData implements Serializable {
     @JoinColumn(name = "setting_id")
     protected Setting setting;
 
+    @Column(name = "status")
+    private String status;
+    @Column(name = "message")
+    private String message;
+
 //    @Column(name = "date")
 //    @Temporal(TemporalType.DATE)
-//    @Column(name = "start_time")
-//    @Temporal(TemporalType.TIME)
-//    private Date startTime;
-//    @Column(name = "stop_time")
-//    @Temporal(TemporalType.TIME)
-//    private Date stopTime;
+    @Column(name = "start_time")
+    @Temporal(TemporalType.TIME)
+    private Date startTime;
+    @Column(name = "stop_time")
+    @Temporal(TemporalType.TIME)
+    private Date stopTime;
 
     @Column(name = "created_at")
     @Temporal(TemporalType.TIMESTAMP)
@@ -392,5 +396,61 @@ public class ServiceData implements Serializable {
         this.single = single;
     }
 
+
+    /**
+     * @return the status
+     */
+    public String getStatus() {
+        return status;
+    }
+
+    /**
+     * @param status the status to set
+     */
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    /**
+     * @return the message
+     */
+    public String getMessage() {
+        return message;
+    }
+
+    /**
+     * @param message the message to set
+     */
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    /**
+     * @return the startTime
+     */
+    public Date getStartTime() {
+        return startTime;
+    }
+
+    /**
+     * @param startTime the startTime to set
+     */
+    public void setStartTime(Date startTime) {
+        this.startTime = startTime;
+    }
+
+    /**
+     * @return the stopTime
+     */
+    public Date getStopTime() {
+        return stopTime;
+    }
+
+    /**
+     * @param stopTime the stopTime to set
+     */
+    public void setStopTime(Date stopTime) {
+        this.stopTime = stopTime;
+    }
 
 }

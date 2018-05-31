@@ -1,0 +1,386 @@
+[INFO] logger started at Fri Mar 24 11:39:26 CET 2017
+[INFO] executable name: /home/eugene/Downloads/lynx-linux-x64.sh
+[INFO] install4j version: 6.1.4 (build 6320)
+[INFO] Properties: 
+-- listing properties --
+java.runtime.name=Java(TM) SE Runtime Environment
+exe4j.moduleName=/home/eugene/Downloads/lynx-linux-x64.sh
+sun.boot.library.path=/home/eugene/.i4j_jres/1.8.0_60_64/li...
+java.vm.version=25.60-b23
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=:
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=RU
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=unknown
+install4j.exeDir=/home/eugene/Downloads/
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=/home/eugene/Downloads/lynx-linux-x64...
+java.runtime.version=1.8.0_60-b27
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+i4jv=0
+java.endorsed.dirs=/home/eugene/.i4j_jres/1.8.0_60_64/li...
+os.arch=amd64
+java.io.tmpdir=/tmp
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+os.name=Linux
+exe4j.totalDataLength=94215422
+sun.java2d.noddraw=true
+sun.jnu.encoding=UTF-8
+java.library.path=/home/eugene/Downloads/lynx-linux-x64...
+sun.awt.enableExtraMouseButtons=true
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=4.8.0-41-generic
+i4j.vpt=true
+user.home=/home/eugene
+install4j.cwd=/home/eugene/Downloads
+user.timezone=Europe/Amsterdam
+java.awt.printerjob=sun.print.PSPrinterJob
+java.specification.version=1.8
+install4j.jvmDir=/home/eugene/.i4j_jres/1.8.0_60_64
+file.encoding=UTF-8
+user.name=eugene
+java.class.path=i4jruntime.jar
+java.vm.specification.version=1.8
+sun.arch.data.model=64
+java.home=/home/eugene/.i4j_jres/1.8.0_60_64
+sun.java.command=com.install4j.runtime.launcher.UnixLa...
+java.specification.vendor=Oracle Corporation
+user.language=ru
+awt.toolkit=sun.awt.X11.XToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_60
+java.ext.dirs=/home/eugene/.i4j_jres/1.8.0_60_64/li...
+sun.boot.class.path=/home/eugene/.i4j_jres/1.8.0_60_64/li...
+java.vendor=Oracle Corporation
+install4j.appDir=/home/eugene/Downloads/
+file.separator=/
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.cpu.endian=little
+sun.io.unicode.encoding=UnicodeLittle
+sun.font.fontmanager=sun.awt.X11FontManager
+sun.cpu.isalist=
+[INFO] System language 'ru'
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 3121]: Execute action
+       Property variableName: installerType
+       Property onlyIfUndefined: false
+       Property failIfNull: true
+       Property responseFileVariable: true
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_1
+       Variable changed: installerType=standalone-white-label[class java.lang.String]
+       Execute action successful after 2 ms
+[INFO] com.install4j.runtime.beans.actions.control.RunScriptAction [ID 1597]: Execute action
+       Property rollbackScript: null
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_2
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 2316]: Execute action
+       Property variableName: jtsConfigDir
+       Property onlyIfUndefined: false
+       Property failIfNull: true
+       Property responseFileVariable: false
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_3
+       Variable changed: jtsConfigDir=/home/eugene/Jts[class java.lang.String]
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 2518]: Execute action
+       Property variableName: vmOptionsPath
+       Property onlyIfUndefined: false
+       Property failIfNull: true
+       Property responseFileVariable: false
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_4
+       Variable changed: vmOptionsPath=/home/eugene/Jts/lynx10/tws.vmoptions[class java.lang.String]
+       Execute action successful after 0 ms
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 2954]: Execute action
+       Property variableName: cmdLineArgs
+       Property onlyIfUndefined: false
+       Property failIfNull: true
+       Property responseFileVariable: true
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_5
+       Variable changed: cmdLineArgs=[/home/eugene/Jts, gdc1.ibllc.com:4000, locale=nl, language=http://www.clientam.com/java/classes/broker/lynx][class [Ljava.lang.String;]
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 1892]: Execute action
+       Property variableName: exeName
+       Property onlyIfUndefined: false
+       Property failIfNull: true
+       Property responseFileVariable: true
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_6
+       Variable changed: exeName=tws[class java.lang.String]
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 2306]: Execute action
+       Property variableName: savedVmOptions
+       Property onlyIfUndefined: false
+       Property failIfNull: true
+       Property responseFileVariable: false
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_7
+       No custom VM options found in /home/eugene/Jts/lynx10/tws.vmoptions
+       Variable changed: savedVmOptions={content=}[class java.util.HashMap]
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 2401]: Execute action
+       Property variableName: mergedVmOptions
+       Property onlyIfUndefined: false
+       Property failIfNull: true
+       Property responseFileVariable: false
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_8
+       Variable changed: mergedVmOptions=#
+# This file contains VM parameters for LYNX Trading.
+# Each parameter should be defined in a separate line and the
+# last line must be followed by a line feed. No leading or
+# trailing whitespaces are allowed in the same line, where a
+# parameter is defined.
+#
+# Lines starting with a '#' character are treated as comments
+# and ignored. Additionally, if a line contains a
+# '### keep on update' string, all parameters defined below will
+# be preserved on update.
+#
+
+# maximum Java heap size
+-Xmx768m
+
+-Dinstaller.uuid=de7f8c05-c679-4854-93ec-5ddd511b3b65
+-DvmOptionsPath=/home/eugene/Jts/lynx10/tws.vmoptions
+-Dsun.awt.nopixfmt=true
+-Dsun.java2d.noddraw=true
+-Dswing.boldMetal=false
+-Dsun.locale.formatasdefault=true
+
+### keep on update
+[class java.lang.String]
+       Execute action successful after 0 ms
+[INFO] com.install4j.runtime.beans.screens.StartupScreen [ID 1]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.BannerFormScreen [ID 2738]: Show screen
+[INFO] com.install4j.runtime.beans.screens.BannerFormScreen [ID 2738]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.InstallationScreen [ID 8]: Show screen
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 3640]: Execute action
+       Property variableName: prevInstallDir
+       Property onlyIfUndefined: false
+       Property failIfNull: false
+       Property responseFileVariable: false
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_11
+       Checking application registry [appId: 5556-0004-2700-0000]...
+       Found an existing installation [installDir: /home/eugene/Jts/lynx10]
+       Variable changed: prevInstallDir=/home/eugene/Jts/lynx10[class java.io.File]
+       Execute action successful after 12 ms
+[INFO] com.install4j.runtime.beans.actions.xml.XPathReadAction [ID 3645]: Execute action
+       Property nodeVariableName: 
+       Property variableName: prevInstallerVersion
+       Property xpathExpression: /config/compilerVariables/variable[@name="installerVersion"]/@value
+       Property file: /home/eugene/Jts/lynx10/.install4j/i4jparams.conf
+       Property rollbackSupported: true
+       Variable changed: prevInstallerVersion=2.8[class java.lang.String]
+       Execute action successful after 49 ms
+[INFO] com.install4j.runtime.beans.actions.control.RunScriptAction [ID 3414]: Execute action
+       Property rollbackScript: null
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_31
+       Attempting to delete '/home/eugene/Jts/lynx10/jars/total-2015c.jar'...
+       Attempting to delete '/home/eugene/Jts/lynx10/jars/twslaunch-install4j-1.8.jar'...
+       Attempting to delete '/home/eugene/Jts/lynx10/jars/jts4launch-963.jar'...
+       Attempting to delete '/home/eugene/Jts/lynx10/jars/log4j-api-2.5.jar'...
+       Attempting to delete '/home/eugene/Jts/lynx10/jars/locales.jar'...
+       Attempting to delete '/home/eugene/Jts/lynx10/jars/twslaunch-963.jar'...
+       Attempting to delete '/home/eugene/Jts/lynx10/jars/log4j-core-2.5.jar'...
+       Execute action successful after 2 ms
+[INFO] com.install4j.runtime.beans.actions.InstallFilesAction [ID 9]: Execute action
+       Property sizeCalculatorScript: null
+       Property saveDownloadedFiles: false
+       Property installRuntime: true
+       Property updateBundledJre: true
+       Property validateApplicationId: false
+       Property checkFreeSpace: true
+       Property showFileNames: true
+       Property fileFilterScript: null
+       Property directoryResolverScript: null
+       Property triggerReboot: true
+       Property delay: false
+       Property rollbackSupported: true
+       checking writable with unelevated
+       Install file: /home/eugene/Jts/lynx10/.install4j/2bfa42ba.lprop; size: 54 bytes; exists: true
+       File options set to: [fileTime: Wed Mar 22 00:08:40 CET 2017, mode: 644, overwriteMode: Always ask except for update, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/lynx10/.install4j/3257f6f9.lprop; size: 54 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/5cbd629.lprop; size: 238 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/restarter; size: 12955 bytes; exists: true
+       File options set to: [fileTime: Wed Mar 22 00:08:40 CET 2017, mode: 755, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/lynx10/.install4j/s_18v1mtl.png; size: 183136 bytes; exists: true
+       File options set to: [fileTime: Wed Mar 22 00:08:40 CET 2017, mode: 644, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/lynx10/.install4j/tws.png; size: 3524 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/uninstall.png; size: 73008 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/jars/jts4launch-964.jar; size: 32053837 bytes; exists: false
+       File options set to: [fileTime: Wed Mar 22 00:08:40 CET 2017, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/lynx10/jars/locales.jar; size: 170920 bytes; exists: false
+       Install file: /home/eugene/Jts/lynx10/jars/log4j-api-2.5.jar; size: 101150 bytes; exists: false
+       Install file: /home/eugene/Jts/lynx10/jars/log4j-core-2.5.jar; size: 565368 bytes; exists: false
+       Install file: /home/eugene/Jts/lynx10/jars/total-2015c.jar; size: 6213315 bytes; exists: false
+       Install file: /home/eugene/Jts/lynx10/jars/twslaunch-964.jar; size: 1012153 bytes; exists: false
+       Install file: /home/eugene/Jts/lynx10/jars/twslaunch-install4j-1.8.jar; size: 11801 bytes; exists: false
+       Install file: /home/eugene/Jts/lynx10/tws; size: 13453 bytes; exists: true
+       File options set to: [fileTime: Wed Mar 22 00:08:40 CET 2017, mode: 755, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/lynx10/uninstall; size: 13103 bytes; exists: true
+       File options set to: [fileTime: Wed Mar 22 00:08:40 CET 2017, mode: 700, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/lynx10/.install4j/inst_jre.cfg; size: 35 bytes; exists: true
+       File options set to: [fileTime: Fri Mar 24 11:39:52 CET 2017, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4jruntime.jar; size: 1373704 bytes; exists: true
+       File options set to: [fileTime: Fri Mar 24 11:39:52 CET 2017, mode: 644, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/eugene/Jts/lynx10/.install4j/MessagesDefault; size: 33540 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4jparams.conf; size: 103149 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/stats.properties; size: 307 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/user.jar; size: 41364 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_1_1uqqcq7.properties; size: 1337 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_39_1uqqcq7.utf8; size: 37541 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_38_1uqqcq7.utf8; size: 31908 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_13_1uqqcq7.properties; size: 872 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_21_1uqqcq7.utf8; size: 34851 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_20_1uqqcq7.utf8; size: 36821 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_26_1uqqcq7.utf8; size: 34684 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_33_1uqqcq7.utf8; size: 37409 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_16_1uqqcq7.properties; size: 987 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_2_1uqqcq7.utf8; size: 28349 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_32_1uqqcq7.properties; size: 1075 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_28_1uqqcq7.utf8; size: 32409 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_5_1uqqcq7.properties; size: 1034 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_15_1uqqcq7.utf8; size: 38922 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_19_1uqqcq7.utf8; size: 48910 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_27_1uqqcq7.properties; size: 926 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_23_1uqqcq7.utf8; size: 44253 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_30_1uqqcq7.utf8; size: 37646 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_7_1uqqcq7.utf8; size: 33733 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_41_1uqqcq7_18j137h.png; size: 1665 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_36_1uqqcq7.utf8; size: 36293 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_34_1uqqcq7.utf8; size: 53101 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_9_1uqqcq7.utf8; size: 32117 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_25_1uqqcq7.utf8; size: 38563 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_12_1uqqcq7.utf8; size: 32438 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_29_1uqqcq7.utf8; size: 34747 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_31_1uqqcq7.utf8; size: 35441 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_3_1uqqcq7.properties; size: 1034 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_8_1uqqcq7.properties; size: 1202 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_6_1uqqcq7.utf8; size: 34552 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_4_1uqqcq7.utf8; size: 27656 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_22_1uqqcq7.properties; size: 935 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_40_1uqqcq7_ipkcol.ico; size: 86694 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_0_1uqqcq7.utf8; size: 33540 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_24_1uqqcq7.properties; size: 2138 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_11_1uqqcq7.properties; size: 791 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_18_1uqqcq7.properties; size: 1021 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_35_1uqqcq7.properties; size: 3187 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_37_1uqqcq7.properties; size: 930 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_14_1uqqcq7.utf8; size: 32793 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_10_1uqqcq7.utf8; size: 33855 bytes; exists: true
+       Install file: /home/eugene/Jts/lynx10/.install4j/i4j_extf_17_1uqqcq7.utf8; size: 36090 bytes; exists: true
+       Execute action successful after 19324 ms
+[INFO] com.install4j.runtime.beans.actions.control.RunScriptAction [ID 2076]: Execute action
+       Property rollbackScript: null
+       Property rollbackSupported: false
+       Property script: com.install4j.script.I4jScript_Internal_34
+       Creating '/home/eugene/Jts' directory...
+       Execute action successful after 0 ms
+[INFO] com.install4j.runtime.beans.actions.text.WriteTextFileAction [ID 2307]: Execute action
+       Property logText: true
+       Property append: false
+       Property text: #
+# This file contains VM parameters for LYNX Trading.
+# Each parameter should be defined in a separate line and the
+# last line must be followed by a line feed. No leading or
+# trailing whitespaces are allowed in the same line, where a
+# parameter is defined.
+#
+# Lines starting with a '#' character are treated as comments
+# and ignored. Additionally, if a line contains a
+# '### keep on update' string, all parameters defined below will
+# be preserved on update.
+#
+
+# maximum Java heap size
+-Xmx768m
+
+-Dinstaller.uuid=de7f8c05-c679-4854-93ec-5ddd511b3b65
+-DvmOptionsPath=/home/eugene/Jts/lynx10/tws.vmoptions
+-Dsun.awt.nopixfmt=true
+-Dsun.java2d.noddraw=true
+-Dswing.boldMetal=false
+-Dsun.locale.formatasdefault=true
+
+### keep on update
+
+       Property encoding: 
+       Property escaped: false
+       Property file: /home/eugene/Jts/lynx10/tws.vmoptions
+       Property rollbackSupported: true
+       Backing up /home/eugene/Jts/lynx10/tws.vmoptions
+       Execute action successful after 2 ms
+[INFO] com.install4j.runtime.beans.actions.desktop.CreateProgramGroupAction [ID 10]: Execute action
+       Property addUninstaller: true
+       Property uninstallerMenuName: LYNX Trading Деинсталлятор
+       Property addDefaultLauncherLinks: true
+       Property categories: Application
+       Property programGroupName: LYNX Trading
+       Property allUsers: true
+       Property linkDirectory: /usr/local/bin
+       Property programGroupEntryConfigs: []
+       Property unixSymlinks: true
+       Property failForSymlinksNotCreated: false
+       Property unixMenuEntries: true
+       Property rollbackSupported: true
+       Install file: /home/eugene/Jts/lynx10/LYNX Trading.desktop; size: 190 bytes; exists: true
+       File options set to: [fileTime: Fri Mar 24 11:39:52 CET 2017, mode: 755, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/eugene/.local/share/applications/LYNX Trading-0.desktop; size: 190 bytes; exists: true
+       File options set to: [fileTime: Fri Mar 24 11:39:52 CET 2017, mode: 644, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+[ERROR] com.install4j.runtime.beans.actions.desktop.CreateProgramGroupAction [ID 10]: /usr/local/bin/tws
+[INFO] com.install4j.runtime.beans.actions.desktop.CreateProgramGroupAction [ID 10]: Execute action successful after 50 ms
+[INFO] com.install4j.runtime.beans.actions.desktop.RegisterAddRemoveAction [ID 11]: Execute action
+       Property itemName: LYNX Trading
+       Property iconSource: Custom icon
+       Property icon: i4j_extf_40_1uqqcq7_ipkcol.ico
+       Property persistentProperties: {}
+       Property rollbackSupported: true
+       Execute action successful after 0 ms
+[INFO] com.install4j.runtime.beans.actions.desktop.CreateDesktopLinkAction [ID 54]: Execute action
+       Property allUsers: true
+       Property runAsAdministrator: false
+       Property startIn: null
+       Property winIconFile: null
+       Property macSingleBundleTarget: false
+       Property arguments: 
+       Property description: LYNX Trading
+       Property name: LYNX Trading
+       Property file: tws
+       Property rollbackSupported: true
+       Install file: /home/eugene/Desktop/LYNX Trading.desktop; size: 167 bytes; exists: true
+       File options set to: [fileTime: Fri Mar 24 11:39:53 CET 2017, mode: 755, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Execute action successful after 2 ms
+[INFO] com.install4j.runtime.beans.actions.text.WriteTextFileAction [ID 2244]: Execute action
+       Property logText: true
+       Property append: false
+       Property text: .
+       Property encoding: 
+       Property escaped: true
+       Property file: /home/eugene/Jts/lynx10/.install4j/.installSuccess
+       Property rollbackSupported: true
+       Backing up /home/eugene/Jts/lynx10/.install4j/.installSuccess
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.screens.InstallationScreen [ID 8]: Rollback barrier reached
+       command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.BannerFormScreen [ID 2790]: Show screen
+       Variable changed: executeLauncherAction=true[class java.lang.Boolean]
+[INFO] com.install4j.runtime.beans.actions.finish.ExecuteLauncherAction [ID 2791]: Execute action
+       Property launcherId: 22
+       Property arguments: null
+       Property rollbackSupported: false
+       Execute action successful after 511 ms
+[INFO] com.install4j.runtime.beans.screens.BannerFormScreen [ID 2790]: command: finish
+       cleaning up
+       Finished

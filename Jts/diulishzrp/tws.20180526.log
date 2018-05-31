@@ -1,0 +1,303 @@
+2018-05-26 00:00:01.770 [ER] INFO  [JTS-Fuse-UpdateCurrentDate-45] - Next calendars date change event is scheduled for Sun May 27 00:00:01 CEST 2018
+2018-05-26 00:00:01.774 [ER] INFO  [JTS-Fuse-UpdateCurrentDate-45] - Current calendars date changed to 20180526
+2018-05-26 00:00:10.926 [ER] INFO  [JTS-CCPDispatcherS2-35] - Day cross detected: twslaunch.jutils.aI[time=1527285610000,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Europe/Amsterdam",offset=3600000,dstSavings=3600000,useDaylight=true,transitions=180,lastRule=java.util.SimpleTimeZone[id=Europe/Amsterdam,offset=3600000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=2,startMonth=2,startDay=-1,startDayOfWeek=1,startTime=3600000,startTimeMode=2,endMode=2,endMonth=9,endDay=-1,endDayOfWeek=1,endTime=3600000,endTimeMode=2]],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2018,MONTH=4,WEEK_OF_YEAR=21,WEEK_OF_MONTH=4,DAY_OF_MONTH=26,DAY_OF_YEAR=146,DAY_OF_WEEK=7,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=0,HOUR_OF_DAY=0,MINUTE=0,SECOND=10,MILLISECOND=0,ZONE_OFFSET=3600000,DST_OFFSET=3600000], starting overnight activities...
+2018-05-26 00:00:10.927 [ER] INFO  [JTS-CCPDispatcherS2-35] - Running overnight activities..., time: twslaunch.jutils.aI[time=1527285610000,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Europe/Amsterdam",offset=3600000,dstSavings=3600000,useDaylight=true,transitions=180,lastRule=java.util.SimpleTimeZone[id=Europe/Amsterdam,offset=3600000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=2,startMonth=2,startDay=-1,startDayOfWeek=1,startTime=3600000,startTimeMode=2,endMode=2,endMonth=9,endDay=-1,endDayOfWeek=1,endTime=3600000,endTimeMode=2]],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2018,MONTH=4,WEEK_OF_YEAR=21,WEEK_OF_MONTH=4,DAY_OF_MONTH=26,DAY_OF_YEAR=146,DAY_OF_WEEK=7,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=0,HOUR_OF_DAY=0,MINUTE=0,SECOND=10,MILLISECOND=0,ZONE_OFFSET=3600000,DST_OFFSET=3600000]
+2018-05-26 00:00:10.927 [ER] INFO  [JTS-CCPDispatcherS2-35] - OvernightManager.dayInit: new values: dayOfTheWeek: 7 (Sat), YYYYMMofToday: 201805, YYYYMMDDofToday: 20180526, m_todayDate: 20180526, dueToChangeInTimezone: false
+2018-05-26 00:00:10.950 [ER] INFO  [JTS-CCPDispatcherS2-35] - ExecReportMgr setting new exec report storage onMidnight cross
+2018-05-26 00:00:10.954 [ER] INFO  [JTS-Order-Audit-24] - set audit xml file: /home/eugene/Jts/diulishzrp/Sat.audit.xml
+2018-05-26 00:00:10.954 [ER] INFO  [JTS-CCPDispatcherS2-35] - Overnight activities completed, time: twslaunch.jutils.aI[time=1527285610555,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Europe/Amsterdam",offset=3600000,dstSavings=3600000,useDaylight=true,transitions=180,lastRule=java.util.SimpleTimeZone[id=Europe/Amsterdam,offset=3600000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=2,startMonth=2,startDay=-1,startDayOfWeek=1,startTime=3600000,startTimeMode=2,endMode=2,endMonth=9,endDay=-1,endDayOfWeek=1,endTime=3600000,endTimeMode=2]],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2018,MONTH=4,WEEK_OF_YEAR=21,WEEK_OF_MONTH=4,DAY_OF_MONTH=26,DAY_OF_YEAR=146,DAY_OF_WEEK=7,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=0,HOUR_OF_DAY=0,MINUTE=0,SECOND=10,MILLISECOND=555,ZONE_OFFSET=3600000,DST_OFFSET=3600000]
+2018-05-26 00:00:10.954 [ER] INFO  [JTS-CCPDispatcherS2-35] - OvernightManager.dayInit: new values: dayOfTheWeek: 7 (Sat), YYYYMMofToday: 201805, YYYYMMDDofToday: 20180526, m_todayDate: 20180526, dueToChangeInTimezone: false
+2018-05-26 00:00:11.950 [ER] INFO  [AWT-EventQueue-0] - TradeDaysMgr: Deselecting day Sat Sat May 26 00:00:10 CEST 2018 true
+2018-05-26 00:00:11.966 [ER] INFO  [AWT-EventQueue-0] - TradeDaysMgr: Selecting day Sat Sat May 26 00:00:10 CEST 2018 false
+2018-05-26 00:00:11.967 [ER] INFO  [AWT-EventQueue-0] - TradeDaysMgr: Selecting today Sat Sat May 26 00:00:10 CEST 2018 true
+2018-05-26 00:00:11.967 [ER] INFO  [AWT-EventQueue-0] - TradeDaysMgr: Selecting today Sat Sat May 26 00:00:10 CEST 2018 true
+2018-05-26 00:00:11.967 [ER] INFO  [AWT-EventQueue-0] - TradeDaysMgr: Selecting today Sat Sat May 26 00:00:10 CEST 2018 true
+2018-05-26 00:00:11.967 [ER] INFO  [AWT-EventQueue-0] - TradeDaysMgr: Selecting today Sat Sat May 26 00:00:10 CEST 2018 true
+2018-05-26 00:00:11.967 [ER] INFO  [AWT-EventQueue-0] - TradeDaysMgr: Selecting today Sat Sat May 26 00:00:10 CEST 2018 true
+2018-05-26 00:00:11.967 [ER] INFO  [AWT-EventQueue-0] - TradeDaysMgr: Selecting today Sat Sat May 26 00:00:10 CEST 2018 true
+2018-05-26 00:00:20.225 [ER] INFO  [AWT-EventQueue-0] - Reload analyst actions on overnight change
+2018-05-26 00:00:20.920 [ER] INFO  [AWT-EventQueue-0] - Reload calendars on overnight change
+2018-05-26 00:00:30.825 [ER] INFO  [JTS-EndSession-9917] - Started auto log off
+2018-05-26 00:00:31.464 [ER] INFO  [JTS-CCPPingS2-26] - Warning: not received heartbeat at 52664000 elapsed:11000
+2018-05-26 00:00:31.464 [ER] INFO  [JTS-EndSession-9917] - Destroy async. services.
+2018-05-26 00:00:31.464 [ER] INFO  [JTS-EndSession-9917] - destroyAsyncServices Started
+2018-05-26 00:00:31.464 [ER] INFO  [JTS-EndSession-9917] - Destroying today's records
+2018-05-26 00:00:31.465 [ER] INFO  [JTS-EndSession-9917] - Destroying MD connection Manager
+2018-05-26 00:00:31.465 [ER] INFO  [JTS-EndSession-9917] - Destroying Scheduler
+2018-05-26 00:00:31.465 [ER] INFO  [JTS-EndSession-9917] - Destroying SnoozerFactory
+2018-05-26 00:00:31.465 [ER] INFO  [JTS-ActivityBus-31] - Terminating async queue thread
+2018-05-26 00:00:31.465 [ER] INFO  [JTS-EndSession-9917] - Destroying MKT Data Wrapper
+2018-05-26 00:00:31.465 [ER] INFO  [JTS-RecordNotifier-34] - Terminating async queue thread
+2018-05-26 00:00:31.465 [ER] INFO  [JTS-EndSession-9917] - Destroying MKT Data MGR
+2018-05-26 00:00:31.465 [ER] INFO  [JTS-ChartOrderProcessor-30] - Terminating async queue thread
+2018-05-26 00:00:31.465 [ER] INFO  [JTS-Async-28] - Terminating async queue thread
+2018-05-26 00:00:31.465 [ER] INFO  [JTS-EndSession-9917] - Destroying SecDef Mgr
+2018-05-26 00:00:31.466 [ER] INFO  [JTS-EndSession-9917] - Destroying ACT Mgr
+2018-05-26 00:00:31.466 [ER] INFO  [JTS-AsyncNonLocked-29] - Terminating async queue thread
+2018-05-26 00:00:31.466 [ER] INFO  [JTS-EndSession-9917] - Destroying NewsFacade
+2018-05-26 00:00:31.541 [ER] INFO  [JTS-EndSession-9917] - Destroying Book
+2018-05-26 00:00:31.541 [ER] INFO  [JTS-EndSession-9917] - destroyAsyncServices Done
+2018-05-26 00:00:31.541 [ER] INFO  [JTS-EndSession-9917] - Done Terminating Queues
+2018-05-26 00:00:31.543 [ER] INFO  [JTS-EndSession-9917] - End Session stop
+2018-05-26 00:00:31.544 [ER] INFO  [AWT-EventQueue-0] - Started invoke 'exitSessionGracefully' in AWT thread. In event thread = true
+2018-05-26 00:00:31.544 [ER] INFO  [AWT-EventQueue-0] - Started 'saveSettingsAndExitSession'
+2018-05-26 00:00:31.544 [ER] INFO  [AWT-EventQueue-0] - saveSettingsAndExitSession
+2018-05-26 00:00:31.563 [ER] INFO  [JTS-ShutdownThread-9930] - Shutdown started. 22 tasks to execute.
+2018-05-26 00:00:31.598 [ER] INFO  [AWT-EventQueue-0] - Finished 'saveSettingsAndExitSession'
+2018-05-26 00:00:31.605 [ER] INFO  [JTS-ShutdownTask-Uploading_Mobile_Settings-9933] - MCFG Filtering out none MainTabable tabable with name Portfolio, type cX
+2018-05-26 00:00:31.605 [ER] INFO  [JTS-ShutdownTask-Uploading_Mobile_Settings-9933] - MCFG Filtering out none MainTabable tabable with name Stock Scanner: Select parameter, type by
+2018-05-26 00:00:31.605 [ER] INFO  [JTS-ShutdownTask-Uploading_Mobile_Settings-9933] - MCFG Filtering out none MainTabable tabable with name Stock Scanner: Select parameter, type by
+2018-05-26 00:00:31.605 [ER] INFO  [JTS-ShutdownTask-Uploading_Mobile_Settings-9933] - MCFG Filtering out none MainTabable tabable with name Pending (All), type o1
+2018-05-26 00:00:31.701 [ER] INFO  [JTS-ShutdownTask-Uploading_Mobile_Settings-9933] - S3: Requesting upload signature tws.wlist
+2018-05-26 00:00:31.704 [ER] INFO  [JTS-ShutdownTask-Uploading_Mobile_Settings-9933] - S3: Requesting upload signature tws.scan
+2018-05-26 00:00:31.707 [ER] INFO  [JTS-AsyncQueryManager-9935] - Starting async query manager
+2018-05-26 00:00:31.718 [ER] INFO  [JTS-ShutdownTask-Prepare_Shutdown_IA-9934] - |rfODM|odmtp.a@7f265583 | <init>()#89 | Creating odm transporter | 0 | 
+2018-05-26 00:00:31.724 [ER] INFO  [JTS-ShutdownTask-Prepare_Shutdown_IA-9934] - /home/eugene/Jts/diulishzrp//traderMap.txt does not exist
+2018-05-26 00:00:31.736 [ER] INFO  [JTS-ShutdownTask-Prepare_Shutdown_IA-9934] - IA: AccountManager has no base Currency. Riskfeed uses USD as default
+2018-05-26 00:00:31.737 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Control settins saving started.
+2018-05-26 00:00:31.737 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Update order defaults
+2018-05-26 00:00:31.738 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Saving IA settings
+2018-05-26 00:00:31.738 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Saving displayed msg list
+2018-05-26 00:00:31.740 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Saving group mgr list
+2018-05-26 00:00:31.741 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Saving xml
+2018-05-26 00:00:31.741 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Check settings BatchRequests are back:2 res:true
+2018-05-26 00:00:31.743 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Saving factory settings. RestoreAllInCurrentWorkspace=false onExit=true inBackground=false
+2018-05-26 00:00:31.768 [ER] INFO  [AWT-EventQueue-0] -  update chart in ChartAlertMgr
+2018-05-26 00:00:31.789 [ER] INFO  [JTS-CCPDispatcherS2-35] - CCP reported time: 2018-05-25 22:00:31.000 (GMT) [1527285631], local time: 2018-05-25 22:00:31.789 (GMT), local time: 2018-05-26 00:00:31.789 (CEST), difference in seconds: -0.789 [TestReq]
+2018-05-26 00:00:31.790 [ER] INFO  [JTS-CCPDispatcherS2-35] - Setting time offset to -790 diff -391
+2018-05-26 00:00:31.790 [ER] INFO  [AWT-EventQueue-0] - S3: Received upload signature tws.wlist
+2018-05-26 00:00:31.818 [ER] INFO  [JTS-onReceiveUploadSignature-9937] - S3: Opening URL connection to https://s3.amazonaws.com/cl.ibllc/hkajpdadlljkpnnecifkelelehhglenofikekejh.tws.wlist?Signature=LQu2kBqShRrDFx5%2BfxEQyq72BgQ%3D&Expires=1527286231&AWSAccessKeyId=0WWXP5X5ZAMQC93NZR82
+2018-05-26 00:00:31.875 [ER] INFO  [JTS-CCPDispatcherS2-35] - CCP reported time: 2018-05-25 22:00:31.000 (GMT) [1527285631], local time: 2018-05-25 22:00:31.875 (GMT), local time: 2018-05-26 00:00:31.875 (CEST), difference in seconds: -0.875 [TestReq]
+2018-05-26 00:00:31.875 [ER] INFO  [AWT-EventQueue-0] - S3: Received upload signature tws.scan
+2018-05-26 00:00:31.884 [ER] INFO  [JTS-onReceiveUploadSignature-9939] - S3: Opening URL connection to https://s3.amazonaws.com/sd.ibllc/hkajpdadlljkpnnecifkelelehhglenofikekejh.tws.scan?Signature=j%2Buh47UP%2FCFImdWlM898%2BlBoDVk%3D&Expires=1527286231&AWSAccessKeyId=0WWXP5X5ZAMQC93NZR82
+2018-05-26 00:00:31.927 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Saving settings to /home/eugene/Jts/diulishzrp/tws.xml
+2018-05-26 00:00:31.987 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Warning: class javax.swing.ImageIcon should implement either ISetting or Xmlable. tagName = icon fieldName = icon
+2018-05-26 00:00:31.987 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Warning: class javax.swing.ImageIcon should implement either ISetting or Xmlable. tagName = Icon fieldName = icon
+2018-05-26 00:00:31.990 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Warning: class javax.swing.ImageIcon should implement either ISetting or Xmlable. tagName = Icon fieldName = icon
+2018-05-26 00:00:32.144 [ER] INFO  [JTS-onReceiveUploadSignature-9937] - S3: Starting tws.wlist settings upload
+2018-05-26 00:00:32.160 [ER] INFO  [JTS-onReceiveUploadSignature-9939] - S3: Starting tws.scan settings upload
+2018-05-26 00:00:32.276 [ER] INFO  [JTS-onReceiveUploadSignature-9939] - S3: Uploaded settings : 23 3
+2018-05-26 00:00:32.277 [ER] INFO  [JTS-onReceiveUploadSignature-9939] - ConfigUploadMgr : ConfigUploadProgress : finished()
+2018-05-26 00:00:32.302 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Verifying saved file
+2018-05-26 00:00:32.368 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - jaccount.portfolio.BasicDrillDownColumn
+2018-05-26 00:00:32.368 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - jaccount.portfolio.BasicDrillDownColumn
+2018-05-26 00:00:32.378 [ER] INFO  [JTS-onReceiveUploadSignature-9937] - S3: Uploaded settings : 3599 21894
+2018-05-26 00:00:32.378 [ER] INFO  [JTS-onReceiveUploadSignature-9937] - ConfigUploadMgr : ConfigUploadProgress : finished()
+2018-05-26 00:00:32.403 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Error: could not find class TicketNotesHint; object will not be added to list
+2018-05-26 00:00:32.598 [ER] INFO  [JTS-GC-2] - restart gc timer
+2018-05-26 00:00:33.551 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - autoexport set to stop: , start: , stop: 
+2018-05-26 00:00:33.553 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - DelayedMarketDataList is created: Approved: 147-148-223-224-227-228-231-233-247-248-267-268-494-495-657-658-659-660-712-727SMART,113-193-578-728-729-730-731-732-733-734-777ECBOT,145-146-245-246-281-522,147-148-223-224-227-228-231-233-247-248-267-268-494-495-657-658-659-660-712-727,114-122-201-202-203-204-211-391-392-565-581-772-773-774-775-776-777SMART,281-522-580-616,580-616,223-224-227-228,281-522-707-97,IND-TSE,112-114-122-201-202-203-204-211-391-392-439-440-520-521,112-113-114-122-201-202-203-204-211-391-392-439-440-520-521-565-581-704-705-736-777-97SMART,707ICEEU,147-148-247-248,711-712-727,147-148-247-248-494-495,710-712-727MONEP,418-419-514,301-302-580-616,722-723-724-753-822-97NYMEX,186-187-188-189SMART,710-712-727FTA,147-148-247-248-267-268-494-495-657-658-659-660-712-727SMART,580-616NYBOT,616NYBOT,114-122-201-202-203-204-211-391-392-565-772-773-774-775-776-778SMART,IND-DTB,165-167-265-266-267-268-494-495,112-114-122-201-202-203-204-211-391-392-393-439-440-520-521,711-712-727FTA,147-148-231-233-247-248-267-268-494-495-657-658-659-660-712-727,112-114-122-201-202-203-204-211-391-392-439-440-520-521-565-581,505-506,IND-CBOE,112-113-114-122-201-202-203-204-211-391-392-439-440-520-521-565-581-679-704-705-736-777-97SMART,149-150-249-250-494-495-657-658-659-660SMART,275-444-446,145-146-245-246SOFFEX,267-268-712-727SBVM,112-113-114-122-201-202-203-204-211-391-392-439-440-520-521-565-581,267-268-712-727SBF,275-444-445TSE,442-443,229-475-476-565-772-776DTB,275-444-445-446SMART,112-193,710-712-727,112-475-476-565-581,462-463-464-465-494-495-549SMART,113-193-578-728-729-730-731-732-733-734-777GLOBEX,STK-BEST/MIBSX,165-167-265-266-281-522,112-113-229-475-476-565-581-777DTB,462-463-464-465,147-148-165-167-247-248-265-266-267-268-494-495,719-720-721-752-767-769-770-821-97NYMEX,165-167-223-224-227-228-265-266-267-268-494-495,145-146-245-246-281-522-97DTB,112-113-475-476-565-581,275-444-445,112-475-476,267-268-494-495-657-658-659-660-712-727SBF,112-229-475-476,165-167-670,114-122-201-202-203-204-211-391-392-393-565-772-773-774-775-776-778SMART,STK-BEST/BVME,267-268-712-727AEB,147-148-231-233-247-248-494-495-657-658-659-660SMART,147-148-149-150-231-233-247-248-249-250-494-495-657-658-659-660SMART,165-167-267-268,STK-BM,710-712-727BELFOX,147-148-247-248SMART,147-148-165-167-247-248-267-268-494-495,732-733-734ECBOT,STK-SEHK,112-203-205-565-581-777NASDAQ,165-167-265-266,181-183-494-495-657-658-659-660SMART,707LIFFE,267-268-712-727SMART,147-148-165-167-231-233-247-248-265-266-267-268-494-495-657-658-659-660,145-146-245-246DTB,112-113-114-122-201-202-203-204-211-391-392-393-439-440-520-521-565-581-704-705-736-777-97SMART,719-720-721-97NYMEX,112-113-229-475-476-565-581,441-516SEHK,145-146-245-246,462-463-464-465SMART,IND-SOFFEX,112-113-193-281-522-577-578,112-113-114-122-201-202-203-204-211-391-392-393-439-440-520-521-565-581,441-516,112-203-565-581,112-113-193-577-578,722-723-724-97NYMEX,165-167-223-224-227-228-265-266-267-268-494-495-657-658-659-660,147-148-231-233-247-248-267-268-494-495-657-658-659-660-712-727SMART,281-522-580-616-97NYBOT,418-419-514DTB,711-712-727MONEP,165-167-223-224-227-228-231-233-265-266-267-268-494-495-657-658-659-660,267-268-494-495-657-658-659-660-712-727SMART,112-193-577-578,147-148-247-248-267-268-494-495-712-727SMART,181-183,732-733-734GLOBEX,147-148-165-167-247-248-265-266-267-268-494-495-657-658-659-660,147-148-223-224-227-228-247-248-267-268-494-495-657-658-659-660-712-727SMART,414-732-733-734CME,722-723-724-822-97NYMEX,112-203,FUT-DTB; Notified: IND-HKFE; Pre-populated: null
+2018-05-26 00:00:33.553 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - DelayedMarketDataList is created: Approved: ; Notified: ; Pre-populated: null
+2018-05-26 00:00:33.553 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - DelayedMarketDataList is created: Approved: STK-SBVM,IOPT-AEB,STK-BEST/BVME,FUT-CME,STK-BEST/ENEXT,IND-TSE,FUT-NYBOT,STK-SEHK,IND-BELFOX,FUT-ECBOT,STK-BEST/VIRTX,FUT-MONEP,FUT-LIFFE,STK-BEST/BM,STK-SBF,STK-BEST,STK-AEB,FUT-NYMEX,IND-NASDAQ,STK-BEST/FWB,STK-BEST/SBF,STK-BEST/EBS,IND-DTB,IND-FTA,IND-SOFFEX,STK-BEST/IBIS,STK-BEST/SBVM,STK-BEST/LSE,STK-BEST/AEB,FUT-GLOBEX,IND-ICEEU,IND-LIFFE,IND-MONEP,OPT-FTA,OPT-DTB,STK-BEST/TSE,FUT-FTA,FUT-DTB; Notified: ; Pre-populated: null
+2018-05-26 00:00:33.553 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - DelayedMarketDataList is created: Approved: 95612508/PSE,95612508/AMEX,95612508/ISE,29622819/IBIS,95612508/NASDAQOM; Notified: 710-727,439-440,114-211-392-439-440,122-204-439-440,112-193-577-578,561-562,483-484,167-266,481-482,OPT-BOX,485-486,148-248; Pre-populated: null
+2018-05-26 00:00:33.553 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - DelayedMarketDataList is created: Approved: ; Notified: ; Pre-populated: null
+2018-05-26 00:00:33.553 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - DelayedMarketDataList is created: Approved: ; Notified: ; Pre-populated: null
+2018-05-26 00:00:33.573 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid677  conid=244930738  exch=FTA
+2018-05-26 00:00:33.573 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid678  conid=9769  exch=SMART
+2018-05-26 00:00:33.573 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid679  conid=1407379  exch=SMART
+2018-05-26 00:00:33.573 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid680  conid=18396910  exch=SMART
+2018-05-26 00:00:33.573 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid681  conid=29612252  exch=SBF
+2018-05-26 00:00:33.574 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid682  conid=69838384  exch=SMART
+2018-05-26 00:00:33.575 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid683  conid=75015675  exch=IDEALPRO
+2018-05-26 00:00:33.575 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid684  conid=16717790  exch=SMART
+2018-05-26 00:00:33.575 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid685  conid=51635646  exch=SMART
+2018-05-26 00:00:33.730 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid686  conid=187713822  exch=DTB
+2018-05-26 00:00:33.730 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid687  conid=167205842  exch=GLOBEX
+2018-05-26 00:00:33.784 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid688  conid=35449496  exch=SMART
+2018-05-26 00:00:33.873 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid689  conid=303997044  exch=FTA
+2018-05-26 00:00:33.873 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid690  conid=248633335  exch=NYBOT
+2018-05-26 00:00:33.873 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid691  conid=273971845  exch=FTA
+2018-05-26 00:00:33.873 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid692  conid=237762830  exch=NYBOT
+2018-05-26 00:00:33.874 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid693  conid=198010266  exch=NYBOT
+2018-05-26 00:00:33.874 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid694  conid=124700141  exch=SMART
+2018-05-26 00:00:33.874 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid695  conid=39089692  exch=SMART
+2018-05-26 00:00:33.874 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid696  conid=29612246  exch=SMART
+2018-05-26 00:00:33.875 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid697  conid=5032  exch=SMART
+2018-05-26 00:00:33.875 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid698  conid=244930738  exch=FTA
+2018-05-26 00:00:33.876 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid699  conid=313662163  exch=FTA
+2018-05-26 00:00:33.911 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid700  conid=307935742  exch=FTA
+2018-05-26 00:00:33.912 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid701  conid=244930738  exch=FTA
+2018-05-26 00:00:33.912 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid702  conid=307935742  exch=FTA
+2018-05-26 00:00:33.912 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - SECDEF  Sending  reqId=ArConidExchangePairsReqByConid703  conid=244930738  exch=FTA
+2018-05-26 00:00:33.915 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Verifying succeeded
+2018-05-26 00:00:33.915 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Renaming saved file
+2018-05-26 00:00:33.915 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Renaming succeeded
+2018-05-26 00:00:33.915 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Settings file size:3542447
+2018-05-26 00:00:33.915 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Copying file /home/eugene/Jts/diulishzrp/tws.Sat.xml
+2018-05-26 00:00:33.933 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Copying succeeded
+2018-05-26 00:00:33.942 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Done saving settings
+2018-05-26 00:00:33.942 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Saving market rules
+2018-05-26 00:00:33.987 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Saving sizeop settings
+2018-05-26 00:00:33.987 [ER] INFO  [JTS-ShutdownTask-Saving_Settings-9936] - Control settins saving finished.
+2018-05-26 00:00:33.991 [ER] INFO  [JTS-ShutdownTask-Shutdown_IA-9942] - Disabling IA
+2018-05-26 00:00:33.991 [ER] INFO  [JTS-ShutdownTask-Shutdown_IA-9942] - Started getting sync 'S.lock()' before 'Disabling IA'
+2018-05-26 00:00:33.991 [ER] INFO  [JTS-ShutdownTask-Shutdown_IA-9942] - Got 'S.lock()' before 'Disabling IA'
+2018-05-26 00:00:33.992 [ER] INFO  [JTS-IA Stopper-9943] - Started shutdown IA session
+2018-05-26 00:00:33.992 [ER] INFO  [JTS-IA Stopper-9943] - Stopping IA session
+2018-05-26 00:00:33.993 [ER] INFO  [JTS-IA Stopper-9943] - |NIA|com.ib.nia.control.l@2676bbe0 | destroy()#46 | nia base timer is shut down | 
+2018-05-26 00:00:33.998 [ER] INFO  [NIA-Input-Queue-2] - |NIA|com.ib.nia.e@60bfcc3a | o()#101 | destroy | 
+2018-05-26 00:00:34.001 [ER] INFO  [NIA-Input-Queue-2] - |NIA|com.ib.nia.histdb.h@746e2073 | destroy()#268 | Shutdown NIA RDBMS | 
+2018-05-26 00:00:34.148 [ER] INFO  [NIA-Input-Queue-2] - |NIA|com.ib.nia.histdb.h@746e2073 | destroy()#271 | NIA DB Closed | 
+2018-05-26 00:00:34.149 [ER] INFO  [NIA-Input-Queue-2] - |NIA|com.ib.nia.control.handler.j@61986160 | a()#46 | Nia SHUTDOWN | 
+2018-05-26 00:00:34.150 [ER] INFO  [JTS-IA Stopper-9943] - |NIA|com.ib.nia.e@60bfcc3a | o()#110 | already destroyed | 
+2018-05-26 00:00:34.151 [ER] INFO  [JTS-AsyncQueryManager-9935] - Terminating async query manager
+2018-05-26 00:00:34.152 [ER] INFO  [JTS-IA Stopper-9943] - Finished shutdown IA session
+2018-05-26 00:00:34.493 [ER] INFO  [AWT-EventQueue-0] - Closing chart windows
+2018-05-26 00:00:34.532 [ER] INFO  [AWT-EventQueue-0] - cdebug: CHARTS | ChartPanel7 | destroy
+2018-05-26 00:00:34.534 [ER] INFO  [AWT-EventQueue-0] - ---destroyed Five Sec Router for EOE
+2018-05-26 00:00:34.534 [ER] INFO  [AWT-EventQueue-0] - cdebug: FIVE_SEC | router(euhmds:6)@5ef68198 | Unset ticker ID
+2018-05-26 00:00:34.536 [ER] INFO  [AWT-EventQueue-0] - cdebug: DATA | ChartDatasetGroup[0/0/1/0/0/0]@1042655897 | Removing all series
+2018-05-26 00:00:34.541 [ER] INFO  [AWT-EventQueue-0] - cdebug: CHARTS | ChartPanel6 | destroy
+2018-05-26 00:00:34.541 [ER] INFO  [AWT-EventQueue-0] - ---destroyed Five Sec Router for EOE
+2018-05-26 00:00:34.541 [ER] INFO  [AWT-EventQueue-0] - cdebug: FIVE_SEC | router(euhmds:9)@4d560e91 | Unset ticker ID
+2018-05-26 00:00:34.542 [ER] INFO  [AWT-EventQueue-0] - cdebug: DATA | ChartDatasetGroup[0/0/1/0/0/0]@427709830 | Removing all series
+2018-05-26 00:00:34.545 [ER] INFO  [AWT-EventQueue-0] - cdebug: CHARTS | ChartPanel5 | destroy
+2018-05-26 00:00:34.545 [ER] INFO  [AWT-EventQueue-0] - ---destroyed Five Sec Router for EUR
+2018-05-26 00:00:34.545 [ER] INFO  [AWT-EventQueue-0] - cdebug: FIVE_SEC | router(cashhmds:1)@9edd3cf | Unset ticker ID
+2018-05-26 00:00:34.546 [ER] INFO  [AWT-EventQueue-0] - cdebug: DATA | ChartDatasetGroup[0/0/1/0/0/0]@1735142733 | Removing all series
+2018-05-26 00:00:34.549 [ER] INFO  [AWT-EventQueue-0] - cdebug: CHARTS | ChartPanel4 | destroy
+2018-05-26 00:00:34.549 [ER] INFO  [AWT-EventQueue-0] - ---destroyed Five Sec Router for EOE
+2018-05-26 00:00:34.549 [ER] INFO  [AWT-EventQueue-0] - cdebug: FIVE_SEC | router(euhmds:7)@65b4b5c2 | Unset ticker ID
+2018-05-26 00:00:34.550 [ER] INFO  [AWT-EventQueue-0] - ---destroyed Five Sec Router for EOE
+2018-05-26 00:00:34.550 [ER] INFO  [AWT-EventQueue-0] - cdebug: FIVE_SEC | router(euhmds:8)@36115177 | Unset ticker ID
+2018-05-26 00:00:34.551 [ER] INFO  [AWT-EventQueue-0] - cdebug: DATA | ChartDatasetGroup[6/0/1/0/0/2]@1755066381 | Removing all series
+2018-05-26 00:00:34.554 [ER] INFO  [AWT-EventQueue-0] - cdebug: CHARTS | ChartPanel3 | destroy
+2018-05-26 00:00:34.554 [ER] INFO  [AWT-EventQueue-0] - ---destroyed Five Sec Router for DAX
+2018-05-26 00:00:34.554 [ER] INFO  [AWT-EventQueue-0] - cdebug: FIVE_SEC | router(euhmds:1)@27cb65b | Unset ticker ID
+2018-05-26 00:00:34.555 [ER] INFO  [AWT-EventQueue-0] - cdebug: DATA | ChartDatasetGroup[0/0/1/0/0/0]@1673865950 | Removing all series
+2018-05-26 00:00:34.557 [ER] INFO  [AWT-EventQueue-0] - cdebug: CHARTS | ChartPanel2 | destroy
+2018-05-26 00:00:34.558 [ER] INFO  [AWT-EventQueue-0] - ---destroyed Five Sec Router for ES
+2018-05-26 00:00:34.558 [ER] INFO  [AWT-EventQueue-0] - cdebug: FIVE_SEC | router(ilhmds:1)@75a733fc | Unset ticker ID
+2018-05-26 00:00:34.558 [ER] INFO  [AWT-EventQueue-0] - hmds data mgr: clearTodaysCloseSubscription for Symbol=ES  Type=FUT  Expiry=20180615  Strike=0.0  Put/Call=?  Exchange=GLOBEX  CompExch=null  Currency=USD  Multiplier=50  IbLocalSymbol=ESM8  IbTradingClass=ES  SecIdType=null  SecId=null  includeExpired=false  needLeadFutureMonth=false  needContinuousLeadFutureOnly=false  newsSource=null  Legs=null  Special Info=  lotSize=1  hashCode=28915280  mrwp=false  conid=269745169  marketName=ES  eligibleRelevant=false  validExchanges=GLOBEX  underWriter=null  record=og: conid= [269745169] m_bid [-1.0], m_ask [-1.0], m_last [2721.0], m_lastTimeStamp [1527281999],m_lastAttribs [0],m_close [2727.5], m_closeTimestamp [0], m_todaysClose [2718.25], m_closeAttribs [0], m_bidSize [0], m_askSize [0], m_lastSize [2], m_bidEligible [1], m_askEligible [1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_callFutureOpenInterest [2147483647], m_plPrice [2720.75], m_ibRate [1.7976931348623157E308], m_shortableShares [2147483647], m_feeRate [undefined], m_rebateRate [undefined], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.am@3c833632  cusip=  dataFeed= mktDataTag=104,lastMktDataTag=105,deepTag=null,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null,delayedFrozenMktDataTag=null,delayedFrozenLastMktDataTag=null,directedDelayedMktDataTag=null  marketBridge=null  destroyed=false
+2018-05-26 00:00:34.559 [ER] INFO  [AWT-EventQueue-0] - cdebug: DATA | ChartDatasetGroup[0/0/1/0/0/0]@983261934 | Removing all series
+2018-05-26 00:00:34.561 [ER] INFO  [AWT-EventQueue-0] - cdebug: CHARTS | ChartPanel1 | destroy
+2018-05-26 00:00:34.562 [ER] INFO  [AWT-EventQueue-0] - ---destroyed Five Sec Router for EOE
+2018-05-26 00:00:34.562 [ER] INFO  [AWT-EventQueue-0] - cdebug: FIVE_SEC | router(euhmds:4)@49a8a0fc | Unset ticker ID
+2018-05-26 00:00:34.562 [ER] INFO  [AWT-EventQueue-0] - cdebug: DATA | ChartDatasetGroup[0/0/1/0/0/0]@599782976 | Removing all series
+2018-05-26 00:00:34.565 [ER] INFO  [AWT-EventQueue-0] - cdebug: CHARTS | ChartPanel8 | destroy
+2018-05-26 00:00:34.565 [ER] INFO  [AWT-EventQueue-0] - ---destroyed Five Sec Router for USD
+2018-05-26 00:00:34.566 [ER] INFO  [AWT-EventQueue-0] - cdebug: FIVE_SEC | router(cashhmds:2)@18b5117a | Unset ticker ID
+2018-05-26 00:00:34.566 [ER] INFO  [AWT-EventQueue-0] - cdebug: DATA | ChartDatasetGroup[0/0/1/0/0/0]@1670266997 | Removing all series
+2018-05-26 00:00:34.570 [ER] INFO  [JTS-ExecNotifier-36] - Terminating async queue thread
+2018-05-26 00:00:34.570 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Disconnecting from farms and hmds
+2018-05-26 00:00:34.570 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Disconnecting all farm connections
+2018-05-26 00:00:34.570 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Farm hfarm/NATIVE: Stopping connection
+2018-05-26 00:00:34.570 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Disconnecting hdc1.ibllc.com:4000 with status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.570 [ER] INFO  [JTS-hfarmServicePingS18-6323] - Terminating ping thread
+2018-05-26 00:00:34.570 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - AuthTimeoutMonitor: deactivate
+2018-05-26 00:00:34.570 [ER] INFO  [JTS-hfarmDispatcherS18-6319S18-6320] - Terminating dispatcher
+2018-05-26 00:00:34.571 [ER] INFO  [JTS-hfarmListenerS18-6318] - Socket for connection hdc1.ibllc.com:4000 was closed by another thread
+2018-05-26 00:00:34.571 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Farm jfarm/NATIVE: Stopping connection
+2018-05-26 00:00:34.571 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Disconnecting hdc1.ibllc.com:4000 with status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.571 [ER] INFO  [JTS-hfarmListenerS18-6318] - Terminating Listener thread
+2018-05-26 00:00:34.571 [ER] INFO  [JTS-jfarmServicePingS21-9237] - Terminating ping thread
+2018-05-26 00:00:34.571 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - AuthTimeoutMonitor: deactivate
+2018-05-26 00:00:34.571 [ER] INFO  [JTS-DisconnectedS18-9951] - Farm hfarm/UNCONNECTED: Lost active connection with disconnect status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.571 [ER] INFO  [JTS-jfarmDispatcherS21-9233S21-9234] - Terminating dispatcher
+2018-05-26 00:00:34.571 [ER] INFO  [JTS-jfarmListenerS21-9232] - Socket for connection hdc1.ibllc.com:4000 was closed by another thread
+2018-05-26 00:00:34.571 [ER] INFO  [JTS-DisconnectedS18-9951] - Farm hfarm/UNCONNECTED: Not resetting
+2018-05-26 00:00:34.577 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Farm usfuture/NATIVE: Stopping connection
+2018-05-26 00:00:34.577 [ER] INFO  [JTS-DisconnectedS21-9952] - Farm jfarm/UNCONNECTED: Lost active connection with disconnect status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.577 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Disconnecting cdc1.ibllc.com:4000 with status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.577 [ER] INFO  [JTS-jfarmListenerS21-9232] - Terminating Listener thread
+2018-05-26 00:00:34.577 [ER] INFO  [JTS-DisconnectedS21-9952] - Farm jfarm/UNCONNECTED: Not resetting
+2018-05-26 00:00:34.577 [ER] INFO  [JTS-usfutureServicePingS9-125] - Terminating ping thread
+2018-05-26 00:00:34.577 [ER] INFO  [JTS-usfutureDispatcherS9-104S9-105] - Terminating dispatcher
+2018-05-26 00:00:34.577 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - AuthTimeoutMonitor: deactivate
+2018-05-26 00:00:34.577 [ER] INFO  [JTS-usfutureListenerS9-103] - Socket for connection cdc1.ibllc.com:4000 was closed by another thread
+2018-05-26 00:00:34.578 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Farm eufarm/NATIVE: Stopping connection
+2018-05-26 00:00:34.578 [ER] INFO  [JTS-DisconnectedS9-9953] - Farm usfuture/UNCONNECTED: Lost active connection with disconnect status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.578 [ER] INFO  [JTS-usfutureListenerS9-103] - Terminating Listener thread
+2018-05-26 00:00:34.578 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Disconnecting zdc1.ibllc.com:4000 with status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.578 [ER] INFO  [JTS-DisconnectedS9-9953] - Farm usfuture/UNCONNECTED: Not resetting
+2018-05-26 00:00:34.578 [ER] INFO  [JTS-eufarmServicePingS7-126] - Terminating ping thread
+2018-05-26 00:00:34.578 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - AuthTimeoutMonitor: deactivate
+2018-05-26 00:00:34.578 [ER] INFO  [JTS-eufarmDispatcherS7-95S7-96] - Terminating dispatcher
+2018-05-26 00:00:34.578 [ER] INFO  [JTS-eufarmListenerS7-94] - Socket for connection zdc1.ibllc.com:4000 was closed by another thread
+2018-05-26 00:00:34.578 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Farm cashfarm/CCP: Stopping connection
+2018-05-26 00:00:34.578 [ER] INFO  [JTS-eufarmListenerS7-94] - Terminating Listener thread
+2018-05-26 00:00:34.578 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Disconnecting gdc1.ibllc.com:4000 with status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.578 [ER] INFO  [JTS-DisconnectedS7-9954] - Farm eufarm/UNCONNECTED: Lost active connection with disconnect status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.578 [ER] INFO  [JTS-DisconnectedS7-9954] - Farm eufarm/UNCONNECTED: Not resetting
+2018-05-26 00:00:34.578 [ER] INFO  [JTS-cashfarmServicePingS24-9348] - Terminating ping thread
+2018-05-26 00:00:34.578 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - AuthTimeoutMonitor: deactivate
+2018-05-26 00:00:34.578 [ER] INFO  [JTS-cashfarmDispatcherS24-9344S24-9345] - Terminating dispatcher
+2018-05-26 00:00:34.579 [ER] INFO  [JTS-cashfarmListenerS24-9343] - Socket for connection gdc1.ibllc.com:4000 was closed by another thread
+2018-05-26 00:00:34.579 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Farm usfarm/CCP: Stopping connection
+2018-05-26 00:00:34.579 [ER] INFO  [JTS-cashfarmListenerS24-9343] - Terminating Listener thread
+2018-05-26 00:00:34.579 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Disconnecting gdc1.ibllc.com:4000 with status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.579 [ER] INFO  [JTS-DisconnectedS24-9955] - Farm cashfarm/UNCONNECTED: Lost active connection with disconnect status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.579 [ER] INFO  [JTS-usfarmServicePingS3-132] - Terminating ping thread
+2018-05-26 00:00:34.579 [ER] INFO  [JTS-DisconnectedS24-9955] - Farm cashfarm/UNCONNECTED: Not resetting
+2018-05-26 00:00:34.579 [ER] INFO  [JTS-usfarmDispatcherS3-131] - Terminating dispatcher
+2018-05-26 00:00:34.579 [ER] INFO  [JTS-usfarmListenerS3-130] - Socket for connection gdc1.ibllc.com:4000 was closed by another thread
+2018-05-26 00:00:34.579 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - AuthTimeoutMonitor: deactivate
+2018-05-26 00:00:34.580 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Disconnecting all farm connections
+2018-05-26 00:00:34.580 [ER] INFO  [JTS-DisconnectedS3-9956] - Farm usfarm/UNCONNECTED: Lost active connection with disconnect status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.580 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Farm secdefus/CCP: Stopping connection
+2018-05-26 00:00:34.580 [ER] INFO  [JTS-usfarmListenerS3-130] - Terminating Listener thread
+2018-05-26 00:00:34.580 [ER] INFO  [JTS-DisconnectedS3-9956] - Farm usfarm/UNCONNECTED: Not resetting
+2018-05-26 00:00:34.580 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Disconnecting gdc1.ibllc.com:4000 with status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.580 [ER] INFO  [JTS-secdefusServicePingS6-120] - Terminating ping thread
+2018-05-26 00:00:34.580 [ER] INFO  [JTS-secdefusDispatcherS6-85S6-86] - Terminating dispatcher
+2018-05-26 00:00:34.580 [ER] INFO  [JTS-secdefusListenerS6-84] - Socket for connection gdc1.ibllc.com:4000 was closed by another thread
+2018-05-26 00:00:34.580 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - AuthTimeoutMonitor: deactivate
+2018-05-26 00:00:34.580 [ER] INFO  [JTS-secdefusListenerS6-84] - Terminating Listener thread
+2018-05-26 00:00:34.580 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Disconnecting all farm connections
+2018-05-26 00:00:34.580 [ER] INFO  [JTS-DisconnectedS6-9957] - Farm secdefus/UNCONNECTED: Lost active connection with disconnect status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.580 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Farm ilhmds/NATIVE: Stopping connection
+2018-05-26 00:00:34.580 [ER] INFO  [JTS-DisconnectedS6-9957] - Farm secdefus/UNCONNECTED: Not resetting
+2018-05-26 00:00:34.580 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Disconnecting cdc1.ibllc.com:4000 with status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.581 [ER] INFO  [JTS-ilhmdsServicePingS12-172] - Terminating ping thread
+2018-05-26 00:00:34.581 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - AuthTimeoutMonitor: deactivate
+2018-05-26 00:00:34.581 [ER] INFO  [JTS-ilhmdsListenerS12-143] - Socket for connection cdc1.ibllc.com:4000 was closed by another thread
+2018-05-26 00:00:34.581 [ER] INFO  [JTS-ilhmdsDispatcherS12-144S12-145] - Terminating dispatcher
+2018-05-26 00:00:34.581 [ER] INFO  [JTS-ilhmdsListenerS12-143] - Terminating Listener thread
+2018-05-26 00:00:34.581 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Farm euhmds/NATIVE: Stopping connection
+2018-05-26 00:00:34.581 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Disconnecting zdc1.ibllc.com:4000 with status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.581 [ER] INFO  [JTS-DisconnectedS12-9958] - Farm ilhmds/UNCONNECTED: Lost active connection with disconnect status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.581 [ER] INFO  [JTS-DisconnectedS12-9958] - Farm ilhmds/UNCONNECTED: Not resetting
+2018-05-26 00:00:34.581 [ER] INFO  [JTS-euhmdsServicePingS13-165] - Terminating ping thread
+2018-05-26 00:00:34.581 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - AuthTimeoutMonitor: deactivate
+2018-05-26 00:00:34.581 [ER] INFO  [JTS-euhmdsListenerS13-146] - Socket for connection zdc1.ibllc.com:4000 was closed by another thread
+2018-05-26 00:00:34.581 [ER] INFO  [JTS-euhmdsDispatcherS13-147S13-148] - Terminating dispatcher
+2018-05-26 00:00:34.592 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Farm cashhmds/CCP: Stopping connection
+2018-05-26 00:00:34.592 [ER] INFO  [JTS-euhmdsListenerS13-146] - Terminating Listener thread
+2018-05-26 00:00:34.592 [ER] INFO  [JTS-DisconnectedS13-9959] - Farm euhmds/UNCONNECTED: Lost active connection with disconnect status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.592 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Disconnecting gdc1.ibllc.com:4000 with status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.592 [ER] INFO  [JTS-DisconnectedS13-9959] - Farm euhmds/UNCONNECTED: Not resetting
+2018-05-26 00:00:34.592 [ER] INFO  [JTS-cashhmdsServicePingS16-174] - Terminating ping thread
+2018-05-26 00:00:34.593 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - AuthTimeoutMonitor: deactivate
+2018-05-26 00:00:34.593 [ER] INFO  [JTS-cashhmdsDispatcherS16-161S16-162] - Terminating dispatcher
+2018-05-26 00:00:34.593 [ER] INFO  [JTS-cashhmdsListenerS16-160] - Socket for connection gdc1.ibllc.com:4000 was closed by another thread
+2018-05-26 00:00:34.593 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Farm ushmds/CCP: Stopping connection
+2018-05-26 00:00:34.593 [ER] INFO  [JTS-cashhmdsListenerS16-160] - Terminating Listener thread
+2018-05-26 00:00:34.593 [ER] INFO  [JTS-DisconnectedS16-9960] - Farm cashhmds/UNCONNECTED: Lost active connection with disconnect status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.594 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - Disconnecting gdc1.ibllc.com:4000 with status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.594 [ER] INFO  [JTS-DisconnectedS16-9960] - Farm cashhmds/UNCONNECTED: Not resetting
+2018-05-26 00:00:34.594 [ER] INFO  [JTS-ushmdsServicePingS5-118] - Terminating ping thread
+2018-05-26 00:00:34.594 [ER] INFO  [JTS-ushmdsDispatcherS5-117] - Terminating dispatcher
+2018-05-26 00:00:34.594 [ER] INFO  [JTS-ShutdownTask-Disconnecting_from_Farms_and_Hmds-9950] - AuthTimeoutMonitor: deactivate
+2018-05-26 00:00:34.594 [ER] INFO  [JTS-ushmdsListenerS5-116] - Socket for connection gdc1.ibllc.com:4000 was closed by another thread
+2018-05-26 00:00:34.594 [ER] INFO  [JTS-ushmdsListenerS5-116] - Terminating Listener thread
+2018-05-26 00:00:34.595 [ER] INFO  [JTS-ShutdownTask-Clearing_batch_requests-9962] - Before clearing batch requets for:0 settings-state:null settings:0
+2018-05-26 00:00:34.595 [ER] INFO  [JTS-ShutdownTask-Sending_logoff-9963] - Sending logoff msg
+2018-05-26 00:00:34.596 [ER] INFO  [JTS-ShutdownTask-Closing_socket-9964] - Close socket.
+2018-05-26 00:00:34.596 [ER] INFO  [JTS-ShutdownTask-Closing_socket-9964] - Disconnecting gdc1.ibllc.com:4000 with status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.596 [ER] INFO  [JTS-ShutdownTask-Closing_socket-9964] - AuthTimeoutMonitor: deactivate
+2018-05-26 00:00:34.596 [ER] INFO  [JTS-CCPListenerS2-12] - Socket for connection gdc1.ibllc.com:4000 was closed by another thread
+2018-05-26 00:00:34.596 [ER] INFO  [JTS-CCPPingS2-26] - Terminating ping thread
+2018-05-26 00:00:34.596 [ER] INFO  [JTS-ShutdownTask-Closing_socket-9964] - CONN CALC: Last connection attempt time is cleared!
+2018-05-26 00:00:34.596 [ER] INFO  [JTS-CCPDispatcherS2-35] - Terminating dispatcher
+2018-05-26 00:00:34.597 [ER] INFO  [JTS-CCPListenerS2-12] - Terminating Listener thread
+2018-05-26 00:00:34.597 [ER] INFO  [JTS-ShutdownTask-Closing_audit-9966] - Close audit log-file.
+2018-05-26 00:00:34.597 [ER] INFO  [JTS-Order-Audit-24] - Terminating async queue thread
+2018-05-26 00:00:34.597 [ER] INFO  [JTS-ShutdownTask-Disconnecting_trades_sync_mgr-9968] - Disconnect 'TradesSyncMgr'
+2018-05-26 00:00:34.598 [ER] INFO  [JTS-DisconnectedS5-9961] - Farm ushmds/UNCONNECTED: Lost active connection with disconnect status DISCONNECT_ON_EXIT_SESSION
+2018-05-26 00:00:34.598 [ER] INFO  [JTS-ShutdownTask-Closing_login_window-9969] - Close login window.
+2018-05-26 00:00:34.598 [ER] INFO  [JTS-DisconnectedS5-9961] - Farm ushmds/UNCONNECTED: Not resetting
+2018-05-26 00:00:34.598 [ER] INFO  [JTS-ShutdownTask-Closing_login_window-9969] - LoginWindow.exitSession()
+2018-05-26 00:00:34.601 [ER] INFO  [AWT-EventQueue-0] - Application exit
+2018-05-26 00:00:34.602 [ER] INFO  [JTS-DisconnectedS2-9965] - Before clearing batch requets for:2 settings-state:true settings:0
+2018-05-26 00:00:34.606 [ER] INFO  [JTS-DisconnectedS2-9965] - Connection to ccp disconnected.
+2018-05-26 00:00:34.607 [ER] INFO  [pool-1-thread-1] - |NIA|Thread[NIA-DBSHUTDOWNHOOK,6,main] | run()#395 | HSQLDB connections are closed | 

@@ -88,6 +88,7 @@ public class HistoryService extends Service implements Barable {
      */
     @Override
     public void run() {
+        super.run();
     }
 
     @Override

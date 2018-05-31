@@ -467,17 +467,19 @@ public class Writer {
     }
 
     public void updateData(ServiceData data) {
-        manager.getTransaction().begin();
+//        if (!manager.getTransaction().isActive()) {
+//            manager.getTransaction().begin();
+//        }
         manager.persist(data);
-        manager.getTransaction().commit();
+//        manager.getTransaction().commit();
     }
 
-    public void updateState(State state) {
-        if (!manager.getTransaction().isActive()) {
-            this.manager.getTransaction().begin();
-        }
-        manager.persist(state);
-        manager.getTransaction().commit();
-    }
+//    public void updateState(State state) {
+////        if (!manager.getTransaction().isActive()) {
+////            this.manager.getTransaction().begin();
+////        }
+//        manager.persist(state);
+////        manager.getTransaction().commit();
+//    }
 
 }
