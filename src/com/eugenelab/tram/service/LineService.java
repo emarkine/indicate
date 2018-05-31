@@ -29,6 +29,7 @@ public class LineService extends Service {
 
     @Override
     public void run() {
+        super.run();
         time();
         if (hasOpen && hasClose) {
         }

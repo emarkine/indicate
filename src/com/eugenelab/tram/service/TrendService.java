@@ -52,6 +52,7 @@ public class TrendService extends Service {
     
     @Override
     public void run() {
+        super.run();
         time();
         Bar[] bars = reader.abars();
         Map<Long, Point> points_high = reader.points("trend_bar_high");

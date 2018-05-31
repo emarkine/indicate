@@ -148,6 +148,7 @@ public class ParabolicStopAndReverseService extends Service {
 
     @Override
     public void run() {
+        super.run();
         time();
         Bar[] bars = reader.abars();
         if (bars.length <= 2) {

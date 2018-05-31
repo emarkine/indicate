@@ -48,6 +48,7 @@ public class BollingerService extends Service {
 
     @Override
     public void run() {
+        super.run();
         time();
         Map<Long, Point> points = ema();
         Map<Long, Point> widthPoints = reader.points(reader.set("bol_width"));

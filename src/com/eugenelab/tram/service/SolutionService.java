@@ -28,6 +28,7 @@ public class SolutionService extends Service {
 
     @Override
     public void run() {
+        super.run();
         time();
         Bar[] bars = reader.abars(); // считываем все имеющиеся бары 
         Map<Long, Point> points = reader.points();

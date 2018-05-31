@@ -62,6 +62,7 @@ public class RelativeStrengthIndexService extends Service  {
 
     @Override
     public void run() {
+        super.run();
         time();
         Bar[] bars = reader.abars(); // считываем все имеющиеся бары 
         Map<Long, Point> ps = reader.points();

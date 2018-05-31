@@ -48,6 +48,7 @@ public class MovingAverageConvergenceDivergenceService extends Service {
 
     @Override
     public void run() {
+        super.run();
         time();
         Setting first_set = reader.set(set.getFirst());
         Map<Long, Point> firstPoints = ema(first_set);
