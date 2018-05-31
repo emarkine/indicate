@@ -22,6 +22,7 @@ public class ExponentialMovingAverageService extends Service {
 
     @Override
     public void run() {
+        super.run();
         time();
         Map<Long, Point> points = ema();
         calculation(points);
