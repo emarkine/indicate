@@ -29,7 +29,7 @@ public class Parser {
         DEFAULT.put("db_user", "root");
         DEFAULT.put("ib_host", "localhost");
         DEFAULT.put("ib_port", "4001");
-        DEFAULT.put("ib_client_id", "1");
+        DEFAULT.put("ib_client_id", "1000");
     }
     public Parser(String[] argv) {
         Map<String, String> env = System.getenv();
