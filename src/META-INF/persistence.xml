@@ -25,14 +25,14 @@
     <class>com.eugenelab.tram.domain.Node</class>
     <class>com.eugenelab.tram.domain.State</class>
     <properties>
-<!--      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/tram_development"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/adapt_development"/>
       <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
       <property name="javax.persistence.jdbc.user" value="eugene"/>
-      <property name="javax.persistence.jdbc.password" value="1q2w3e4r5t"/>-->
-      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://eugenelab.com:5432/adapt_production"/>
+      <property name="javax.persistence.jdbc.password" value="HXLemdtpoO"/>
+<!--      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://eugenelab.com:5432/adapt_production"/>
       <property name="javax.persistence.jdbc.user" value="adapt"/>
       <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-      <property name="javax.persistence.jdbc.password" value="HXLemdtpoO"/>
+      <property name="javax.persistence.jdbc.password" value="HXLemdtpoO"/>-->
       
 <!--      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/tram_development?zeroDateTimeBehavior=convertToNull"/>
       <property name="javax.persistence.jdbc.user" value="root"/>

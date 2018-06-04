@@ -73,7 +73,7 @@ public class HistoryService extends Service implements Barable {
 //            }
 //            history.setPeriod(calculator.beginTime, calculator.endTime);
         }
-        if (this.frame.getId() == 5) { // для 5s все расчитывается по другому
+        if (this.frame.getMs() == 5000) { // для 5s все расчитывается по другому
             history.setPeriod(new Period(calculator.beginTime, calculator.endTime));
         } else {
             history.setDate(calculator.endTime);
@@ -93,7 +93,7 @@ public class HistoryService extends Service implements Barable {
 
     @Override
     public void complete() {
-        if (this.frame.getId() == 5) {
+        if (this.frame.getMs() == 5000) {
             puts("5s");
         }
         if (isSingle()) { // одиночный запуск 
@@ -104,7 +104,7 @@ public class HistoryService extends Service implements Barable {
     @Override
     public Bar make(com.ib.controller.Bar ib_bar) {
         long t = ib_bar.time() * 1000L + calculator.bar_size / 2;
-        if (frame.getId() == 1 || frame.getId() == 5) {
+        if (frame.getMs() == 1000 || frame.getMs() == 5000) {
             t -= 500; // уменьшаем серединку на пол-секунды только для 5s баров
         }
         Bar bar = (Bar) reader.bars.get(t); // пытаемся считать бар из коллекции

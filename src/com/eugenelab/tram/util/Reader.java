@@ -340,7 +340,7 @@ public final class Reader {
             query.setParameter(1, bar.getPrev_id());
             return (Bar) query.getSingleResult();
         } else {
-            time = new Date(time.getTime() - frame.getId() * 1000L);
+            time = new Date(time.getTime() - frame.getMs());
             Query query = manager.createQuery("SELECT o FROM Bar o WHERE o.fund = ?1 AND o.frame = ?2 AND o.openTime < ?3 AND o.closeTime >= ?4");
             query.setParameter(1, fund);
             query.setParameter(2, frame);

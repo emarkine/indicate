@@ -57,8 +57,9 @@ public class MarketData {
         return duration(unit(name));
     }
 
-    public static BarSize barSize(int frame_id) {
-        switch (frame_id) {
+    public static BarSize barSize(int ms) {
+        int sec = ms / 1000;
+        switch (sec) {
             case 1:
                 return BarSize._1_secs;
             case 5:

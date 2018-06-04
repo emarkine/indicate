@@ -7,13 +7,16 @@ import com.eugenelab.tram.domain.Indicator;
 import com.eugenelab.tram.domain.Setting;
 import com.eugenelab.tram.service.AccountService;
 import com.eugenelab.tram.service.BarService;
+import com.eugenelab.tram.service.BellService;
 import com.eugenelab.tram.service.BinaryService;
 import com.eugenelab.tram.service.BollingerService;
 import com.eugenelab.tram.service.CrystalService;
+import com.eugenelab.tram.service.DoorService;
 import com.eugenelab.tram.service.ExponentialMovingAverageService;
 import com.eugenelab.tram.service.HistoryService;
 import com.eugenelab.tram.service.LineService;
 import com.eugenelab.tram.service.MovingAverageConvergenceDivergenceService;
+import com.eugenelab.tram.service.NodeService;
 import com.eugenelab.tram.service.ParabolicStopAndReverseService;
 import com.eugenelab.tram.service.RandomService;
 import com.eugenelab.tram.service.RelativeStrengthIndexService;
@@ -34,6 +37,9 @@ public class ServiceFinder {
 
     static {
         SERVICES.put("state", StateService.class);
+        SERVICES.put("node", NodeService.class);
+        SERVICES.put("bell", BellService.class);
+        SERVICES.put("door", DoorService.class);
         SERVICES.put("tick", TickService.class);
         SERVICES.put("bar", BarService.class);
         SERVICES.put("history", HistoryService.class);
@@ -62,7 +68,13 @@ public class ServiceFinder {
     }
 
     public static final Class find(String service_name) {
-        if (service_name.startsWith("ema")) {
+        if (service_name.startsWith("node")) {
+            service_name = "node";
+        } else if (service_name.startsWith("bell")) {
+            service_name = "bell";
+        } else if (service_name.startsWith("door")) {
+            service_name = "door";
+        } else if (service_name.startsWith("ema")) {
             service_name = "ema";
         } else if (service_name.startsWith("sma")) {
             service_name = "sma";

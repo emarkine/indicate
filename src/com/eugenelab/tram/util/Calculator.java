@@ -70,7 +70,7 @@ public class Calculator {
         this.frame = frame;
         this.setting = setting;
         this.period = period;
-        this.bar_size = frame.getId() * 1000L;
+        this.bar_size = frame.getMs();
         this.viewport = bar_size * VIEWPORT_SIZE;
         time(period);
     }

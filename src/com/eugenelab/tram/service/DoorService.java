@@ -11,9 +11,9 @@ import javax.persistence.EntityManager;
  * 
  * @author eugene
  */
-public class StateService extends Service {
+public class DoorService extends NodeService {
 
-    public StateService(ServiceData data, EntityManager manager) {
+    public DoorService(ServiceData data, EntityManager manager) {
         super(data, manager);
     }
     

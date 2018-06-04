@@ -187,7 +187,7 @@ public class Writer {
     public Bar create(Bar prev, Bar b) {
         Bar bar = new Bar();
         Date open_time = b.getOpenTime();
-        long size = frame.getId() * 1000L;
+        long size = frame.getMs();
         Date close_time = new Date(open_time.getTime() + size);
         Date time = new Date(open_time.getTime() + size / 2);
         bar.setMs(System.currentTimeMillis());
@@ -261,7 +261,7 @@ public class Writer {
         bar.setHigh(rate);
         bar.setLow(rate);
         bar.setRate(rate);
-        long size = frame.getId() * 1000L; // размер бара
+        long size = frame.getMs(); // размер бара
         long ntime = tick.getTime().getTime() / size;
         Date open_time = new Date(ntime * size);
         Date close_time = new Date(open_time.getTime() + size);
@@ -470,6 +470,7 @@ public class Writer {
 //        if (!manager.getTransaction().isActive()) {
 //            manager.getTransaction().begin();
 //        }
+//        manager.getTransaction().begin();
         manager.persist(data);
 //        manager.getTransaction().commit();
     }
@@ -481,5 +482,4 @@ public class Writer {
 //        manager.persist(state);
 ////        manager.getTransaction().commit();
 //    }
-
 }

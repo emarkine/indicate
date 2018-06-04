@@ -11,14 +11,14 @@ import javax.persistence.EntityManager;
  * 
  * @author eugene
  */
-public class StateService extends Service {
+public class NodeService extends Service {
 
-    public StateService(ServiceData data, EntityManager manager) {
+    public NodeService(ServiceData data, EntityManager manager) {
         super(data, manager);
     }
     
     /**
-     * 
+     * Connection to Arduino USB
      */
     @Override
     public void start() {

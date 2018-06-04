@@ -42,7 +42,7 @@ public class HistoryReader implements IHistoricalDataHandler {
         this.controller = controller;
         this.frame = frame;
         this.contract = initContract(fund);
-        this.barSize = MarketData.barSize(frame.getId());
+        this.barSize = MarketData.barSize(frame.getMs());
         this.unit = MarketData.unit(frame.getUnit());
 //        this.endDateTime = FORMAT_IB_REQUEST.format(new Date());
 //        this.duration = frame.getDuration();

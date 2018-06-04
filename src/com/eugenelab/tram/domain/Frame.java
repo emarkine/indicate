@@ -34,6 +34,8 @@ public class Frame implements Serializable {
     @Basic(optional = false)
     @Column(name = "id")
     private Integer id;
+    @Column(name = "ms")
+    private Integer ms;
     @Column(name = "name")
     private String name;
     @Column(name = "unit")
@@ -54,9 +56,9 @@ public class Frame implements Serializable {
     }
 
 
-    public Integer getId() {
-        return id;
-    }
+//    public Integer getId() {
+//        return id;
+//    }
 
     public void setId(Integer id) {
         this.id = id;
@@ -116,5 +118,20 @@ public class Frame implements Serializable {
      */
     public void setDuration(Integer duration) {
         this.duration = duration;
+    }
+
+
+    /**
+     * @return the ms
+     */
+    public Integer getMs() {
+        return ms;
+    }
+
+    /**
+     * @param ms the ms to set
+     */
+    public void setMs(Integer ms) {
+        this.ms = ms;
     }
 }
