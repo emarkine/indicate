@@ -15,14 +15,17 @@ public class NodeService extends Service {
 
     public NodeService(ServiceData data, EntityManager manager) {
         super(data, manager);
+        this.print = true;
     }
     
     /**
-     * Connection to Arduino USB
+     * Connection to Arduino 
      */
     @Override
     public void start() {
+        manager.getTransaction().begin();
         super.start();
+        manager.getTransaction().commit();
     }
 
     /**
@@ -30,14 +33,20 @@ public class NodeService extends Service {
      */
     @Override
     public void run() {
+        manager.getTransaction().begin();
+        int value = 0;
         super.run();
+        puts(value);
+        manager.getTransaction().commit();
     }
     /**
      * 
      */
     @Override
     public void stop() {
+        manager.getTransaction().begin();
         super.stop();
+        manager.getTransaction().commit();
     }
     
 }
