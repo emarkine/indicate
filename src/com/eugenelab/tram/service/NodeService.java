@@ -4,49 +4,76 @@
 package com.eugenelab.tram.service;
 
 import com.eugenelab.tram.domain.ServiceData;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import javax.persistence.EntityManager;
 
 /**
  * Получение данных о состоянии сервисов
- * 
+ *
  * @author eugene
  */
 public class NodeService extends Service {
+
+    protected Process process;
+    protected BufferedReader bufferedReader;
 
     public NodeService(ServiceData data, EntityManager manager) {
         super(data, manager);
         this.print = true;
     }
-    
+
     /**
-     * Connection to Arduino 
+     * Connection to Arduino
      */
     @Override
     public void start() {
         manager.getTransaction().begin();
+        try {
+            process = Runtime.getRuntime().exec("screen /dev/ttyACM0");
+            bufferedReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         super.start();
         manager.getTransaction().commit();
     }
 
     /**
-     * 
+     *
      */
     @Override
     public void run() {
         manager.getTransaction().begin();
-        int value = 0;
+        try {
+            String line = null;
+            do {
+                line = bufferedReader.readLine();
+                int value = 0;
+                puts(value);
+            } while (line != null);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         super.run();
-        puts(value);
         manager.getTransaction().commit();
     }
+
     /**
-     * 
+     *
      */
     @Override
     public void stop() {
         manager.getTransaction().begin();
+        try {
+            process.waitFor();
+            puts("exit: " + process.exitValue());
+            process.destroy();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         super.stop();
         manager.getTransaction().commit();
     }
-    
+
 }
