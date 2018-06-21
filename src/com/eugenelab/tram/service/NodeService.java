@@ -50,7 +50,7 @@ public class NodeService extends Service {
             do {
                 line = bufferedReader.readLine();
                 int value = 0;
-                puts(value);
+                puts(line);
             } while (line != null);
         } catch (Exception e) {
             e.printStackTrace();
