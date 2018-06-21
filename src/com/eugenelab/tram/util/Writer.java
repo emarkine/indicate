@@ -387,6 +387,10 @@ public class Writer {
         return commint(bar);
     }
 
+    public Point createPoint(double value) {
+        return createPoint(System.currentTimeMillis(), value, setting, null);
+    }
+
     public Point createPoint(long time, double value) {
         return createPoint(time, value, setting, null);
     }

@@ -53,6 +53,7 @@ public class NodeService extends Service {
                 try {
                     int value = Integer.parseInt(line);
                     puts(value);
+                    writer.createPoint(value);
                 } catch (NumberFormatException e) {
                 }
             } while (line != null);
