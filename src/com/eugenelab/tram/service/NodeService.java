@@ -52,7 +52,7 @@ public class NodeService extends Service {
                 line = bufferedReader.readLine();
                 try {
                     int value = Integer.parseInt(line);
-                    puts(value);
+//                    puts(value);
                     manager.getTransaction().begin();
                     Point point = writer.createPoint(value);
                     point.setService(data);
