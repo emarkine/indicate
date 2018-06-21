@@ -7,7 +7,7 @@ import com.eugenelab.tram.domain.ServiceData;
 import javax.persistence.EntityManager;
 
 /**
- * Получение данных о состоянии сервисов
+ *
  * 
  * @author eugene
  */

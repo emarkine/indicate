@@ -3,6 +3,7 @@
  */
 package com.eugenelab.tram.service;
 
+import com.eugenelab.tram.domain.Point;
 import com.eugenelab.tram.domain.ServiceData;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -53,7 +54,9 @@ public class NodeService extends Service {
                 try {
                     int value = Integer.parseInt(line);
                     puts(value);
-                    writer.createPoint(value);
+                    Point point = writer.createPoint(value);
+                    point.setService(data);
+
                 } catch (NumberFormatException e) {
                 }
             } while (line != null);

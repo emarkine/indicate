@@ -424,7 +424,7 @@ public class Writer {
 //        point.setIndicator(indicator);
         point.setMs(time);
         point.setSetting(set);
-        point.setFund(fund);
+        point.setFund(fund);    
         point.setFrame(frame);
         point.setTime(time);
         point.setValue(value);
