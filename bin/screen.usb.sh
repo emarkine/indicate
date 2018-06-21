@@ -1,3 +1,2 @@
 #!/bin/bash  
-getty tty
-screen /dev/ttyACM0 
+screen -dm /dev/ttyACM0 
