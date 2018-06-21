@@ -30,7 +30,8 @@ public class NodeService extends Service {
     public void start() {
         manager.getTransaction().begin();
         try {
-            process = Runtime.getRuntime().exec("screen /dev/ttyACM0");
+//            process = Runtime.getRuntime().exec("screen /dev/ttyACM0");
+            process = Runtime.getRuntime().exec("bin/screen.usb.sh");
             bufferedReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
         } catch (Exception e) {
             e.printStackTrace();
