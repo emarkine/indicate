@@ -46,7 +46,6 @@ public class NodeService extends Service {
      */
     @Override
     public void run() {
-        manager.getTransaction().begin();
         try {
             String line = null;
             do {
@@ -54,17 +53,18 @@ public class NodeService extends Service {
                 try {
                     int value = Integer.parseInt(line);
                     puts(value);
+                    manager.getTransaction().begin();
                     Point point = writer.createPoint(value);
                     point.setService(data);
-
+                    manager.getTransaction().commit();
+                    puts(point);
                 } catch (NumberFormatException e) {
-                }
+               }
             } while (line != null);
         } catch (Exception e) {
             e.printStackTrace();
         }
         super.run();
-        manager.getTransaction().commit();
     }
 
     /**
