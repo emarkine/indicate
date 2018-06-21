@@ -50,8 +50,11 @@ public class NodeService extends Service {
             String line = null;
             do {
                 line = bufferedReader.readLine();
-                int value = Integer.parseInt(line);
-                puts(value);
+                try {
+                    int value = Integer.parseInt(line);
+                    puts(value);
+                } catch (NumberFormatException e) {
+                }
             } while (line != null);
         } catch (Exception e) {
             e.printStackTrace();
