@@ -87,6 +87,9 @@ public class ServiceData implements Serializable {
     @Column(name = "message")
     private String message;
 
+    @Column(name = "command")
+    private String command;
+
 //    @Column(name = "date")
 //    @Temporal(TemporalType.DATE)
     @Column(name = "start_time")
@@ -451,6 +454,20 @@ public class ServiceData implements Serializable {
      */
     public void setStopTime(Date stopTime) {
         this.stopTime = stopTime;
+    }
+
+    /**
+     * @return the command
+     */
+    public String getCommand() {
+        return command;
+    }
+
+    /**
+     * @param command the command to set
+     */
+    public void setCommand(String command) {
+        this.command = command;
     }
 
 }

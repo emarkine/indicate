@@ -1,0 +1,64 @@
+Database Connecting...
+[EL Info]: 2018-07-06 03:53:46.511--ServerSession(403147759)--EclipseLink, version: Eclipse Persistence Services - 2.5.1.v20130918-f2b9fc5
+[EL Info]: connection: 2018-07-06 03:53:46.777--ServerSession(403147759)--file:/home/indicate/dist/indicate.jar_TramPU login successful
+host_name: teak
+Host: Host[763560746]: teak, ip: 1.1.1.11, os: Ubuntu, location: apartment
+IB Client ID: 1000
+list[1]
+U1401726
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.eugenelab.tram.service.Commander.initService(Commander.java:189)
+	at com.eugenelab.tram.service.Commander.initServices(Commander.java:235)
+	at com.eugenelab.tram.service.Commander.main(Commander.java:100)
+Caused by: java.lang.NullPointerException
+	at com.eugenelab.tram.util.MarketData.initContract(MarketData.java:116)
+	at com.eugenelab.tram.util.HistoryReader.<init>(HistoryReader.java:44)
+	at com.eugenelab.tram.service.HistoryService.<init>(HistoryService.java:32)
+	at com.eugenelab.tram.service.BarService.<init>(BarService.java:29)
+	... 7 more
+connected
+Market data farm connection is OK:jfarm
+Market data farm connection is OK:usfuture
+Market data farm connection is OK:eufarm
+Market data farm connection is OK:cashfarm
+Market data farm connection is OK:usfarm
+HMDS data farm connection is OK:ilhmds
+HMDS data farm connection is OK:euhmds
+HMDS data farm connection is OK:cashhmds
+HMDS data farm connection is OK:ushmds
+Database Connecting...
+[EL Info]: 2018-07-06 03:55:29.757--ServerSession(403147759)--EclipseLink, version: Eclipse Persistence Services - 2.5.1.v20130918-f2b9fc5
+[EL Info]: connection: 2018-07-06 03:55:30.016--ServerSession(403147759)--file:/home/indicate/dist/indicate.jar_TramPU login successful
+host_name: teak
+Host: Host[763560746]: teak, ip: 1.1.1.11, os: Ubuntu, location: apartment
+IB Client ID: 1000
+list[1]
+U1401726
+connected
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.eugenelab.tram.service.Commander.initService(Commander.java:189)
+	at com.eugenelab.tram.service.Commander.initServices(Commander.java:235)
+	at com.eugenelab.tram.service.Commander.main(Commander.java:100)
+Caused by: java.lang.NullPointerException
+	at com.eugenelab.tram.util.MarketData.initContract(MarketData.java:116)
+	at com.eugenelab.tram.util.HistoryReader.<init>(HistoryReader.java:44)
+	at com.eugenelab.tram.service.HistoryService.<init>(HistoryService.java:32)
+	at com.eugenelab.tram.service.BarService.<init>(BarService.java:29)
+	... 7 more
+Market data farm connection is OK:jfarm
+Market data farm connection is OK:usfuture
+Market data farm connection is OK:eufarm
+Market data farm connection is OK:cashfarm
+Market data farm connection is OK:usfarm
+HMDS data farm connection is OK:ilhmds
+HMDS data farm connection is OK:euhmds
+HMDS data farm connection is OK:cashhmds
+HMDS data farm connection is OK:ushmds

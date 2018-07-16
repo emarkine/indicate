@@ -60,7 +60,7 @@ public abstract class Service implements Serviceable {
 //    protected Map<Date, Tick> ticks = new TreeMap<>();
 //    protected Map<Date, Bar> bars = new TreeMap<>();
 //    protected Map<Date, Point> points = new TreeMap<>();
-    protected final ServiceData data;
+    protected ServiceData data;
     protected final Indicator indicator;
     protected final Setting set;
     protected final Fund fund;
@@ -82,6 +82,7 @@ public abstract class Service implements Serviceable {
     protected Date vtime; // передано вирутальное время
     protected long service_time;
     public boolean force = false; // принудительное создание баров/точек
+    protected State state;
 
     protected final List<Service> listUpdatableServices = new ArrayList<>();
 
@@ -108,6 +109,7 @@ public abstract class Service implements Serviceable {
         this.neuro = new NeuroCalc(manager, calculator, fund, frame, set);
         this.reader = new Reader(manager, fund, frame, indicator, set, calculator);
         this.writer = new Writer(manager, fund, frame, indicator, set, calculator);
+        state(State.LOAD);
 //        this.viewport = frame.getId() * Commander.VIEWPORT_SIZE; // размер окна в сек
 //        long add = frame.getId() * (period + 1); // добавка времени с учетом frame 
 //        this.shift = (viewport + add) * 1000L; // общий сдвиг в ms
@@ -160,7 +162,6 @@ public abstract class Service implements Serviceable {
         return data.getId();
     }
 
-
     private void initUpdatable() {
         puts("Updatable Services:");
         for (Service service : Commander.services) {
@@ -184,18 +185,33 @@ public abstract class Service implements Serviceable {
             }
             calculator.time(beginDate, endDate, period);
         }
-        setState("start");
+        state(State.START);
     }
 
     @Override
     public void run() {
         service_time = System.currentTimeMillis();
-        setState("run");
+        state(State.RUN);
     }
 
     @Override
     public void stop() {
-        setState("stop");
+        state(State.STOP);
+    }
+
+    @Override
+    public boolean allow(String action) {
+        State st = reader.state(data);
+        if (st != null && !st.equals(this.state)) {
+            this.state = st;
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public void state(String name) {
+//        this.state = writer.state(data, name);
     }
 
     @Override
@@ -429,7 +445,7 @@ public abstract class Service implements Serviceable {
      */
     protected void calculation(Map<Long, Point> points) {
         if (points != null && points.size() > 0) {
-            Linker.setPointsPrevNext(manager,points);
+            Linker.setPointsPrevNext(manager, points);
             calculator.params(points);
             Map<Long, Rateable> bars = reader.bars();
             neuro.edge(points, bars);
@@ -529,13 +545,13 @@ public abstract class Service implements Serviceable {
 
     @Override
     public void setHost(Host host) {
-       data.setHost(host);
-       writer.updateData(data);
+        data.setHost(host);
+        writer.updateData(data);
     }
-    
+
     @Override
     public void setState(String status) {
-        setState(status,null);
+        setState(status, null);
     }
 
     @Override
@@ -553,7 +569,6 @@ public abstract class Service implements Serviceable {
 //       writer.updateState(state);
     }
 
- 
     @Override
     public String getState() {
         return data.getStatus();

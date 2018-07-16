@@ -15,6 +15,7 @@ import com.eugenelab.tram.service.DoorService;
 import com.eugenelab.tram.service.ExponentialMovingAverageService;
 import com.eugenelab.tram.service.HistoryService;
 import com.eugenelab.tram.service.LineService;
+import com.eugenelab.tram.service.MicrophoneService;
 import com.eugenelab.tram.service.MovingAverageConvergenceDivergenceService;
 import com.eugenelab.tram.service.NodeService;
 import com.eugenelab.tram.service.ParabolicStopAndReverseService;
@@ -33,11 +34,13 @@ import java.util.TreeMap;
  * @author eugene
  */
 public class ServiceFinder {
-        private final static Map<String, Class> SERVICES = new TreeMap<>();
+
+    private final static Map<String, Class> SERVICES = new TreeMap<>();
 
     static {
         SERVICES.put("state", StateService.class);
         SERVICES.put("node", NodeService.class);
+        SERVICES.put("microphone", MicrophoneService.class);
         SERVICES.put("bell", BellService.class);
         SERVICES.put("door", DoorService.class);
         SERVICES.put("tick", TickService.class);
@@ -57,7 +60,7 @@ public class ServiceFinder {
         SERVICES.put("binary", BinaryService.class);
         SERVICES.put("crystal", CrystalService.class);
     }
-    
+
     public static final Class find(Setting setting) {
         Indicator indicator = setting.getIndicator();
         if (indicator.getName().equals("crystal")) {
@@ -69,7 +72,18 @@ public class ServiceFinder {
 
     public static final Class find(String service_name) {
         if (service_name.startsWith("node")) {
-            service_name = "node";
+            String subname = service_name.substring(5);
+            if (subname.startsWith("microphone")) {
+                service_name = "microphone";
+            } else if (subname.startsWith("bell")) {
+                service_name = "bell";
+            } else if (service_name.startsWith("door")) {
+                service_name = "door";
+            } else {
+                service_name = "node";
+            }
+        } else if (service_name.startsWith("microphone")) {
+            service_name = "microphone";
         } else if (service_name.startsWith("bell")) {
             service_name = "bell";
         } else if (service_name.startsWith("door")) {
@@ -87,5 +101,5 @@ public class ServiceFinder {
         }
         return SERVICES.get(service_name);
     }
-    
+
 }

@@ -180,6 +180,7 @@ public class Commander {
         if (set_name.startsWith("tick")
                 || set_name.startsWith("bar")
                 || set_name.startsWith("history")
+                || set_name.startsWith("state")
                 || set_name.startsWith("account")) {
             if (controller == null) { // надо запустить контроллер
                 this.controller = initController(new Logger(), ARG.getIBClientId());
@@ -217,7 +218,7 @@ public class Commander {
         // Таймер запускаем только в случае если есть время обнавления 
         if (service.isRefresh() && !service.isSingle()) {
             ServiceTimerTask task = new ServiceTimerTask(service);
-            timer.schedule(task, task.alignedTime(), task.frameMs());
+            timer.scheduleAtFixedRate(task, task.alignedTime(), task.frameMs());
             System.out.println("Servive[" + service.getId() + "] timer(start: " + FORMAT.format(task.alignedTime()) + ", refresh: " + service.refreshPeriod() + "s)");
         } else { // иначе просто выполняем один раз метод run
             service.run();

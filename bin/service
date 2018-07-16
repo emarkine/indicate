@@ -1,3 +1,18 @@
 #!/bin/bash  
 
+DATE=`/bin/date +%Y-%m-%d`
+SERVICE_NAME=${@: -1}
+LOG_FILE=/home/indicate/log/$SERVICE_NAME.log
+PATH_TO_JAR=/home/indicate/dist/indicate.jar
+PID_PATH_NAME=/home/indicate/tmp/$SERVICE_NAME.pid
+
+#!/bin/bash  
+
+date=`/bin/date +%Y-%m-%d`
+#exec &>> log/$date.${@: -1}.log
+exec &>> log/${@: -1}.log
 java -jar dist/indicate.jar $@
+
+#exec &>> log/$date.${@: -1}.log
+#exec &>> log/${@: -1}.log
+#java -jar dist/indicate.jar $@

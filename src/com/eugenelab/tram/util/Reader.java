@@ -102,9 +102,16 @@ public final class Reader {
         return (List<ServiceData>) query.getResultList();
     }
 
+    public List<ServiceData> services_by_host(Host host) {
+        Query query = manager.createQuery("SELECT o FROM ServiceData o WHERE o.host = ?1 AND o.active=1 ORDER BY o.position");
+        query.setParameter(1, host);
+        return (List<ServiceData>) query.getResultList();
+    }
+
     public static List<ServiceData> services_by_name(EntityManager manager, String name) {
         return services_by(manager, "name", name);
     }
+
 
     public static List<ServiceData> services_by(EntityManager manager, String field, String value) {
         Query query = manager.createQuery("SELECT o FROM ServiceData o WHERE o." + field + " = ?1");
@@ -811,6 +818,16 @@ public final class Reader {
         }
     }
 
+    public ServiceData update(ServiceData service) {
+        Query query = manager.createQuery("SELECT o FROM ServiceData o WHERE o.id = ?1");
+        query.setParameter(1, service.getId());
+        List<ServiceData> list = query.getResultList();
+        if (list.isEmpty()) {
+            return null;
+        } else {
+            return list.get(0);
+        }
+    }
 
 }
 // SELLAR

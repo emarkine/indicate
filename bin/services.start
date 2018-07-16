@@ -1,0 +1,8 @@
+#!/bin/bash                                                                                                                             
+# Copyright 2018 EugeneLab
+# 
+# Start local services.
+# 
+
+/opt/vc/bin/vcgencmd measure_temp
+

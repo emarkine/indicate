@@ -10,11 +10,11 @@ import java.io.InputStreamReader;
 import javax.persistence.EntityManager;
 
 /**
- * Получение данных о состоянии сервисов
+ * 
  *
  * @author eugene
  */
-public class NodeService extends Service {
+public abstract class NodeService extends Service {
 
     protected Process process;
     protected BufferedReader bufferedReader;
@@ -25,46 +25,28 @@ public class NodeService extends Service {
     }
 
     /**
-     * Connection to Arduino
+     * 
      */
     @Override
     public void start() {
         manager.getTransaction().begin();
-        try {
-//            process = Runtime.getRuntime().exec("screen /dev/ttyACM0");
-            process = Runtime.getRuntime().exec("bin/screen.usb.sh");
-            bufferedReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
         super.start();
         manager.getTransaction().commit();
     }
 
+    protected abstract int value();
+    
     /**
      *
      */
     @Override
     public void run() {
-        try {
-            String line = null;
-            do {
-                line = bufferedReader.readLine();
-                try {
-                    int value = Integer.parseInt(line);
-//                    puts(value);
-                    manager.getTransaction().begin();
-                    Point point = writer.createPoint(value);
-                    point.setService(data);
-                    manager.getTransaction().commit();
-                    puts(point);
-                } catch (NumberFormatException e) {
-               }
-            } while (line != null);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        manager.getTransaction().begin();
+        Point point = writer.createPoint(value());
+        point.setService(data);
         super.run();
+        manager.getTransaction().commit();
+        puts(point);
     }
 
     /**
@@ -73,13 +55,6 @@ public class NodeService extends Service {
     @Override
     public void stop() {
         manager.getTransaction().begin();
-        try {
-            process.waitFor();
-            puts("exit: " + process.exitValue());
-            process.destroy();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
         super.stop();
         manager.getTransaction().commit();
     }

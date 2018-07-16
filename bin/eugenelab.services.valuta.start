@@ -1,0 +1,9 @@
+#!/bin/bash                                                                                                                             
+# Copyright 2018 EugeneLab
+# 
+# Start local services.
+# 
+
+export IB_CLIENT_ID=84417837
+bin/service.system start -group eur.tick
+bin/service.system start -group eur.ind

@@ -52,7 +52,8 @@ public class Frame implements Serializable {
 
     @Override
     public String toString() {
-        return "Frame[" + id + "]: " + name + ", unit: " + unit + ", duration: " + duration;
+        return "Frame[" + id + "]: " + name;
+//        return "Frame[" + id + "]: " + name + ", unit: " + unit + ", duration: " + duration;
     }
 
 

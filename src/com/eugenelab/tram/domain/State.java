@@ -3,6 +3,7 @@
  */
 package com.eugenelab.tram.domain;
 
+import com.eugenelab.tram.util.Constant;
 import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Basic;
@@ -31,8 +32,14 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "State.findAll", query = "SELECT h FROM State h"),
     @NamedQuery(name = "State.findById", query = "SELECT h FROM State h WHERE h.id = :id")})
 public class State implements Serializable {
-
     private static final long serialVersionUID = 1L;
+   
+    public static final String LOAD = "load";
+    public static final String START = "start";
+    public static final String RUN = "run";
+    public static final String CHECK = "check";
+    public static final String STOP = "stop";
+    public static final String UNLOAD = "unload";
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -42,16 +49,18 @@ public class State implements Serializable {
 
     @Column(name = "name")
     private String name;
+//    @Column(name = "status")
+//    private String status;
     @Column(name = "message")
     private String message;
 
     @ManyToOne
     @JoinColumn(name = "service_id")
     private ServiceData service;
+    
+    @Column(name = "ms")
+    private Long ms;
 
-    @Column(name = "time")
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date time;
 
     public State() {
     }
@@ -62,7 +71,7 @@ public class State implements Serializable {
 
     @Override
     public String toString() {
-        return "State[" + id + "]: " + name + ", service: " + getService().getName() + ", time: " + getTime();
+        return "State[" + id + "]: " + name + ", service: " + getService().getName() + ", ms: " + getMs();
     }
 
     @Override
@@ -131,18 +140,20 @@ public class State implements Serializable {
         this.service = service;
     }
 
+
     /**
-     * @return the time
+     * @return the ms
      */
-    public Date getTime() {
-        return time;
+    public Long getMs() {
+        return ms;
     }
 
     /**
-     * @param time the time to set
+     * @param ms the ms to set
      */
-    public void setTime(Date time) {
-        this.time = time;
+    public void setMs(Long ms) {
+        this.ms = ms;
     }
+
 
 }

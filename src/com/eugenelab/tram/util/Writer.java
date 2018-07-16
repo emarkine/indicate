@@ -479,6 +479,28 @@ public class Writer {
 //        manager.getTransaction().commit();
     }
 
+    public State state(ServiceData data, String name) {
+        return state(data,name,null);
+    }
+
+    /**
+     * Создание состояния
+     *
+     * @param data сервис
+     * @param name состояние
+     * @param message сообщение
+     * @return вновь созданное состояние сервиса
+     */
+    public State state(ServiceData data, String name, String message) {
+        State state = new State();
+        state.setService(data);
+        state.setName(name);
+        state.setMessage(message);
+        state.setMs(System.currentTimeMillis());
+        manager.persist(state);
+        return state;
+    }
+
 //    public void updateState(State state) {
 ////        if (!manager.getTransaction().isActive()) {
 ////            this.manager.getTransaction().begin();

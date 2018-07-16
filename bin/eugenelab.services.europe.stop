@@ -1,0 +1,8 @@
+#!/bin/bash                                                                                                                             
+# Copyright 2018 EugeneLab
+# 
+# Stop local services.
+# 
+
+bin/service.system stop -group aex.tick
+bin/service.system stop -group aex.ind

@@ -17,11 +17,16 @@ public class DoorService extends NodeService {
         super(data, manager);
     }
     
+    protected int value() {
+        return 0;
+    }
+
     /**
      * 
      */
     @Override
     public void start() {
+//        System.err.println("error");
         super.start();
     }
 
